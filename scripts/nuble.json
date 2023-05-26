@@ -1,0 +1,1127 @@
+{
+    "metadata": {
+        "title": "Nuble",
+        "description": "Modelo Nuble",
+        "minimum_version": "0.4"
+    },
+    "timestepper": {
+        "start": "1994-04-01",
+        "end": "2019-03-31",
+        "timestep": "M"
+    },
+    "nodes": [  
+        {
+        "name": "NubleSanFabian",
+        "type": "catchment",
+        "flow": "FlowNubleSanFabian",
+        "cost": -11000
+        },
+        {
+          "name":"FlorDeQuihua",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowFlorDeQihua"
+        },
+        {
+          "name":"Collico",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowCollico"
+        },
+        {
+          "name":"GreeneYMaira",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowGreeneYMaira"
+        },
+        {
+          "name":"ChacayalOriente",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowChacayalOriente"
+        },
+        {
+          "name":"Zemita",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowZemita"
+        },
+        {
+          "name":"Municipal",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowMunicipal"
+        },
+        {
+          "name":"VirguinJFR",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowVirguinJFR"
+        },
+        {
+          "name":"SanAgustinChangaral",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSanAgustinChangaral"
+        },
+        {
+          "name":"CaroSaldana",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowCaroSaldana"
+        },
+        {
+          "name":"Ranchillo",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowRanchillo"
+        },
+        {
+          "name":"GaonaPerales",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowGaonaPerales"
+        },
+        {
+          "name":"SanPedro",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSanPedro"
+        },
+        {
+          "name":"ArrauNiquen",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowArrauNiquen"
+        },
+        {
+          "name":"LurinSilva",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowLurinSilva"
+        },
+        {
+          "name":"LurinSilva",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowLurinSilva"
+        },
+        {
+          "name":"Muticura",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowMuticura"
+        },
+        {
+          "name":"SantaSara",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSantaSara"
+        },
+        {
+          "name":"PomuyetoOssaDelAlto",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowPomuyetoOssaDelAlto"
+        },
+        {
+          "name":"SantaMartaMBUrrutia",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSantaMartaMBUrrutia"
+        },
+        {
+          "name":"Bellavista",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowBellavista"
+        },
+        {
+          "name":"Moreira",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowMoreira"
+        },
+        {
+          "name":"Lilahue",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowLilahue"
+        },
+        {
+          "name":"MonteBlancoBurgos",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowMonteBlancoBurgos"
+        },
+        {
+          "name":"PomuyetoDelBajo",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowPomuyetoDelBajo"
+        },
+        {
+          "name":"MBFerrada",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowMBFerrada"
+        },
+        {
+          "name":"SantaRosaNorte",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSantaRosaNorte"
+        },
+        {
+          "name":"LasCulebras",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowLasCulebras"
+        },
+        {
+          "name":"LasDumas",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowLasDumas"
+        },
+        {
+          "name":"Quilelto",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowQuilelto"
+        },
+        {
+          "name":"MonteBlancoMendez",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowMonteBlancoMendez"
+        },
+        {
+          "name":"ElPenonElCaballo",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowElPenonElCaballo"
+        },
+        {
+          "name":"Alazan",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowAlazan"
+        },
+        {
+          "name":"Reloca",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowReloca"
+        },
+        {
+          "name":"Romeral",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowRomeral"
+        },
+        {
+          "name":"SanLuisElCanelo",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSanLuisElCanelo"
+        },
+        {
+          "name":"Quinquehua",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowQuinquehua"
+        },
+        {
+          "name":"SantaRosaCato",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSantaRosaCato"
+        },
+        {
+          "name":"MonteBlancoLopezGenetica",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowMonteBlancoLopezGenetica"
+        },
+        {
+          "name":"MonteBlancoJhoujohann",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowMonteBlancoJhoujohann"
+        },
+        {
+          "name":"Dadinco",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowDadinco"
+        },
+        {
+          "name":"SantaIsabel",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSantaIsabel"
+        },
+        {
+          "name":"Cocharcas",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowCocharcas"
+        },
+        {
+          "name":"RubenSaldias",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowRubenSaldias"
+        },
+        {
+          "name":"SanJoseSur",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSanJoseSur"
+        },
+        {
+          "name":"CapillaCox",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowCapillaCox"
+        },
+        {
+          "name":"CapillaNavarro",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowCapillaNavarro"
+        },
+        {
+          "name":"SanJoseNorte",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSanJoseNorte"
+        },
+        {
+          "name":"Arancibia",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowArancibia"
+        },
+        {
+          "name":"SantaLaura",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSantaLaura"
+        },
+        {
+          "name":"LaPalma",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowLaPalma"
+        },
+        {
+          "name": "rQuinquehua",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rRanchillo",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rSantaRosaCato",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rCocharcas",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rRubenSaldias",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rMonteBlancoJhoujohann",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rSantaMartaMBUrrutia",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rLilahue",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rArancibia",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rChacayalOriente",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rArrauNiquen",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rMoreira",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rSanAgustinChangaral",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rQuilelto",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rSantaIsabel",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rSanJoseSur",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rLaPalma",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rDadinco",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rMonteBlancoBurgos",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rMuticura",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rLasDumas",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rMonteBlancoLopezGenetica",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rVirguinJFR",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },       
+        {
+          "name": "rMunicipal",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rGaonaPerales",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rCaroSaldana",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rMBFerrada",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rLasCulebras",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rLurinSilva",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rCapillaNavarro",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rAlazan",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rPomuyetoOssaDelAlto",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rMonteBlancoMendez",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rReloca",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rSanPedro",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rSantaLaura",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rFlorDeQuihua",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rZemita",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rSantaSara",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rGreeneMaira",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rElPenonElCaballo",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rCollico",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rGreeneYMaira",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rSanJoseNorte",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rCapillaCox",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rBellavista",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rRomeral",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rSantaRosaNorte",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rPomuyetoDelBajo",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "rSanLuisElCanelo",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "end",
+          "type": "output",
+          "cost":10000
+      }        
+    ],
+    "edges": [
+      ["NubleSanFabian", "rFlorDeQuihua"],
+      ["rFlorDeQuihua", "FlorDeQuihua"],
+      ["rFlorDeQuihua", "rCollico"],
+      ["rCollico", "Collico"],
+      ["rCollico", "rGreeneYMaira"],
+      ["rGreeneMaira", "GreeneYMaira"],
+      ["rGreeneMaira", "rChacayalOriente"],
+      ["rChacayalOriente", "ChacayalOriente"],
+      ["rChacayalOriente", "rZemita"],
+      ["rZemita", "Zemita"],
+      ["rZemita", "rMunicipal"],
+      ["rMunicipal", "Municipal"],
+      ["rMunicipal", "rVirguinJFR"],
+      ["rVirguinJFR", "VirguinJFR"],
+      ["rVirguinJFR", "rSanAgustinChangaral"],
+      ["rSanAgustinChangaral", "SanAgustinChangaral"],
+      ["rSanAgustinChangaral", "rCaroSaldana"],
+      ["rCaroSaldana", "CaroSaldana"],
+      ["rCaroSaldana", "rRanchillo"],
+      ["rRanchillo", "Ranchillo"],
+      ["rRanchillo", "rGaonaPerales"],
+      ["rGaonaPerales", "GaonaPerales"],
+      ["rGaonaPerales", "rSanPedro"],
+      ["rSanPedro", "SanPedro"],
+      ["rSanPedro", "rArrauNiquen"],
+      ["rArrauNiquen", "ArrauNiquen"],
+      ["rArrauNiquen", "rLurinSilva"],
+      ["rLurinSilva", "LurinSilva"],
+      ["rLurinSilva", "rMuticura"],
+      ["rMuticura", "Muticura"],
+      ["rMuticura", "rSantaSara"],
+      ["rSantaSara", "SantaSara"],
+      ["rSantaSara", "rPomuyetoOssaDelAlto"],
+      ["rPomuyetoOssaDelAlto", "PomuyetoOssaDelAlto"],
+      ["rPomuyetoOssaDelAlto", "rSantaMartaMBUrrutia"],
+      ["rSantaMartaMBUrrutia", "SantaMartaMBUrrutia"],
+      ["rSantaMartaMBUrrutia", "rBellavista"],
+      ["rBellavista", "Bellavista"],
+      ["rBellavista", "rMoreira"],
+      ["rMoreira", "Moreira"],
+      ["rMoreira", "rLilahue"],
+      ["rLilahue", "Lilahue"],
+      ["rLilahue", "rMonteBlancoBurgos"],
+      ["rMonteBlancoBurgos", "MonteBlancoBurgos"],
+      ["rMonteBlancoBurgos", "rPomuyetoDelBajo"],
+      ["rPomuyetoDelBajo", "PomuyetoDelBajo"],
+      ["rPomuyetoDelBajo", "rLasCulebras"],
+      ["rLasCulebras", "LasCulebras"],
+      ["rLasCulebras", "rLasDumas"],
+      ["rLasDumas", "LasDumas"],
+      ["rLasDumas", "rQuilelto"],
+      ["rQuilelto", "Quilelto"],
+      ["rQuilelto","rMBFerrada"],
+      ["rMBFerrada", "MBFerrada"],
+      ["rMBFerrada", "rSantaRosaNorte"],
+      ["rSantaRosaNorte", "SantaRosaNorte"],
+      ["rSantaRosaNorte", "rMonteBlancoMendez"],
+      ["rMonteBlancoMendez", "MonteBlancoMendez"],
+      ["rMonteBlancoMendez", "rElPenonElCaballo"],
+      ["rElPenonElCaballo", "ElPenonElCaballo"],
+      ["rAlazan", "Alazan"],
+      ["rElPenonElCaballo", "rAlazan"],
+      ["rAlazan", "rReloca"],
+      ["rReloca", "Reloca"],
+      ["rReloca", "rRomeral"],
+      ["rRomeral", "Romeral"],
+      ["rRomeral", "rSanLuisElCanelo"],
+      ["rSanLuisElCanelo","SanLuisElCanelo"],
+      ["rSanLuisElCanelo", "rQuinquehua"],
+      ["rQuinquehua", "Quinquehua"],
+      ["rQuinquehua", "rSantaRosaCato"],
+      ["rSantaRosaCato", "SantaRosaCato"],
+      ["rSantaRosaCato", "rMonteBlancoLopezGenetica"],
+      ["rMonteBlancoLopezGenetica", "MonteBlancoLopezGenetica"],
+      ["rMonteBlancoLopezGenetica", "rMonteBlancoJhoujohann"],
+      ["rMonteBlancoJhoujohann", "MonteBlancoJhoujohann"],
+      ["rMonteBlancoJhoujohann", "rDadinco"],
+      ["rDadinco", "Dadinco"],
+      ["rDadinco", "rSantaIsabel"],
+      ["rSantaIsabel", "SantaIsabel"],
+      ["rSantaIsabel", "rCocharcas"],
+      ["rCocharcas", "Cocharcas"],
+      ["rCocharcas", "rRubenSaldias"],
+      ["rRubenSaldias", "RubenSaldias"],
+      ["rRubenSaldias", "rSanJoseSur"],
+      ["rSanJoseSur", "SanJoseSur"],
+      ["rSanJoseSur", "rCapillaCox"],
+      ["rCapillaCox", "CapillaCox"],
+      ["rCapillaCox", "rCapillaNavarro"],
+      ["rCapillaNavarro", "CapillaNavarro"],
+      ["rCapillaNavarro", "rSanJoseNorte"],
+      ["rSanJoseNorte", "SanJoseNorte"],
+      ["rSanJoseNorte", "rArancibia"],
+      ["rArancibia", "Arancibia"],
+      ["rArancibia", "rSantaLaura"],
+      ["rSantaLaura", "SantaLaura"],
+      ["rSantaLaura", "rLaPalma"],
+      ["rLaPalma", "LaPalma"],
+      ["rLaPalma", "end"]
+    ],
+     "recorders": {
+    },
+    "parameters": {
+      "FlowNubleSanFabian": 
+      {
+      "type": "constant",
+      "value": 100
+      },
+      "flowFlorDeQihua": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowCollico": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowGreeneYMaira": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowChacayalOriente": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowZemita": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowMunicipal": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowVirguinJFR": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowSanAgustinChangaral": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowCaroSaldana": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowRanchillo": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowGaonaPerales": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowSanPedro": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowArrauNiquen": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowLurinSilva": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowMuticura": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowSantaSara": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowPomuyetoOssaDelAlto": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowSantaMartaMBUrrutia": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowBellavista": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowMoreira": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowLilahue": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowMonteBlancoBurgos": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowPomuyetoDelBajo": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowMBFerrada": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowSantaRosaNorte": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowLasCulebras": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowLasDumas": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowQuilelto": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowMonteBlancoMendez": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowElPenonElCaballo": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowAlazan": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowReloca": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowRomeral": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowSanLuisElCanelo": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowQuinquehua": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowSantaRosaCato": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowMonteBlancoLopezGenetica": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowMonteBlancoJhoujohann": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowDadinco": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowSantaIsabel": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowCocharcas": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowRubenSaldias": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowSanJoseSur": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowCapillaCox": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowCapillaNavarro": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowSanJoseNorte": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowArancibia": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowSantaLaura": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowLaPalma": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      }
+    }
+}

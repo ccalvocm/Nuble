@@ -41,10 +41,22 @@
           "max_flow": "flowChacayalOriente"
         },
         {
-          "name":"Zemita",
+          "name":"ChacayalPoniente",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowZemita"
+          "max_flow": "flowChacayalPoniente"
+        },
+        {
+          "name":"Zemita_a",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowZemita_a"
+        },
+        {
+          "name":"Zemita_b",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowZemita_b"
         },
         {
           "name":"Municipal",
@@ -251,6 +263,12 @@
           "max_flow": "flowMonteBlancoJhoujohann"
         },
         {
+          "name":"SantaRita",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSantaRita"
+        },
+        {
           "name":"Dadinco",
           "type": "Output",
           "cost": -100,
@@ -305,6 +323,12 @@
           "max_flow": "flowArancibia"
         },
         {
+          "name":"RinconadaDeCato",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowRinconadaDeCato"
+        },
+        {
           "name":"SantaLaura",
           "type": "Output",
           "cost": -100,
@@ -317,97 +341,67 @@
           "max_flow": "flowLaPalma"
         },
         {
-          "name": "rQuinquehua",
+          "name": "bocatoma20",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rRanchillo",
+          "name": "bocatoma8",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rSantaRosaCato",
+          "name": "bocatoma21",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rCocharcas",
+          "name": "bocatoma23",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rRubenSaldias",
+          "name": "bocatoma24",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rMonteBlancoJhoujohann",
+          "name": "bocatoma30",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rSantaMartaMBUrrutia",
+          "name": "bocatoma4",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rLilahue",
+          "name": "bocatoma13",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rArancibia",
+          "name": "bocatoma7",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rChacayalOriente",
+          "name": "rQuileltoMBFerrada",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rArrauNiquen",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rMoreira",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rSanAgustinChangaral",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rQuilelto",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rSantaIsabel",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rSanJoseSur",
+          "name": "bocatoma26",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
@@ -419,199 +413,139 @@
             "cost": 100
         },
         {
-          "name": "rDadinco",
+          "name": "bocatoma25",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rMonteBlancoBurgos",
+          "name": "bocatoma14",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rMuticura",
+          "name": "bocatoma15",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rLasDumas",
+          "name": "bocatoma22",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },   
+        {
+          "name": "bocatoma5",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rMonteBlancoLopezGenetica",
+          "name": "bocatoma10",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rVirguinJFR",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },       
-        {
-          "name": "rMunicipal",
+          "name": "bocatoma27",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rGaonaPerales",
+          "name": "bocatoma16",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rCaroSaldana",
+          "name": "bocatoma14",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rMBFerrada",
+          "name": "bocatoma17",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rLasCulebras",
+          "name": "bocatoma9",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rLurinSilva",
+          "name": "bocatoma31",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rCapillaNavarro",
+          "name": "bocatoma1",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rAlazan",
+          "name": "bocatoma6",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rPomuyetoOssaDelAlto",
+          "name": "bocatoma11",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rMonteBlancoMendez",
+          "name": "bocatoma3",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rReloca",
+          "name": "bocatoma2",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rSanPedro",
+          "name": "bocatoma3",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rSantaLaura",
+          "name": "bocatoma28",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rFlorDeQuihua",
+          "name": "bocatoma29",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rZemita",
+          "name": "bocatoma12",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rSantaSara",
+          "name": "bocatoma18",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "rGreeneMaira",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rElPenonElCaballo",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rCollico",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rGreeneYMaira",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rSanJoseNorte",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rCapillaCox",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rBellavista",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rRomeral",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rSantaRosaNorte",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rPomuyetoDelBajo",
-            "type": "link",
-            "max_flow": 13200000,
-            "cost": 100
-        },
-        {
-          "name": "rSanLuisElCanelo",
+          "name": "bocatoma19",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
@@ -623,103 +557,94 @@
       }        
     ],
     "edges": [
-      ["NubleSanFabian", "rFlorDeQuihua"],
-      ["rFlorDeQuihua", "FlorDeQuihua"],
-      ["rFlorDeQuihua", "rCollico"],
-      ["rCollico", "Collico"],
-      ["rCollico", "rGreeneYMaira"],
-      ["rGreeneMaira", "GreeneYMaira"],
-      ["rGreeneMaira", "rChacayalOriente"],
-      ["rChacayalOriente", "ChacayalOriente"],
-      ["rChacayalOriente", "rZemita"],
-      ["rZemita", "Zemita"],
-      ["rZemita", "rMunicipal"],
-      ["rMunicipal", "Municipal"],
-      ["rMunicipal", "rVirguinJFR"],
-      ["rVirguinJFR", "VirguinJFR"],
-      ["rVirguinJFR", "rSanAgustinChangaral"],
-      ["rSanAgustinChangaral", "SanAgustinChangaral"],
-      ["rSanAgustinChangaral", "rCaroSaldana"],
-      ["rCaroSaldana", "CaroSaldana"],
-      ["rCaroSaldana", "rRanchillo"],
-      ["rRanchillo", "Ranchillo"],
-      ["rRanchillo", "rGaonaPerales"],
-      ["rGaonaPerales", "GaonaPerales"],
-      ["rGaonaPerales", "rSanPedro"],
-      ["rSanPedro", "SanPedro"],
-      ["rSanPedro", "rArrauNiquen"],
-      ["rArrauNiquen", "ArrauNiquen"],
-      ["rArrauNiquen", "rLurinSilva"],
-      ["rLurinSilva", "LurinSilva"],
-      ["rLurinSilva", "rMuticura"],
-      ["rMuticura", "Muticura"],
-      ["rMuticura", "rSantaSara"],
-      ["rSantaSara", "SantaSara"],
-      ["rSantaSara", "rPomuyetoOssaDelAlto"],
-      ["rPomuyetoOssaDelAlto", "PomuyetoOssaDelAlto"],
-      ["rPomuyetoOssaDelAlto", "rSantaMartaMBUrrutia"],
-      ["rSantaMartaMBUrrutia", "SantaMartaMBUrrutia"],
-      ["rSantaMartaMBUrrutia", "rBellavista"],
-      ["rBellavista", "Bellavista"],
-      ["rBellavista", "rMoreira"],
-      ["rMoreira", "Moreira"],
-      ["rMoreira", "rLilahue"],
-      ["rLilahue", "Lilahue"],
-      ["rLilahue", "rMonteBlancoBurgos"],
-      ["rMonteBlancoBurgos", "MonteBlancoBurgos"],
-      ["rMonteBlancoBurgos", "rPomuyetoDelBajo"],
-      ["rPomuyetoDelBajo", "PomuyetoDelBajo"],
-      ["rPomuyetoDelBajo", "rLasCulebras"],
-      ["rLasCulebras", "LasCulebras"],
-      ["rLasCulebras", "rLasDumas"],
-      ["rLasDumas", "LasDumas"],
-      ["rLasDumas", "rQuilelto"],
-      ["rQuilelto", "Quilelto"],
-      ["rQuilelto","rMBFerrada"],
-      ["rMBFerrada", "MBFerrada"],
-      ["rMBFerrada", "rSantaRosaNorte"],
-      ["rSantaRosaNorte", "SantaRosaNorte"],
-      ["rSantaRosaNorte", "rMonteBlancoMendez"],
-      ["rMonteBlancoMendez", "MonteBlancoMendez"],
-      ["rMonteBlancoMendez", "rElPenonElCaballo"],
-      ["rElPenonElCaballo", "ElPenonElCaballo"],
-      ["rAlazan", "Alazan"],
-      ["rElPenonElCaballo", "rAlazan"],
-      ["rAlazan", "rReloca"],
-      ["rReloca", "Reloca"],
-      ["rReloca", "rRomeral"],
-      ["rRomeral", "Romeral"],
-      ["rRomeral", "rSanLuisElCanelo"],
-      ["rSanLuisElCanelo","SanLuisElCanelo"],
-      ["rSanLuisElCanelo", "rQuinquehua"],
-      ["rQuinquehua", "Quinquehua"],
-      ["rQuinquehua", "rSantaRosaCato"],
-      ["rSantaRosaCato", "SantaRosaCato"],
-      ["rSantaRosaCato", "rMonteBlancoLopezGenetica"],
-      ["rMonteBlancoLopezGenetica", "MonteBlancoLopezGenetica"],
-      ["rMonteBlancoLopezGenetica", "rMonteBlancoJhoujohann"],
-      ["rMonteBlancoJhoujohann", "MonteBlancoJhoujohann"],
-      ["rMonteBlancoJhoujohann", "rDadinco"],
-      ["rDadinco", "Dadinco"],
-      ["rDadinco", "rSantaIsabel"],
-      ["rSantaIsabel", "SantaIsabel"],
-      ["rSantaIsabel", "rCocharcas"],
-      ["rCocharcas", "Cocharcas"],
-      ["rCocharcas", "rRubenSaldias"],
-      ["rRubenSaldias", "RubenSaldias"],
-      ["rRubenSaldias", "rSanJoseSur"],
-      ["rSanJoseSur", "SanJoseSur"],
-      ["rSanJoseSur", "rCapillaCox"],
-      ["rCapillaCox", "CapillaCox"],
-      ["rCapillaCox", "rCapillaNavarro"],
-      ["rCapillaNavarro", "CapillaNavarro"],
-      ["rCapillaNavarro", "rSanJoseNorte"],
-      ["rSanJoseNorte", "SanJoseNorte"],
-      ["rSanJoseNorte", "rArancibia"],
-      ["rArancibia", "Arancibia"],
-      ["rArancibia", "rSantaLaura"],
-      ["rSantaLaura", "SantaLaura"],
-      ["rSantaLaura", "rLaPalma"],
+      ["NubleSanFabian", "bocatoma1"],
+      ["bocatoma1", "FlorDeQuihua"],
+      ["bocatoma1", "bocatoma2"],
+      ["bocatoma2", "Collico"],
+      ["bocatoma2", "bocatoma3"],
+      ["bocatoma3", "GreeneYMaira"],
+      ["bocatoma3", "bocatoma4"],
+      ["bocatoma4","ChacayalOriente"],
+      ["bocatoma4", "ChacayalPoniente"],
+      ["bocatoma4", "bocatoma5"],
+      ["bocatoma5", "Municipal"],
+      ["bocatoma5", "bocatoma6"],
+      ["bocatoma6", "Zemita_a"],
+      ["bocatoma6", "Zemita_b"],
+      ["bocatoma6", "VirguinJFR"],
+      ["bocatoma6", "bocatoma7"],
+      ["bocatoma7", "SanAgustinChangaral"],
+      ["bocatoma7", "CaroSaldana"],
+      ["bocatoma7", "bocatoma8"],
+      ["bocatoma8", "Ranchillo"],
+      ["bocatoma8", "GaonaPerales"],
+      ["bocatoma8", "bocatoma9"],
+      ["bocatoma9", "SanPedro"],
+      ["bocatoma9", "ArrauNiquen"],
+      ["bocatoma9", "bocatoma10"],
+      ["bocatoma10", "LurinSilva"],
+      ["bocatoma10", "Muticura"],
+      ["bocatoma10", "bocatoma11"],
+      ["bocatoma11", "SantaSara"],
+      ["bocatoma11", "PomuyetoOssaDelAlto"],
+      ["bocatoma11", "SantaMartaMBUrrutia"],
+      ["bocatoma11", "bocatoma12"],
+      ["bocatoma12", "Bellavista"],
+      ["bocatoma12", "bocatoma13"],
+      ["bocatoma13", "Moreira"],
+      ["bocatoma13", "Lilahue"],
+      ["bocatoma13", "bocatoma14"],
+      ["bocatoma14", "MonteBlancoBurgos"],
+      ["bocatoma14", "PomuyetoDelBajo"],
+      ["bocatoma14", "LasCulebras"],
+      ["bocatoma14", "bocatoma15"],
+      ["bocatoma15", "LasDumas"],
+      ["bocatoma15", "rQuileltoMBFerrada"],
+      ["bocatoma15", "rQuileltoMBFerrada"],
+      ["bocatoma15","rQuileltoMBFerrada"],
+      ["rQuileltoMBFerrada", "MBFerrada"],
+      ["rQuileltoMBFerrada", "Quilelto"],
+      ["bocatoma15", "SantaRosaNorte"],
+      ["bocatoma15", "MonteBlancoMendez"],
+      ["bocatoma15", "ElPenonElCaballo"],
+      ["bocatoma15", "bocatoma16"],
+      ["bocatoma15", "bocatoma16"],
+      ["bocatoma16", "Alazan"],
+      ["bocatoma16", "bocatoma17"],
+      ["bocatoma17", "Reloca"],
+      ["bocatoma17", "bocatoma18"],
+      ["bocatoma18", "Romeral"],
+      ["bocatoma18", "bocatoma19"],
+      ["bocatoma19","SanLuisElCanelo"],
+      ["bocatoma19", "bocatoma20"],
+      ["bocatoma20", "Quinquehua"],
+      ["bocatoma20", "bocatoma21"],
+      ["bocatoma21", "SantaRosaCato"],
+      ["bocatoma21", "bocatoma22"],
+      ["bocatoma22", "MonteBlancoLopezGenetica"],
+      ["bocatoma22", "bocatoma23"],
+      ["bocatoma23", "MonteBlancoJhoujohann"],
+      ["bocatoma23", "bocatoma24"],
+      ["bocatoma24", "SantaRita"],
+      ["bocatoma24", "bocatoma25"],
+      ["bocatoma25", "Dadinco"],
+      ["bocatoma25", "SantaIsabel"],
+      ["bocatoma25", "Cocharcas"],
+      ["bocatoma25", "RubenSaldias"],
+      ["bocatoma25", "bocatoma26"],
+      ["bocatoma26", "SanJoseSur"],
+      ["bocatoma26", "CapillaCox"],
+      ["bocatoma26", "bocatoma27"],
+      ["bocatoma27", "CapillaNavarro"],
+      ["bocatoma27", "bocatoma28"],
+      ["bocatoma28", "SanJoseNorte"],
+      ["bocatoma28", "bocatoma29"],
+      ["bocatoma29", "RinconadaDeCato"],
+      ["bocatoma29", "bocatoma30"],
+      ["bocatoma30", "Arancibia"],
+      ["bocatoma30", "bocatoma31"],
+      ["bocatoma31", "SantaLaura"],
+      ["bocatoma31", "rLaPalma"],
       ["rLaPalma", "LaPalma"],
       ["rLaPalma", "end"]
     ],
@@ -729,7 +654,7 @@
       "FlowNubleSanFabian": 
       {
       "type": "constant",
-      "value": 100
+      "value": 1000
       },
       "flowFlorDeQihua": 
       {
@@ -763,7 +688,23 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowZemita": 
+      "flowChacayalPoniente": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowZemita_a": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowZemita_b": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -1035,6 +976,14 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
+      "flowSantaRita": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
       "flowDadinco": 
       {
       "type": "aggregated",
@@ -1100,6 +1049,14 @@
             0.014285714285714285]
       },
       "flowArancibia": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowRinconadaDeCato": 
       {
       "type": "aggregated",
       "agg_func": "product",

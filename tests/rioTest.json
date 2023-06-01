@@ -1,0 +1,70 @@
+{
+    "metadata": {
+        "title": "River with MRF",
+        "description": "Example of a minimum residual flow constraint",
+        "minimum_version": "0.1"
+    },
+    "timestepper": {
+        "start": "2015-01-01",
+        "end": "2015-12-31",
+        "timestep": 1
+    },
+    "nodes": [
+        {
+            "name": "cuenca",
+            "type": "catchment",
+            "flow": 100
+        },
+        {
+            "name": "rio",
+            "type": "river"
+        },
+        {
+            "name": "retorno",
+            "type": "river"
+        },
+        {
+            "name": "mrf",
+            "type": "rivergauge",
+            "mrf": {
+                "type": "monthlyprofile",
+                "values": [20, 20, 20, 20, 20, 60, 60, 60, 60, 60, 20, 20]
+            },
+            "mrf_cost": -1000
+        },
+        {
+            "name": "demanda1",
+            "type": "output",
+            "max_flow":30,
+            "cost": -500
+        },
+        {
+            "name": "demanda1Rem",
+            "type": "output",
+            "max_flow":10,
+            "cost": -499
+        },
+        {
+            "name": "demanda1RemI",
+            "type": "input",
+            "max_flow":10,
+            "cost": -499
+        },
+        {
+            "name": "demanda2",
+            "type": "output",
+            "max_flow": 200,
+            "cost": -488
+        }
+    ],
+    "edges": [
+        ["cuenca", "rio"],
+        ["rio", "mrf"],
+        ["mrf", "demanda1Rem"],
+        ["mrf", "demanda1"],
+        ["demanda1Rem", "demanda1RemI"],
+        ["demanda1RemI", "retorno"],
+        ["rio", "retorno"],
+        ["retorno", "demanda2"]
+    ]
+}

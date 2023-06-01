@@ -26,28 +26,25 @@
         {
             "name": "mrf",
             "type": "rivergauge",
-            "mrf": {
-                "type": "monthlyprofile",
-                "values": [20, 20, 20, 20, 20, 60, 60, 60, 60, 60, 20, 20]
-            },
+            "mrf": "flowRequirement",
             "mrf_cost": -1000
         },
         {
             "name": "demanda1",
             "type": "output",
-            "max_flow":30,
+            "max_flow": "demanda1",
             "cost": -500
         },
         {
             "name": "demanda1Rem",
             "type": "output",
-            "max_flow":10,
+            "max_flow":"RemanenteDemanda1",
             "cost": -499
         },
         {
             "name": "demanda1RemI",
             "type": "input",
-            "max_flow":10,
+            "max_flow":"RemanenteDemanda1",
             "cost": -499
         },
         {
@@ -66,5 +63,40 @@
         ["demanda1RemI", "retorno"],
         ["rio", "retorno"],
         ["retorno", "demanda2"]
-    ]
+    ],
+    "parameters": {
+        "demanda1": {
+            "type": "constant",
+            "value":30
+    },        
+    "flowRequirement": {
+        "type": "monthlyprofile",
+        "values": [40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40]
+    },
+    "demanda1Negativa": {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+            "demanda1",
+            -1
+        ]
+    },
+    "RemanenteDemanda1Prior": {
+        "type": "aggregated",
+        "agg_func": "sum",
+        "parameters": [
+            "flowRequirement",
+            "demanda1Negativa"
+        ]
+    },
+    "RemanenteDemanda1": {
+        "type": "aggregated",
+        "agg_func": "max",
+        "parameters": [
+            "RemanenteDemanda1Prior",
+            0
+        ]
+    }
+}   
 }
+

@@ -519,13 +519,7 @@
           "type": "output",
           "max_flow":"REMVirguinJFR",
           "cost": 100
-        },
-        {
-          "name": "REMVirguinJFRInput",
-          "type": "input",
-          "max_flow":"REMVirguinJFR",
-          "cost": 100
-        },     
+        },    
         {
           "name": "bocatoma11",
             "type": "link",
@@ -607,7 +601,6 @@
       ["MatrizJFR", "FRVirguin"],
       ["FRVirguin", "VirguinJFR"],
       ["FRVirguin", "REMVirguinJFR"],
-      ["REMVirguinJFR", "REMVirguinJFRInput"],      
       ["bocatoma6", "bocatoma7"],
       ["bocatoma7", "SanAgustinChangaral"],
       ["bocatoma7", "CaroSaldana"],

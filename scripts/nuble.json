@@ -47,16 +47,16 @@
           "max_flow": "flowChacayalPoniente"
         },
         {
-          "name":"Zemita_a",
+          "name":"Zemita_mix",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowZemita_a"
+          "max_flow": "flowZemita_mix"
         },
         {
-          "name":"Zemita_b",
+          "name":"Zemita_sup",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowZemita_b"
+          "max_flow": "flowZemita_sup"
         },
         {
           "name":"Municipal",
@@ -497,6 +497,24 @@
             "cost": 100
         },
         {
+          "name": "bocatoma6FR",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "FRZemita",
+            "type": "rivergauge",
+            "mrf": "FRZemita",
+            "cost": 100
+        },
+        {
+          "name": "FRVirguin",
+            "type": "rivergauge",
+            "mrf": "FRVirguin",
+            "cost": 100
+        },
+        {
           "name": "bocatoma11",
             "type": "link",
             "max_flow": 13200000,
@@ -569,9 +587,13 @@
       ["bocatoma4", "bocatoma5"],
       ["bocatoma5", "Municipal"],
       ["bocatoma5", "bocatoma6"],
-      ["bocatoma6", "Zemita_a"],
-      ["bocatoma6", "Zemita_b"],
-      ["bocatoma6", "VirguinJFR"],
+      ["bocatoma6","bocatoma6FR"],
+      ["bocatoma6FR","FRZemita"],
+      ["FRZemita", "Zemita_mix"],
+      ["FRZemita", "Zemita_mix"],
+      ["FRZemita", "Zemita_sup"],
+      ["bocatoma6FR", "FRVirguin"],
+      ["FRVirguin", "VirguinJFR"],
       ["bocatoma6", "bocatoma7"],
       ["bocatoma7", "SanAgustinChangaral"],
       ["bocatoma7", "CaroSaldana"],
@@ -696,7 +718,7 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowZemita_a": 
+      "flowZemita_mix": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -704,7 +726,7 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowZemita_b": 
+      "flowZemita_sup": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -1079,6 +1101,16 @@
       "parameters": [
             "FlowNubleSanFabian",
             0.014285714285714285]
-      }
+      },
+    "FRZemita": {
+      "type": "monthlyprofile",
+      "values": [0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 
+      0.02, 0.02, 0.02]
+    },
+    "FRVirguin": {
+      "type": "monthlyprofile",
+      "values": [0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 
+      0.03, 0.03, 0.03]
+  }
     }
 }

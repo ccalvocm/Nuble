@@ -515,6 +515,18 @@
             "cost": 100
         },
         {
+          "name": "REMVirguinJFR",
+          "type": "output",
+          "max_flow":"REMVirguinJFR",
+          "cost": -499
+        },
+        {
+          "name": "REMVirguinJFRInput",
+          "type": "input",
+          "max_flow":"REMVirguinJFR",
+          "cost": -499
+        },     
+        {
           "name": "bocatoma11",
             "type": "link",
             "max_flow": 13200000,
@@ -572,7 +584,7 @@
           "name": "end",
           "type": "output",
           "cost":10000
-      }        
+        }   
     ],
     "edges": [
       ["NubleSanFabian", "bocatoma1"],
@@ -594,6 +606,8 @@
       ["FRZemita", "Zemita_sup"],
       ["MatrizJFR", "FRVirguin"],
       ["FRVirguin", "VirguinJFR"],
+      ["FRVirguin", "REMVirguinJFR"],
+      ["REMVirguinJFR", "REMVirguinJFRInput"],      
       ["bocatoma6", "bocatoma7"],
       ["bocatoma7", "SanAgustinChangaral"],
       ["bocatoma7", "CaroSaldana"],
@@ -749,6 +763,30 @@
       "parameters": [
             "FlowNubleSanFabian",
             0.014285714285714285]
+      },
+      "flowVirguinJFRNegativo": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "flowVirguinJFR",
+            -1]
+      },
+      "REMVirguinJFRprior": 
+      {
+      "type": "aggregated",
+      "agg_func": "sum",
+      "parameters": [
+            "flowVirguinJFRNegativo",
+            "FRVirguin"]
+      },
+      "REMVirguinJFR": 
+      {
+      "type": "aggregated",
+      "agg_func": "max",
+      "parameters": [
+            "REMVirguinJFRprior",
+            0]
       },
       "flowSanAgustinChangaral": 
       {

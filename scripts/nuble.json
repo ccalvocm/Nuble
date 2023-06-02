@@ -518,13 +518,13 @@
           "name": "REMVirguinJFR",
           "type": "output",
           "max_flow":"REMVirguinJFR",
-          "cost": -499
+          "cost": 100
         },
         {
           "name": "REMVirguinJFRInput",
           "type": "input",
           "max_flow":"REMVirguinJFR",
-          "cost": -499
+          "cost": 100
         },     
         {
           "name": "bocatoma11",
@@ -1147,8 +1147,8 @@
     },
     "FRVirguin": {
       "type": "monthlyprofile",
-      "values": [0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 
-      0.03, 0.03, 0.03]
+      "values": [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 
+      3000, 3000, 3000]
     },
     "FRZemitaVirguin": 
     {

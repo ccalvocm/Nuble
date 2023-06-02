@@ -497,9 +497,9 @@
             "cost": 100
         },
         {
-          "name": "bocatoma6FR",
-            "type": "link",
-            "max_flow": 13200000,
+          "name": "MatrizJFR",
+            "type": "rivergauge",
+            "mrf": "FRZemitaVirguin",
             "cost": 100
         },
         {
@@ -587,12 +587,12 @@
       ["bocatoma4", "bocatoma5"],
       ["bocatoma5", "Municipal"],
       ["bocatoma5", "bocatoma6"],
-      ["bocatoma6","bocatoma6FR"],
-      ["bocatoma6FR","FRZemita"],
+      ["bocatoma6","MatrizJFR"],
+      ["MatrizJFR","FRZemita"],
       ["FRZemita", "Zemita_mix"],
       ["FRZemita", "Zemita_mix"],
       ["FRZemita", "Zemita_sup"],
-      ["bocatoma6FR", "FRVirguin"],
+      ["MatrizJFR", "FRVirguin"],
       ["FRVirguin", "VirguinJFR"],
       ["bocatoma6", "bocatoma7"],
       ["bocatoma7", "SanAgustinChangaral"],
@@ -1111,6 +1111,14 @@
       "type": "monthlyprofile",
       "values": [0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 
       0.03, 0.03, 0.03]
-  }
+    },
+    "FRZemitaVirguin": 
+    {
+    "type": "aggregated",
+    "agg_func": "sum",
+    "parameters": [
+          "FRZemita",
+          "FRVirguin"]
+    }
     }
 }

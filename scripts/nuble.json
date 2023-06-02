@@ -1146,9 +1146,11 @@
       0.02, 0.02, 0.02]
     },
     "FRVirguin": {
-      "type": "monthlyprofile",
-      "values": [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 
-      3000, 3000, 3000]
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+        "flowVirguinJFR",
+        1.2]
     },
     "FRZemitaVirguin": 
     {

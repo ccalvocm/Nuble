@@ -575,6 +575,11 @@
             "cost": 100
         },
         {
+          "name": "abstraccionAq",
+          "type": "output",
+          "cost":10000
+        },  
+        {
           "name": "end",
           "type": "output",
           "cost":10000
@@ -1143,7 +1148,7 @@
       "agg_func": "product",
       "parameters": [
         "flowVirguinJFR",
-        1.2]
+        2]
     },
     "FRZemitaVirguin": 
     {

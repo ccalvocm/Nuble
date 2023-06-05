@@ -1177,7 +1177,7 @@
       "agg_func": "product",
       "parameters": [
         "flowZemita_mix",
-        4]
+        1]
     },
     "FRVirguin": {
       "type": "aggregated",

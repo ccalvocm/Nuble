@@ -41,10 +41,16 @@
           "max_flow": "REMCollico"
         },
         {
-          "name":"REMCollicoI",
+          "name":"REMCollicoSub",
           "type": "Input",
           "cost": -100,
-          "max_flow": "REMCollico"
+          "max_flow": "REMCollicoSub"
+        },
+        {
+          "name":"REMCollicoSup",
+          "type": "Input",
+          "cost": -100,
+          "max_flow": "REMCollicoSup"
         },
         {
           "name":"deficitCollico",
@@ -654,7 +660,9 @@
       ["FRCollico", "Collico_sup"],
       ["FRCollico", "Collico_mix"],
       ["FRCollico","REMCollico"],
-      ["REMCollico","REMCollicoI"],
+      ["REMCollico","REMCollicoSub"],
+      ["REMCollico","REMCollicoSup"],
+      ["REMCollicoSup","bocatoma3"],
       ["bocatoma2", "bocatoma3"],
       ["bocatoma3", "GreeneYMaira"],
       ["bocatoma3", "bocatoma4"],
@@ -820,6 +828,22 @@
             ]
             },
         0]
+        },
+        "REMCollicoSub": 
+        {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "REMCollico",
+              0.9]
+        },
+        "REMCollicoSup": 
+        {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "REMCollico",
+              0.1]
         },
         "DAASubCollico": 
         {

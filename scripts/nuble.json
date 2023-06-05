@@ -776,28 +776,24 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowVirguinJFRNegativo": 
-      {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "flowVirguinJFR",
-            -1]
-      },
-      "REMVirguinJFRprior": 
-      {
-      "type": "aggregated",
-      "agg_func": "sum",
-      "parameters": [
-            "flowVirguinJFRNegativo",
-            "FRVirguin"]
-      },
       "REMVirguinJFR": 
       {
       "type": "aggregated",
       "agg_func": "max",
       "parameters": [
-            "REMVirguinJFRprior",
+        {
+          "type": "aggregated",
+          "agg_func": "sum",
+          "parameters": [
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "flowVirguinJFR",
+                    -1]
+              },
+                "FRVirguin"]
+          },
             0]
       },
       "REMZemita": 

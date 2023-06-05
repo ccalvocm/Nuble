@@ -59,6 +59,12 @@
           "max_flow": "flowZemita_sup"
         },
         {
+          "name":"REMZemita",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "REMZemita"
+        },
+        {
           "name":"Municipal",
           "type": "Output",
           "cost": -100,
@@ -603,6 +609,7 @@
       ["FRZemita", "Zemita_mix"],
       ["FRZemita", "Zemita_mix"],
       ["FRZemita", "Zemita_sup"],
+      ["FRZemita","REMZemita"],
       ["MatrizJFR", "FRVirguin"],
       ["FRVirguin", "VirguinJFR"],
       ["FRVirguin", "REMVirguinJFR"],
@@ -784,6 +791,33 @@
       "agg_func": "max",
       "parameters": [
             "REMVirguinJFRprior",
+            0]
+      },
+      "REMZemita": 
+      {
+      "type": "aggregated",
+      "agg_func": "max",
+      "parameters": [
+          {
+          "type": "aggregated",
+          "agg_func": "sum",
+          "parameters": [
+                "FRZemita",
+                {
+                  "type": "aggregated",
+                  "agg_func": "product",
+                  "parameters": [
+                    {
+                      "type": "aggregated",
+                      "agg_func": "sum",
+                      "parameters": [
+                            "flowZemita_sup",
+                            "flowZemita_mix"]
+                    },
+                              -1]
+                }     
+                        ]
+          },
             0]
       },
       "flowSanAgustinChangaral": 
@@ -1139,9 +1173,11 @@
             0.014285714285714285]
       },
     "FRZemita": {
-      "type": "monthlyprofile",
-      "values": [0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 
-      0.02, 0.02, 0.02]
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+        "flowZemita_mix",
+        4]
     },
     "FRVirguin": {
       "type": "aggregated",

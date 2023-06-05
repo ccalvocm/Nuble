@@ -23,10 +23,34 @@
           "max_flow": "flowFlorDeQihua"
         },
         {
-          "name":"Collico",
+          "name":"Collico_sup",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowCollico"
+          "max_flow": "flowCollico_sup"
+        },
+        {
+          "name":"Collico_mix",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowCollico_mix"
+        },
+        {
+          "name":"REMCollico",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "REMCollico"
+        },
+        {
+          "name":"REMCollicoI",
+          "type": "Input",
+          "cost": -100,
+          "max_flow": "REMCollico"
+        },
+        {
+          "name":"deficitCollico",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "deficitCollico"
         },
         {
           "name":"GreeneYMaira",
@@ -77,10 +101,16 @@
           "max_flow": "flowMunicipal"
         },
         {
-          "name":"VirguinJFR",
+          "name":"VirguinJFR_sup",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowVirguinJFR"
+          "max_flow": "flowVirguinJFR_sup"
+        },
+        {
+          "name":"VirguinJFR_mix",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowVirguinJFR_mix"
         },
         {
           "name":"SanAgustinChangaral",
@@ -521,6 +551,12 @@
             "cost": 100
         },
         {
+          "name": "FRCollico",
+            "type": "rivergauge",
+            "mrf": "FRCollico",
+            "cost": 100
+        },
+        {
           "name": "FRVirguin",
             "type": "rivergauge",
             "mrf": "FRVirguin",
@@ -529,6 +565,12 @@
         {
           "name": "REMVirguinJFR",
           "type": "output",
+          "max_flow":"REMVirguinJFR",
+          "cost": 100
+        }, 
+        {
+          "name": "REMVirguinJFRI",
+          "type": "input",
           "max_flow":"REMVirguinJFR",
           "cost": 100
         },    
@@ -587,12 +629,19 @@
             "cost": 100
         },
         {
-          "name": "abstraccionAq",
+          "name": "abstraccionAqNiq",
           "type": "output",
+          "max_flow": 0,
           "cost":10000
         },  
         {
-          "name": "end",
+          "name": "abstraccionAqNub",
+          "type": "output",
+          "max_flow": 0,
+          "cost":10000
+        },  
+        {
+          "name": "rioNuble",
           "type": "output",
           "cost":10000
         }   
@@ -601,7 +650,11 @@
       ["NubleSanFabian", "bocatoma1"],
       ["bocatoma1", "FlorDeQuihua"],
       ["bocatoma1", "bocatoma2"],
-      ["bocatoma2", "Collico"],
+      ["bocatoma2","FRCollico"],
+      ["FRCollico", "Collico_sup"],
+      ["FRCollico", "Collico_mix"],
+      ["FRCollico","REMCollico"],
+      ["REMCollico","REMCollicoI"],
       ["bocatoma2", "bocatoma3"],
       ["bocatoma3", "GreeneYMaira"],
       ["bocatoma3", "bocatoma4"],
@@ -618,8 +671,10 @@
       ["FRZemita","REMZemita"],
       ["REMZemita","REMZemitaI"],
       ["MatrizJFR", "FRVirguin"],
-      ["FRVirguin", "VirguinJFR"],
+      ["FRVirguin", "VirguinJFR_sup"],
+      ["FRVirguin", "VirguinJFR_mix"],
       ["FRVirguin", "REMVirguinJFR"],
+      ["REMVirguinJFR", "REMVirguinJFRI"],
       ["bocatoma6", "bocatoma7"],
       ["bocatoma7", "SanAgustinChangaral"],
       ["bocatoma7", "CaroSaldana"],
@@ -694,7 +749,7 @@
       ["bocatoma31", "SantaLaura"],
       ["bocatoma31", "rLaPalma"],
       ["rLaPalma", "LaPalma"],
-      ["rLaPalma", "end"]
+      ["rLaPalma", "rioNuble"]
     ],
      "recorders": {
     },
@@ -710,9 +765,9 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.0]
       },
-      "flowCollico": 
+      "flowCollico_sup": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -720,6 +775,87 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
+      "flowCollico_mix": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "FRCollico": 
+      {
+      "type": "aggregated",
+      "agg_func": "sum",
+      "parameters": [
+            "flowCollico_sup",
+            "flowCollico_mix"]
+      },
+      "REMCollico": 
+      {
+        "type": "aggregated",
+        "agg_func": "max",
+        "parameters": 
+        [
+            {
+            "type": "aggregated",
+            "agg_func": "sum",
+            "parameters": 
+            [
+                  "FRCollico",
+                  {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": 
+                    [
+                      {
+                        "type": "aggregated",
+                        "agg_func": "sum",
+                        "parameters": [
+                              "flowCollico_sup",
+                              "flowCollico_mix"]
+                      },
+                  -1]
+                  }     
+            ]
+            },
+        0]
+        },
+        "DAASubCollico": 
+        {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FlowNubleSanFabian",
+              0.00014285714285714285]
+        },
+        "deficitCollico": 
+        {
+        "type": "aggregated",
+        "agg_func": "min",
+        "parameters": [
+        "DAASubCollico",
+        {
+          "type": "aggregated",
+          "agg_func": "max",
+          "parameters": [
+            {
+              "type": "aggregated",
+              "agg_func": "sum",
+              "parameters": [
+                    "flowCollico_sup",
+                    "flowCollico_mix",
+                    {
+                      "type": "aggregated",
+                      "agg_func": "product",
+                      "parameters": [
+                            "FRCollico",
+                            -1]
+                      }]
+            },
+            0]
+          }]
+        },
       "flowGreeneYMaira": 
       {
       "type": "aggregated",
@@ -768,7 +904,15 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowVirguinJFR": 
+      "flowVirguinJFR_sup": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowVirguinJFR_mix": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -778,38 +922,51 @@
       },
       "REMVirguinJFR": 
       {
-      "type": "aggregated",
-      "agg_func": "max",
-      "parameters": [
-        {
-          "type": "aggregated",
-          "agg_func": "sum",
-          "parameters": [
+        "type": "aggregated",
+        "agg_func": "max",
+        "parameters": 
+        [
             {
-              "type": "aggregated",
-              "agg_func": "product",
-              "parameters": [
-                    "flowVirguinJFR",
-                    -1]
-              },
-                "FRVirguin"]
-          },
-            0]
-      },
+            "type": "aggregated",
+            "agg_func": "sum",
+            "parameters": 
+            [
+                  "FRVirguin",
+                  {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": 
+                    [
+                      {
+                        "type": "aggregated",
+                        "agg_func": "sum",
+                        "parameters": [
+                              "flowVirguinJFR_sup",
+                              "flowVirguinJFR_mix"]
+                      },
+                  -1]
+                  }     
+            ]
+            },
+        0]
+        },
       "REMZemita": 
       {
       "type": "aggregated",
       "agg_func": "max",
-      "parameters": [
+      "parameters": 
+      [
           {
           "type": "aggregated",
           "agg_func": "sum",
-          "parameters": [
+          "parameters": 
+          [
                 "FRZemita",
                 {
                   "type": "aggregated",
                   "agg_func": "product",
-                  "parameters": [
+                  "parameters": 
+                  [
                     {
                       "type": "aggregated",
                       "agg_func": "sum",
@@ -817,11 +974,11 @@
                             "flowZemita_sup",
                             "flowZemita_mix"]
                     },
-                              -1]
+                -1]
                 }     
-                        ]
+          ]
           },
-            0]
+      0]
       },
       "flowSanAgustinChangaral": 
       {
@@ -1180,14 +1337,14 @@
       "agg_func": "product",
       "parameters": [
         "flowZemita_mix",
-        3]
+        1]
     },
     "FRVirguin": {
       "type": "aggregated",
       "agg_func": "product",
       "parameters": [
-        "flowVirguinJFR",
-        2]
+        "flowVirguinJFR_mix",
+        3]
     },
     "FRZemitaVirguin": 
     {

@@ -23,16 +23,16 @@
           "max_flow": "flowFlorDeQihua"
         },
         {
-          "name":"Collico_sup",
+          "name":"CollicoSup",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowCollico_sup"
+          "max_flow": "flowCollicoSup"
         },
         {
-          "name":"Collico_mix",
+          "name":"CollicoMix",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowCollico_mix"
+          "max_flow": "flowCollicoMix"
         },
         {
           "name":"REMCollico",
@@ -59,34 +59,82 @@
           "max_flow": "deficitCollico"
         },
         {
-          "name":"GreeneYMaira",
+          "name":"deficitChacayalO",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowGreeneYMaira"
+          "max_flow": "deficitChacayalO"
         },
         {
-          "name":"ChacayalOriente",
+          "name":"deficitChacayalP",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowChacayalOriente"
+          "max_flow": "deficitChacayalP"
         },
         {
-          "name":"ChacayalPoniente",
+          "name":"GreeneYMairaSup",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowChacayalPoniente"
+          "max_flow": "flowGreeneYMairaSup"
         },
         {
-          "name":"Zemita_mix",
+          "name":"GreeneYMairaMix",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowZemita_mix"
+          "max_flow": "flowGreeneYMairaMix"
         },
         {
-          "name":"Zemita_sup",
+          "name":"REMGYM",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowZemita_sup"
+          "max_flow": "REMGYM"
+        },
+        {
+          "name":"REMGYMI",
+          "type": "Input",
+          "cost": -100,
+          "max_flow": "REMGYM"
+        },
+        {
+          "name": "FRGYM",
+            "type": "rivergauge",
+            "mrf": "FRGYM",
+            "cost": 100
+        },
+        {
+          "name":"ChacayalOSup",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowChacayalOSup"
+        },
+        {
+          "name":"ChacayalOMix",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowChacayalOMix"
+        },
+        {
+          "name":"ChacayalPSup",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowChacayalPSup"
+        },
+        {
+          "name":"ChacayalPMix",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowChacayalPMix"
+        },
+        {
+          "name":"ZemitaMix",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowZemitaMix"
+        },
+        {
+          "name":"ZemitaSup",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowZemitaSup"
         },
         {
           "name":"REMZemita",
@@ -95,28 +143,58 @@
           "max_flow": "REMZemita"
         },
         {
-          "name":"REMZemitaI",
+          "name":"REMZemitaSub",
           "type": "Input",
           "cost": -100,
           "max_flow": "REMZemita"
         },
         {
-          "name":"Municipal",
+          "name":"MunicipalSup",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowMunicipal"
+          "max_flow": "flowMunicipalSup"
         },
         {
-          "name":"VirguinJFR_sup",
+          "name":"MunicipalMix",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowVirguinJFR_sup"
+          "max_flow": "flowMunicipalMix"
         },
         {
-          "name":"VirguinJFR_mix",
+          "name":"FRMunicipal",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMunicipal"
+        },
+        {
+        "name":"deficitMunicipal",
+        "type": "Output",
+        "cost": -100,
+        "max_flow": "deficitMunicipal"
+        },
+        {
+          "name": "REMMunicipal",
+          "type": "output",
+          "max_flow":"REMMunicipal",
+          "cost": 100
+        },
+        {
+          "name": "REMMunicipalSub",
+          "type": "input",
+          "max_flow":"REMMunicipal",
+          "cost": 100
+        },  
+        {
+          "name":"VirguinJFRSup",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowVirguinJFR_mix"
+          "max_flow": "flowVirguinJFRSup"
+        },
+        {
+          "name":"VirguinJFRMix",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowVirguinJFRMix"
         },
         {
           "name":"SanAgustinChangaral",
@@ -431,6 +509,12 @@
             "cost": 100
         },
         {
+          "name": "MatrizChacayal",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
           "name": "bocatoma13",
             "type": "link",
             "max_flow": 13200000,
@@ -575,19 +659,49 @@
           "cost": 100
         }, 
         {
-          "name": "REMVirguinJFRI",
+          "name": "REMVirguinJFRSub",
           "type": "input",
           "max_flow":"REMVirguinJFR",
           "cost": 100
-        },    
+        },   
         {
-          "name": "bocatoma11",
-            "type": "link",
-            "max_flow": 13200000,
+          "name": "FRChacayalO",
+            "type": "rivergauge",
+            "mrf": "FRVirguin",
             "cost": 100
         },
         {
-          "name": "bocatoma3",
+          "name": "REMChacayalO",
+            "type": "output",
+            "max_flow": "REMChacayalO",
+            "cost": 100
+        },
+        {
+          "name": "FRChacayalP",
+            "type": "rivergauge",
+            "mrf": "FRVirguin",
+            "cost": 100
+        }, 
+        {
+          "name": "REMChacayalOSub",
+            "type": "input",
+            "max_flow": "REMChacayalO",
+            "cost": 100
+        },
+        {
+          "name": "REMChacayalP",
+            "type": "output",
+            "max_flow": "REMChacayalP",
+            "cost": 100
+        },
+        {
+          "name": "REMChacayalPSub",
+            "type": "input",
+            "max_flow": "REMChacayalP",
+            "cost": 100
+        },
+        {
+          "name": "bocatoma11",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
@@ -641,6 +755,12 @@
           "cost":10000
         },  
         {
+          "name": "abstraccionAqCha",
+          "type": "output",
+          "max_flow": 0,
+          "cost":10000
+        },  
+        {
           "name": "abstraccionAqNub",
           "type": "output",
           "max_flow": 0,
@@ -657,32 +777,48 @@
       ["bocatoma1", "FlorDeQuihua"],
       ["bocatoma1", "bocatoma2"],
       ["bocatoma2","FRCollico"],
-      ["FRCollico", "Collico_sup"],
-      ["FRCollico", "Collico_mix"],
+      ["FRCollico", "CollicoSup"],
+      ["FRCollico", "CollicoMix"],
       ["FRCollico","REMCollico"],
       ["REMCollico","REMCollicoSub"],
       ["REMCollico","REMCollicoSup"],
       ["REMCollicoSup","bocatoma3"],
       ["bocatoma2", "bocatoma3"],
-      ["bocatoma3", "GreeneYMaira"],
+      ["bocatoma3", "FRGYM"],
+      ["FRGYM", "GreeneYMairaSup"],
+      ["FRGYM", "GreeneYMairaMix"],
+      ["FRGYM", "REMGYM"],
+      ["REMGYM", "REMGYMI"],
       ["bocatoma3", "bocatoma4"],
-      ["bocatoma4","ChacayalOriente"],
-      ["bocatoma4", "ChacayalPoniente"],
+      ["bocatoma4","MatrizChacayal"],
+      ["MatrizChacayal","FRChacayalO"],
+      ["MatrizChacayal","FRChacayalP"],
+      ["FRChacayalO","ChacayalOSup"],
+      ["FRChacayalO","ChacayalOMix"],
+      ["FRChacayalO","REMChacayalO"],
+      ["REMChacayalO", "REMChacayalOSub"],
+      ["FRChacayalP", "ChacayalPSup"],
+      ["FRChacayalP", "ChacayalPMix"],
+      ["FRChacayalP", "REMChacayalP"],
+      ["REMChacayalP", "REMChacayalPSub"],
       ["bocatoma4", "bocatoma5"],
-      ["bocatoma5", "Municipal"],
+      ["bocatoma5", "FRMunicipal"],
+      ["FRMunicipal", "MunicipalSup"],
+      ["FRMunicipal", "MunicipalMix"],
+      ["FRMunicipal", "REMMunicipal"],
+      ["REMMunicipal", "REMMunicipalSub"],
       ["bocatoma5", "bocatoma6"],
       ["bocatoma6","MatrizJFR"],
       ["MatrizJFR","FRZemita"],
-      ["FRZemita", "Zemita_mix"],
-      ["FRZemita", "Zemita_mix"],
-      ["FRZemita", "Zemita_sup"],
+      ["FRZemita", "ZemitaMix"],
+      ["FRZemita", "ZemitaSup"],
       ["FRZemita","REMZemita"],
-      ["REMZemita","REMZemitaI"],
+      ["REMZemita","REMZemitaSub"],
       ["MatrizJFR", "FRVirguin"],
-      ["FRVirguin", "VirguinJFR_sup"],
-      ["FRVirguin", "VirguinJFR_mix"],
+      ["FRVirguin", "VirguinJFRSup"],
+      ["FRVirguin", "VirguinJFRMix"],
       ["FRVirguin", "REMVirguinJFR"],
-      ["REMVirguinJFR", "REMVirguinJFRI"],
+      ["REMVirguinJFR", "REMVirguinJFRSub"],
       ["bocatoma6", "bocatoma7"],
       ["bocatoma7", "SanAgustinChangaral"],
       ["bocatoma7", "CaroSaldana"],
@@ -775,7 +911,7 @@
             "FlowNubleSanFabian",
             0.0]
       },
-      "flowCollico_sup": 
+      "flowCollicoSup": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -783,7 +919,7 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowCollico_mix": 
+      "flowCollicoMix": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -794,10 +930,10 @@
       "FRCollico": 
       {
       "type": "aggregated",
-      "agg_func": "sum",
+      "agg_func": "product",
       "parameters": [
-            "flowCollico_sup",
-            "flowCollico_mix"]
+            "flowCollicoSup",
+            2.0]
       },
       "REMCollico": 
       {
@@ -820,8 +956,8 @@
                         "type": "aggregated",
                         "agg_func": "sum",
                         "parameters": [
-                              "flowCollico_sup",
-                              "flowCollico_mix"]
+                              "flowCollicoSup",
+                              "flowCollicoMix"]
                       },
                   -1]
                   }     
@@ -835,7 +971,7 @@
         "agg_func": "product",
         "parameters": [
               "REMCollico",
-              0.9]
+              1]
         },
         "REMCollicoSup": 
         {
@@ -843,7 +979,7 @@
         "agg_func": "product",
         "parameters": [
               "REMCollico",
-              0.1]
+              0]
         },
         "DAASubCollico": 
         {
@@ -867,8 +1003,8 @@
               "type": "aggregated",
               "agg_func": "sum",
               "parameters": [
-                    "flowCollico_sup",
-                    "flowCollico_mix",
+                    "flowCollicoSup",
+                    "flowCollicoMix",
                     {
                       "type": "aggregated",
                       "agg_func": "product",
@@ -880,7 +1016,7 @@
             0]
           }]
         },
-      "flowGreeneYMaira": 
+      "flowGreeneYMairaSup": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -888,7 +1024,7 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowChacayalOriente": 
+      "flowGreeneYMairaMix": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -896,7 +1032,45 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowChacayalPoniente": 
+      "FRGYM": 
+      {
+      "type": "aggregated",
+      "agg_func": "sum",
+      "parameters": [
+            "flowGreeneYMairaSup",
+            "flowGreeneYMairaMix"]
+      },
+      "REMGYM": 
+      {
+      "type": "aggregated",
+      "agg_func": "max",
+      "parameters": 
+      [
+          {
+          "type": "aggregated",
+          "agg_func": "sum",
+          "parameters": 
+          [
+                "FRGYM",
+                {
+                  "type": "aggregated",
+                  "agg_func": "product",
+                  "parameters": 
+                  [
+                    {
+                      "type": "aggregated",
+                      "agg_func": "sum",
+                      "parameters": [
+                            "flowGreeneYMairaSup",
+                            "flowGreeneYMairaMix"]
+                    },
+                -1]
+                }     
+          ]
+          },
+      0]
+      },
+      "flowChacayalOSup": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -904,7 +1078,7 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowZemita_mix": 
+      "flowChacayalOMix": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -912,7 +1086,7 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowZemita_sup": 
+      "flowChacayalPSup": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -920,7 +1094,7 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowMunicipal": 
+      "flowChacayalPMix": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -928,7 +1102,7 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowVirguinJFR_sup": 
+      "flowZemitaMix": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -936,7 +1110,39 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowVirguinJFR_mix": 
+      "flowZemitaSup": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowMunicipalSup": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowMunicipalMix": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowVirguinJFRSup": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FlowNubleSanFabian",
+            0.014285714285714285]
+      },
+      "flowVirguinJFRMix": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -965,8 +1171,8 @@
                         "type": "aggregated",
                         "agg_func": "sum",
                         "parameters": [
-                              "flowVirguinJFR_sup",
-                              "flowVirguinJFR_mix"]
+                              "flowVirguinJFRSup",
+                              "flowVirguinJFRMix"]
                       },
                   -1]
                   }     
@@ -995,8 +1201,8 @@
                       "type": "aggregated",
                       "agg_func": "sum",
                       "parameters": [
-                            "flowZemita_sup",
-                            "flowZemita_mix"]
+                            "flowZemitaSup",
+                            "flowZemitaMix"]
                     },
                 -1]
                 }     
@@ -1360,15 +1566,15 @@
       "type": "aggregated",
       "agg_func": "product",
       "parameters": [
-        "flowZemita_mix",
-        1]
+        "flowZemitaMix",
+        2]
     },
     "FRVirguin": {
       "type": "aggregated",
       "agg_func": "product",
       "parameters": [
-        "flowVirguinJFR_mix",
-        3]
+        "flowVirguinJFRMix",
+        2]
     },
     "FRZemitaVirguin": 
     {
@@ -1377,6 +1583,233 @@
     "parameters": [
           "FRZemita",
           "FRVirguin"]
-    }
+    },
+    "FRChacayalO": 
+    {
+      "type": "aggregated",
+      "agg_func": "sum",
+      "parameters": [
+        "flowChacayalOSup",
+        "flowChacayalOMix"]
+    },
+    "FRChacayalP": 
+    {
+      "type": "aggregated",
+      "agg_func": "sum",
+      "parameters": [
+        "flowChacayalPSup",
+        "flowChacayalPMix"]
+    },
+    "DAASubChacayalO": 
+    {
+    "type": "aggregated",
+    "agg_func": "product",
+    "parameters": [
+          "FlowNubleSanFabian",
+          0.00014285714285714285]
+    },
+    "DAASubChacayalP": 
+    {
+    "type": "aggregated",
+    "agg_func": "product",
+    "parameters": [
+          "FlowNubleSanFabian",
+          0.00014285714285714285]
+    },
+    "REMChacayalO": 
+    {
+      "type": "aggregated",
+      "agg_func": "max",
+      "parameters": 
+      [
+          {
+          "type": "aggregated",
+          "agg_func": "sum",
+          "parameters": 
+          [
+                "FRChacayalO",
+                {
+                  "type": "aggregated",
+                  "agg_func": "product",
+                  "parameters": 
+                  [
+                    {
+                      "type": "aggregated",
+                      "agg_func": "sum",
+                      "parameters": [
+                            "flowChacayalOSup",
+                            "flowChacayalOMix"]
+                    },
+                -1]
+                }     
+          ]
+          },
+      0]
+      },
+      "REMChacayalP": 
+      {
+        "type": "aggregated",
+        "agg_func": "max",
+        "parameters": 
+        [
+            {
+            "type": "aggregated",
+            "agg_func": "sum",
+            "parameters": 
+            [
+                  "FRChacayalP",
+                  {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": 
+                    [
+                      {
+                        "type": "aggregated",
+                        "agg_func": "sum",
+                        "parameters": [
+                              "flowChacayalPSup",
+                              "flowChacayalPMix"]
+                      },
+                  -1]
+                  }     
+            ]
+            },
+        0]
+        },
+        "deficitChacayalO": 
+        {
+        "type": "aggregated",
+        "agg_func": "min",
+        "parameters": [
+        "DAASubChacayalO",
+        {
+          "type": "aggregated",
+          "agg_func": "max",
+          "parameters": [
+            {
+              "type": "aggregated",
+              "agg_func": "sum",
+              "parameters": [
+                    "flowChacayalOSup",
+                    "flowChacayalOMix",
+                    {
+                      "type": "aggregated",
+                      "agg_func": "product",
+                      "parameters": [
+                            "FRChacayalO",
+                            -1]
+                      }]
+            },
+            0]
+          }]
+        },
+        "deficitChacayalP": 
+        {
+        "type": "aggregated",
+        "agg_func": "min",
+        "parameters": [
+        "DAASubChacayalP",
+        {
+          "type": "aggregated",
+          "agg_func": "max",
+          "parameters": [
+            {
+              "type": "aggregated",
+              "agg_func": "sum",
+              "parameters": [
+                    "flowChacayalPSup",
+                    "flowChacayalPMix",
+                    {
+                      "type": "aggregated",
+                      "agg_func": "product",
+                      "parameters": [
+                            "FRChacayalP",
+                            -1]
+                      }]
+            },
+            0]
+          }]
+        },
+        "FRMunicipal": 
+        {
+          "type": "aggregated",
+          "agg_func": "sum",
+          "parameters": [
+            "flowMunicipalSup",
+            "flowMunicipalMix"]
+        },
+        "flowMunicipal": 
+        {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FlowNubleSanFabian",
+              0.014285714285714285]
+        },
+        "DAASubMunicipal": 
+        {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FlowNubleSanFabian",
+              0.00014285714285714285]
+        },
+        "REMMunicipal": 
+        {
+          "type": "aggregated",
+          "agg_func": "max",
+          "parameters": 
+          [
+              {
+              "type": "aggregated",
+              "agg_func": "sum",
+              "parameters": 
+              [
+                    "FRMunicipal",
+                    {
+                      "type": "aggregated",
+                      "agg_func": "product",
+                      "parameters": 
+                      [
+                        {
+                          "type": "aggregated",
+                          "agg_func": "sum",
+                          "parameters": [
+                                "flowMunicipalSup",
+                                "flowMunicipalMix"]
+                        },
+                    -1]
+                    }     
+              ]
+              },
+          0]
+          },
+          "deficitMunicipal": 
+          {
+          "type": "aggregated",
+          "agg_func": "min",
+          "parameters": [
+          "DAASubMunicipal",
+          {
+            "type": "aggregated",
+            "agg_func": "max",
+            "parameters": [
+              {
+                "type": "aggregated",
+                "agg_func": "sum",
+                "parameters": [
+                      "flowMunicipalSup",
+                      "flowMunicipalMix",
+                      {
+                        "type": "aggregated",
+                        "agg_func": "product",
+                        "parameters": [
+                              "FRMunicipal",
+                              -1]
+                        }]
+              },
+              0]
+            }]
+          }
     }
 }

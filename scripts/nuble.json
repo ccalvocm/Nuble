@@ -42,15 +42,9 @@
         },
         {
           "name":"REMCollicoSub",
-          "type": "Input",
+          "type": "input",
           "cost": -100,
-          "max_flow": "REMCollicoSub"
-        },
-        {
-          "name":"REMCollicoSup",
-          "type": "Input",
-          "cost": -100,
-          "max_flow": "REMCollicoSup"
+          "max_flow": "REMCollico"
         },
         {
           "name":"deficitCollico",
@@ -479,6 +473,18 @@
           "name": "REMMuticura",
             "type": "output",
             "max_flow": "REMMuticura",
+            "cost": 100
+        },
+        {
+          "name": "REMMuticuraSup",
+            "type": "input",
+            "max_flow": "REMMuticuraSup",
+            "cost": 100
+        },
+        {
+          "name": "REMMuticuraSub",
+            "type": "input",
+            "max_flow": "REMMuticuraSub",
             "cost": 100
         },
         {
@@ -1065,8 +1071,6 @@
       ["FRCollico", "CollicoMix"],
       ["FRCollico","REMCollico"],
       ["REMCollico","REMCollicoSub"],
-      ["REMCollico","REMCollicoSup"],
-      ["REMCollicoSup","bocatoma3"],
       ["bocatoma2", "bocatoma3"],
       ["bocatoma3", "FRGYM"],
       ["FRGYM", "GreeneYMairaSup"],
@@ -1150,7 +1154,9 @@
       ["FRMuticura","MuticuraSup"],
       ["FRMuticura", "MuticuraMix"],
       ["FRMuticura","REMMuticura"],
+      ["REMMuticura","REMMuticuraSup"],
       ["REMMuticura","REMMuticuraSub"],
+      ["REMMuticuraSup","bocatoma11"],
       ["bocatoma10", "bocatoma11"],
       ["bocatoma11","FRSSPOSM"],
       ["FRSSPOSM","FRSantaSara"],
@@ -1289,22 +1295,6 @@
             ]
             },
         0]
-        },
-        "REMCollicoSub": 
-        {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "REMCollico",
-              1]
-        },
-        "REMCollicoSup": 
-        {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "REMCollico",
-              0]
         },
         "DAASubCollico": 
         {
@@ -2148,6 +2138,30 @@
                       ]
                       },
                   0]
+                  },
+                  "REMMuticuraSup": 
+                  {
+                  "type": "aggregated",
+                  "agg_func": "product",
+                  "parameters": [
+                        "REMMuticura",
+                        0.1]
+                  },
+                  "REMMuticuraSub": 
+                  {
+                  "type": "aggregated",
+                  "agg_func": "product",
+                  "parameters": [
+                        "REMMuticura",
+                        0.1]
+                  },
+                  "REMCollicoSup": 
+                  {
+                  "type": "aggregated",
+                  "agg_func": "product",
+                  "parameters": [
+                        "REMCollico",
+                        0]
                   },
                 "deficitMuticura": 
                   {

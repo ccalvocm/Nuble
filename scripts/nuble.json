@@ -529,6 +529,12 @@
             "cost": 100
         },
         {
+          "name": "REMSantaSaraSup",
+            "type": "input",
+            "max_flow": "REMSantaSaraSup",
+            "cost": 100
+        },
+        {
           "name": "REMSantaSaraSub",
             "type": "input",
             "max_flow": "REMSantaSara",
@@ -541,16 +547,88 @@
           "max_flow": "deficitSantaSara"
         },
         {
-          "name":"PomuyetoOssaDelAlto",
+          "name":"FRPomuyetoAlto",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRPomuyetoAlto"
+        },   
+        {
+          "name":"PomuyetoAltoSup",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowPomuyetoOssaDelAlto"
+          "max_flow": "flowPomuyetoAltoSup"
         },
         {
-          "name":"SantaMartaMBUrrutia",
+          "name":"PomuyetoAltoMix",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowSantaMartaMBUrrutia"
+          "max_flow": "flowPomuyetoAltoMix"
+        },
+        {
+          "name": "REMPomuyetoAlto",
+            "type": "output",
+            "max_flow": "REMPomuyetoAlto",
+            "cost": 100
+        },
+        {
+          "name": "REMPomuyetoAltoSup",
+            "type": "input",
+            "max_flow": "REMPomuyetoAltoSup",
+            "cost": 100
+        },
+        {
+          "name": "REMPomuyetoAltoSub",
+            "type": "input",
+            "max_flow": "REMPomuyetoAlto",
+            "cost": 100
+        },
+        {
+          "name":"deficitPomuyetoAlto",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "deficitPomuyetoAlto"
+        },
+        {
+          "name":"FRSantaMarta",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRSantaMarta"
+        },   
+        {
+          "name":"SantaMartaSup",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSantaMartaSup"
+        },
+        {
+          "name":"SantaMartaMix",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowSantaMartaMix"
+        },
+        {
+          "name": "REMSantaMarta",
+            "type": "output",
+            "max_flow": "REMSantaMarta",
+            "cost": 100
+        },
+        {
+          "name": "REMSantaMartaSup",
+            "type": "input",
+            "max_flow": "REMSantaMartaSup",
+            "cost": 100
+        },
+        {
+          "name": "REMSantaMartaSub",
+            "type": "input",
+            "max_flow": "REMSantaMarta",
+            "cost": 100
+        },
+        {
+          "name":"deficitSantaMarta",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "deficitSantaMarta"
         },
         {
           "name":"Bellavista",
@@ -1163,9 +1241,23 @@
       ["FRSantaSara","SantaSaraSup"],
       ["FRSantaSara", "SantaSaraMix"],
       ["FRSantaSara","REMSantaSara"],
+      ["REMSantaSara","REMSantaSaraSup"],
+      ["REMSantaSaraSup","bocatoma12"],
       ["REMSantaSara","REMSantaSaraSub"],
-      ["bocatoma11", "PomuyetoOssaDelAlto"],
-      ["bocatoma11", "SantaMartaMBUrrutia"],
+      ["FRSSPOSM","FRPomuyetoAlto"],
+      ["FRPomuyetoAlto","PomuyetoAltoSup"],
+      ["FRPomuyetoAlto", "PomuyetoAltoMix"],
+      ["FRPomuyetoAlto","REMPomuyetoAlto"],
+      ["REMPomuyetoAlto","REMPomuyetoAltoSup"],
+      ["REMPomuyetoAltoSup","bocatoma12"],
+      ["REMPomuyetoAlto","REMPomuyetoAltoSub"],
+      ["FRSSPOSM","FRSantaMarta"],
+      ["FRSantaMarta","SantaMartaSup"],
+      ["FRSantaMarta", "SantaMartaMix"],
+      ["FRSantaMarta","REMSantaMarta"],
+      ["REMSantaMarta","REMSantaMartaSup"],
+      ["REMSantaMartaSup","bocatoma12"],
+      ["REMSantaMarta","REMSantaMartaSub"],
       ["bocatoma11", "bocatoma12"],
       ["bocatoma12", "Bellavista"],
       ["bocatoma12", "bocatoma13"],
@@ -1264,7 +1356,7 @@
       "agg_func": "product",
       "parameters": [
             "flowCollicoSup",
-            2.0]
+            0.2]
       },
       "REMCollico": 
       {
@@ -2251,6 +2343,22 @@
                         },
                     0]
                     },
+                    "REMSantaSaraSup": 
+                    {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": [
+                          "REMSantaSara",
+                          0.05]
+                    },
+                    "REMSantaSaraSub": 
+                    {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": [
+                          "REMSantaSara",
+                          0.95]
+                    },
                   "deficitSantaSara": 
                     {
                     "type": "aggregated",
@@ -2277,22 +2385,214 @@
                         0]
                       }]
                     },
-      "flowPomuyetoOssaDelAlto": 
-      {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.014285714285714285]
-      },
-      "flowSantaMartaMBUrrutia": 
-      {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.014285714285714285]
-      },
+                    "flowPomuyetoAltoSup": 
+                    {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": [
+                          "FlowNubleSanFabian",
+                          0.014285714285714285]
+                    },
+                    "flowPomuyetoAltoMix": 
+                    {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": [
+                          "FlowNubleSanFabian",
+                          0.014285714285714285]
+                    },
+                    "PomuyetoAlto":
+                    {
+                      "type": "aggregated",
+                      "agg_func": "sum",
+                      "parameters": [
+                            "flowPomuyetoAltoMix",
+                            "flowPomuyetoAltoSup"]
+                      },
+                    "FRPomuyetoAlto": 
+                    {
+                      "type": "aggregated",
+                      "agg_func": "sum",
+                      "parameters": [
+                        "flowPomuyetoAltoMix",
+                        "flowPomuyetoAltoSup"]
+                    },
+                    "DAASubPomuyetoAlto": 
+                    {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": [
+                          "FlowNubleSanFabian",
+                          0.00014285714285714285]
+                    },
+                    "REMPomuyetoAlto": 
+                    {
+                      "type": "aggregated",
+                      "agg_func": "max",
+                      "parameters": 
+                      [
+                          {
+                          "type": "aggregated",
+                          "agg_func": "sum",
+                          "parameters": 
+                          [
+                                "FRPomuyetoAlto",
+                                {
+                                  "type": "aggregated",
+                                  "agg_func": "product",
+                                  "parameters": 
+                                  ["PomuyetoAlto",-1]
+                                }     
+                          ]
+                          },
+                      0]
+                      },
+                      "REMPomuyetoAltoSup": 
+                      {
+                      "type": "aggregated",
+                      "agg_func": "product",
+                      "parameters": [
+                            "REMPomuyetoAlto",
+                            0.05]
+                      },
+                      "REMPomuyetoAltoSub": 
+                      {
+                      "type": "aggregated",
+                      "agg_func": "product",
+                      "parameters": [
+                            "REMPomuyetoAlto",
+                            0.95]
+                      },
+                    "deficitPomuyetoAlto": 
+                      {
+                      "type": "aggregated",
+                      "agg_func": "min",
+                      "parameters": [
+                      "DAASubPomuyetoAlto",
+                      {
+                        "type": "aggregated",
+                        "agg_func": "max",
+                        "parameters": [
+                          {
+                            "type": "aggregated",
+                            "agg_func": "sum",
+                            "parameters": 
+                            ["PomuyetoAlto",
+                                  {
+                                    "type": "aggregated",
+                                    "agg_func": "product",
+                                    "parameters": [
+                                          "FRPomuyetoAlto",
+                                          -1]
+                                    }]
+                          },
+                          0]
+                        }]
+                      },
+                      "flowSantaMartaSup": 
+                      {
+                      "type": "aggregated",
+                      "agg_func": "product",
+                      "parameters": [
+                            "FlowNubleSanFabian",
+                            0.014285714285714285]
+                      },
+                      "flowSantaMartaMix": 
+                      {
+                      "type": "aggregated",
+                      "agg_func": "product",
+                      "parameters": [
+                            "FlowNubleSanFabian",
+                            0.014285714285714285]
+                      },
+                      "SantaMarta":
+                      {
+                        "type": "aggregated",
+                        "agg_func": "sum",
+                        "parameters": [
+                              "flowSantaMartaMix",
+                              "flowSantaMartaSup"]
+                        },
+                      "FRSantaMarta": 
+                      {
+                        "type": "aggregated",
+                        "agg_func": "sum",
+                        "parameters": [
+                          "flowSantaMartaMix",
+                          "flowSantaMartaSup"]
+                      },
+                      "DAASubSantaMarta": 
+                      {
+                      "type": "aggregated",
+                      "agg_func": "product",
+                      "parameters": [
+                            "FlowNubleSanFabian",
+                            0.00014285714285714285]
+                      },
+                      "REMSantaMarta": 
+                      {
+                        "type": "aggregated",
+                        "agg_func": "max",
+                        "parameters": 
+                        [
+                            {
+                            "type": "aggregated",
+                            "agg_func": "sum",
+                            "parameters": 
+                            [
+                                  "FRSantaMarta",
+                                  {
+                                    "type": "aggregated",
+                                    "agg_func": "product",
+                                    "parameters": 
+                                    ["SantaMarta",-1]
+                                  }     
+                            ]
+                            },
+                        0]
+                        },
+                        "REMSantaMartaSup": 
+                        {
+                        "type": "aggregated",
+                        "agg_func": "product",
+                        "parameters": [
+                              "REMSantaMarta",
+                              0.05]
+                        },
+                        "REMSantaMartaSub": 
+                        {
+                        "type": "aggregated",
+                        "agg_func": "product",
+                        "parameters": [
+                              "REMSantaMarta",
+                              0.95]
+                        },
+                      "deficitSantaMarta": 
+                        {
+                        "type": "aggregated",
+                        "agg_func": "min",
+                        "parameters": [
+                        "DAASubSantaMarta",
+                        {
+                          "type": "aggregated",
+                          "agg_func": "max",
+                          "parameters": [
+                            {
+                              "type": "aggregated",
+                              "agg_func": "sum",
+                              "parameters": 
+                              ["SantaMarta",
+                                    {
+                                      "type": "aggregated",
+                                      "agg_func": "product",
+                                      "parameters": [
+                                            "FRSantaMarta",
+                                            -1]
+                                      }]
+                            },
+                            0]
+                          }]
+                        },
       "flowBellavista": 
       {
       "type": "aggregated",

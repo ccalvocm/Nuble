@@ -6,7 +6,7 @@
     },
     "timestepper": {
         "start": "1994-04-01",
-        "end": "2019-03-31",
+        "end": "1995-03-31",
         "timestep": "M"
     },
     "nodes": [  
@@ -263,15 +263,20 @@
           "max_flow": "REMCS"
         },
         {
-          "name":"MatrizRG",
+          "name":"TUCRG",
           "type": "link",
           "cost": -100
         },   
         {
-          "name":"MatrizSA",
+          "name":"TUCSA",
           "type": "link",
           "cost": -100
         },   
+        {
+          "name":"TUCMBPOMLC",
+          "type": "link",
+          "cost": -100
+        }, 
         {
           "name":"FRRanchillo",
           "type": "rivergauge",
@@ -411,7 +416,7 @@
           "max_flow": "deficitArrauNiquen"
         },
         {
-          "name":"MatrizLSM",
+          "name":"TUCLSM",
           "type": "link",
           "cost": 100
         },
@@ -500,7 +505,12 @@
           "max_flow": "deficitMuticura"
         },
         {
-          "name":"FRSSPOSM",
+          "name":"TUCSPS",
+          "type": "link",
+          "cost": -100
+        },   
+        {
+          "name":"TUCMORLIL",
           "type": "link",
           "cost": -100
         },   
@@ -631,34 +641,256 @@
           "max_flow": "deficitSantaMarta"
         },
         {
-          "name":"Bellavista",
+          "name":"FRBellavista",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRBellavista"
+        },   
+        {
+          "name":"BellavistaSup",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowBellavista"
+          "max_flow": "flowBellavistaSup"
         },
         {
-          "name":"Moreira",
+          "name":"BellavistaMix",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowMoreira"
+          "max_flow": "flowBellavistaMix"
         },
         {
-          "name":"Lilahue",
-          "type": "Output",
-          "cost": -100,
-          "max_flow": "flowLilahue"
+          "name": "REMBellavista",
+            "type": "output",
+            "max_flow": "REMBellavista",
+            "cost": 100
         },
         {
-          "name":"MonteBlancoBurgos",
-          "type": "Output",
-          "cost": -100,
-          "max_flow": "flowMonteBlancoBurgos"
+          "name": "REMBellavistaSup",
+            "type": "input",
+            "max_flow": "REMBellavistaSup",
+            "cost": 100
         },
         {
-          "name":"PomuyetoDelBajo",
+          "name": "REMBellavistaSub",
+            "type": "input",
+            "max_flow": "REMBellavista",
+            "cost": 100
+        },
+        {
+          "name":"deficitBellavista",
           "type": "Output",
           "cost": -100,
-          "max_flow": "flowPomuyetoDelBajo"
+          "max_flow": "deficitBellavista"
+        },
+        {
+          "name":"FRMoreira",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMoreira"
+        },   
+        {
+          "name":"MoreiraSup",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowMoreiraSup"
+        },
+        {
+          "name":"MoreiraMix",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowMoreiraMix"
+        },
+        {
+          "name": "REMMoreira",
+            "type": "output",
+            "max_flow": "REMMoreira",
+            "cost": 100
+        },
+        {
+          "name": "REMMoreiraSup",
+            "type": "input",
+            "max_flow": "REMMoreiraSup",
+            "cost": 100
+        },
+        {
+          "name": "REMMoreiraSub",
+            "type": "input",
+            "max_flow": "REMMoreira",
+            "cost": 100
+        },
+        {
+          "name":"deficitMoreira",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "deficitMoreira"
+        },
+        {
+          "name":"FRLilahue",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRLilahue"
+        },   
+        {
+          "name":"LilahueSup",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowLilahueSup"
+        },
+        {
+          "name":"LilahueMix",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowLilahueMix"
+        },
+        {
+          "name": "REMLilahue",
+            "type": "output",
+            "max_flow": "REMLilahue",
+            "cost": 100
+        },
+        {
+          "name": "REMLilahueSup",
+            "type": "input",
+            "max_flow": "REMLilahueSup",
+            "cost": 100
+        },
+        {
+          "name": "REMLilahueSub",
+            "type": "input",
+            "max_flow": "REMLilahue",
+            "cost": 100
+        },
+        {
+          "name":"deficitLilahue",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "deficitLilahue"
+        },
+        {
+          "name":"FRMonteBlancoB",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMonteBlancoB"
+        },   
+        {
+          "name":"MonteBlancoBSup",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowMonteBlancoBSup"
+        },
+        {
+          "name":"MonteBlancoBMix",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowMonteBlancoBMix"
+        },
+        {
+          "name": "REMMonteBlancoB",
+            "type": "output",
+            "max_flow": "REMMonteBlancoB",
+            "cost": 100
+        },
+        {
+          "name": "REMMonteBlancoBSup",
+            "type": "input",
+            "max_flow": "REMMonteBlancoBSup",
+            "cost": 100
+        },
+        {
+          "name": "REMMonteBlancoBSub",
+            "type": "input",
+            "max_flow": "REMMonteBlancoB",
+            "cost": 100
+        },
+        {
+          "name":"deficitMonteBlancoB",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "deficitMonteBlancoB"
+        },
+        {
+          "name":"FRPomuyetoBajo",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRPomuyetoBajo"
+        },   
+        {
+          "name":"PomuyetoBajoSup",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowPomuyetoBajoSup"
+        },
+        {
+          "name":"PomuyetoBajoMix",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowPomuyetoBajoMix"
+        },
+        {
+          "name": "REMPomuyetoBajo",
+            "type": "output",
+            "max_flow": "REMPomuyetoBajo",
+            "cost": 100
+        },
+        {
+          "name": "REMPomuyetoBajoSup",
+            "type": "input",
+            "max_flow": "REMPomuyetoBajoSup",
+            "cost": 100
+        },
+        {
+          "name": "REMPomuyetoBajoSub",
+            "type": "input",
+            "max_flow": "REMPomuyetoBajo",
+            "cost": 100
+        },
+        {
+          "name":"deficitPomuyetoBajo",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "deficitPomuyetoBajo"
+        },
+        {
+          "name":"FRLasCulebras",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRLasCulebras"
+        },   
+        {
+          "name":"LasCulebrasSup",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowLasCulebrasSup"
+        },
+        {
+          "name":"LasCulebrasMix",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowLasCulebrasMix"
+        },
+        {
+          "name": "REMLasCulebras",
+            "type": "output",
+            "max_flow": "REMLasCulebras",
+            "cost": 100
+        },
+        {
+          "name": "REMLasCulebrasSup",
+            "type": "input",
+            "max_flow": "REMLasCulebrasSup",
+            "cost": 100
+        },
+        {
+          "name": "REMLasCulebrasSub",
+            "type": "input",
+            "max_flow": "REMLasCulebras",
+            "cost": 100
+        },
+        {
+          "name":"deficitLasCulebras",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "deficitLasCulebras"
         },
         {
           "name":"MBFerrada",
@@ -672,12 +904,7 @@
           "cost": -100,
           "max_flow": "flowSantaRosaNorte"
         },
-        {
-          "name":"LasCulebras",
-          "type": "Output",
-          "cost": -100,
-          "max_flow": "flowLasCulebras"
-        },
+
         {
           "name":"LasDumas",
           "type": "Output",
@@ -877,13 +1104,13 @@
             "cost": 100
         },
         {
-          "name": "MatrizCSC",
+          "name": "TUCCSC",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
         },
         {
-          "name": "MatrizChacayal",
+          "name": "TUCChacayal",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
@@ -997,7 +1224,7 @@
             "cost": 100
         },
         {
-          "name": "MatrizJFR",
+          "name": "TUCJFR",
             "type": "rivergauge",
             "mrf": "FRZemitaVirguin",
             "cost": 100
@@ -1156,9 +1383,9 @@
       ["FRGYM", "REMGYM"],
       ["REMGYM", "REMGYMSub"],
       ["bocatoma3", "bocatoma4"],
-      ["bocatoma4","MatrizChacayal"],
-      ["MatrizChacayal","FRChacayalO"],
-      ["MatrizChacayal","FRChacayalP"],
+      ["bocatoma4","TUCChacayal"],
+      ["TUCChacayal","FRChacayalO"],
+      ["TUCChacayal","FRChacayalP"],
       ["FRChacayalO","ChacayalOSup"],
       ["FRChacayalO","ChacayalOMix"],
       ["FRChacayalO","REMChacayalO"],
@@ -1174,61 +1401,61 @@
       ["FRMunicipal", "REMMunicipal"],
       ["REMMunicipal", "REMMunicipalSub"],
       ["bocatoma5", "bocatoma6"],
-      ["bocatoma6","MatrizJFR"],
-      ["MatrizJFR","FRZemita"],
+      ["bocatoma6","TUCJFR"],
+      ["TUCJFR","FRZemita"],
       ["FRZemita", "ZemitaMix"],
       ["FRZemita", "ZemitaSup"],
       ["FRZemita","REMZemita"],
       ["REMZemita","REMZemitaSub"],
-      ["MatrizJFR", "FRVirguin"],
+      ["TUCJFR", "FRVirguin"],
       ["FRVirguin", "VirguinJFRSup"],
       ["FRVirguin", "VirguinJFRMix"],
       ["FRVirguin", "REMVirguinJFR"],
       ["REMVirguinJFR", "REMVirguinJFRSub"],
       ["bocatoma6", "bocatoma7"],
-      ["bocatoma7","MatrizCSC"],
-      ["MatrizCSC","FRSAC"],
+      ["bocatoma7","TUCCSC"],
+      ["TUCCSC","FRSAC"],
       ["FRSAC","SanAgustinChangaralSup"],
       ["FRSAC","SanAgustinChangaralMix"],
       ["FRSAC","REMSAC"],
       ["REMSAC","REMSACSub"],
-      ["MatrizCSC","FRCS"],
+      ["TUCCSC","FRCS"],
       ["FRCS","CaroSaldanaSup"],
       ["FRCS","CaroSaldanaMix"],
       ["FRCS","REMCS"],
       ["REMCS","REMCSSub"],
       ["bocatoma7", "bocatoma8"],
-      ["bocatoma8", "MatrizRG"],
-      ["MatrizRG","FRRanchillo"],
+      ["bocatoma8", "TUCRG"],
+      ["TUCRG","FRRanchillo"],
       ["FRRanchillo","RanchilloSup"],
       ["FRRanchillo", "RanchilloMix"],
       ["FRRanchillo","REMRanchillo"],
       ["REMRanchillo","REMRanchilloSub"],
-      ["MatrizRG","FRGaonaPerales"],
+      ["TUCRG","FRGaonaPerales"],
       ["FRGaonaPerales","GaonaPeralesSup"],
       ["FRGaonaPerales", "GaonaPeralesMix"],
       ["FRGaonaPerales","REMGaonaPerales"],
       ["REMGaonaPerales","REMGaonaPeralesSub"],
       ["bocatoma8", "bocatoma9"],
-      ["bocatoma9", "MatrizSA"],
-      ["MatrizSA","FRSanPedro"],
+      ["bocatoma9", "TUCSA"],
+      ["TUCSA","FRSanPedro"],
       ["FRSanPedro","SanPedroSup"],
       ["FRSanPedro", "SanPedroMix"],
       ["FRSanPedro","REMSanPedro"],
       ["REMSanPedro","REMSanPedroSub"],
-      ["MatrizSA","FRArrauNiquen"],
+      ["TUCSA","FRArrauNiquen"],
       ["FRArrauNiquen","ArrauNiquenSup"],
       ["FRArrauNiquen", "ArrauNiquenMix"],
       ["FRArrauNiquen","REMArrauNiquen"],
       ["REMArrauNiquen","REMArrauNiquenSub"],
       ["bocatoma9", "bocatoma10"],
-      ["bocatoma10", "MatrizLSM"],
-      ["MatrizLSM","FRLurinSilva"],
+      ["bocatoma10", "TUCLSM"],
+      ["TUCLSM","FRLurinSilva"],
       ["FRLurinSilva","LurinSilvaSup"],
       ["FRLurinSilva", "LurinSilvaMix"],
       ["FRLurinSilva","REMLurinSilva"],
       ["REMLurinSilva","REMLurinSilvaSub"],
-      ["MatrizLSM","FRMuticura"],
+      ["TUCLSM","FRMuticura"],
       ["FRMuticura","MuticuraSup"],
       ["FRMuticura", "MuticuraMix"],
       ["FRMuticura","REMMuticura"],
@@ -1236,22 +1463,22 @@
       ["REMMuticura","REMMuticuraSub"],
       ["REMMuticuraSup","bocatoma11"],
       ["bocatoma10", "bocatoma11"],
-      ["bocatoma11","FRSSPOSM"],
-      ["FRSSPOSM","FRSantaSara"],
+      ["bocatoma11","TUCSPS"],
+      ["TUCSPS","FRSantaSara"],
       ["FRSantaSara","SantaSaraSup"],
       ["FRSantaSara", "SantaSaraMix"],
       ["FRSantaSara","REMSantaSara"],
       ["REMSantaSara","REMSantaSaraSup"],
       ["REMSantaSaraSup","bocatoma12"],
       ["REMSantaSara","REMSantaSaraSub"],
-      ["FRSSPOSM","FRPomuyetoAlto"],
+      ["TUCSPS","FRPomuyetoAlto"],
       ["FRPomuyetoAlto","PomuyetoAltoSup"],
       ["FRPomuyetoAlto", "PomuyetoAltoMix"],
       ["FRPomuyetoAlto","REMPomuyetoAlto"],
       ["REMPomuyetoAlto","REMPomuyetoAltoSup"],
       ["REMPomuyetoAltoSup","bocatoma12"],
       ["REMPomuyetoAlto","REMPomuyetoAltoSub"],
-      ["FRSSPOSM","FRSantaMarta"],
+      ["TUCSPS","FRSantaMarta"],
       ["FRSantaMarta","SantaMartaSup"],
       ["FRSantaMarta", "SantaMartaMix"],
       ["FRSantaMarta","REMSantaMarta"],
@@ -1259,14 +1486,52 @@
       ["REMSantaMartaSup","bocatoma12"],
       ["REMSantaMarta","REMSantaMartaSub"],
       ["bocatoma11", "bocatoma12"],
-      ["bocatoma12", "Bellavista"],
+      ["bocatoma12","FRBellavista"],
+      ["FRBellavista","BellavistaSup"],
+      ["FRBellavista", "BellavistaMix"],
+      ["FRBellavista","REMBellavista"],
+      ["REMBellavista","REMBellavistaSup"],
+      ["REMBellavistaSup","bocatoma13"],
+      ["REMBellavista","REMBellavistaSub"],
       ["bocatoma12", "bocatoma13"],
-      ["bocatoma13", "Moreira"],
-      ["bocatoma13", "Lilahue"],
+      ["bocatoma13", "TUCMORLIL"],
+      ["TUCMORLIL","FRMoreira"],
+      ["FRMoreira","MoreiraSup"],
+      ["FRMoreira", "MoreiraMix"],
+      ["FRMoreira","REMMoreira"],
+      ["REMMoreira","REMMoreiraSup"],
+      ["REMMoreiraSup","bocatoma14"],
+      ["REMMoreira","REMMoreiraSub"],
+      ["TUCMORLIL","FRLilahue"],
+      ["FRLilahue","LilahueSup"],
+      ["FRLilahue", "LilahueMix"],
+      ["FRLilahue","REMLilahue"],
+      ["REMLilahue","REMLilahueSup"],
+      ["REMLilahueSup","bocatoma14"],
+      ["REMLilahue","REMLilahueSub"],
       ["bocatoma13", "bocatoma14"],
-      ["bocatoma14", "MonteBlancoBurgos"],
-      ["bocatoma14", "PomuyetoDelBajo"],
-      ["bocatoma14", "LasCulebras"],
+      ["bocatoma14","TUCMBPOMLC"],
+      ["TUCMBPOMLC","FRMonteBlancoB"],
+      ["FRMonteBlancoB","MonteBlancoBSup"],
+      ["FRMonteBlancoB", "MonteBlancoBMix"],
+      ["FRMonteBlancoB","REMMonteBlancoB"],
+      ["REMMonteBlancoB","REMMonteBlancoBSup"],
+      ["REMMonteBlancoBSup","bocatoma14"],
+      ["REMMonteBlancoB","REMMonteBlancoBSub"],
+      ["TUCMBPOMLC","FRPomuyetoBajo"],
+      ["FRPomuyetoBajo","PomuyetoBajoSup"],
+      ["FRPomuyetoBajo", "PomuyetoBajoMix"],
+      ["FRPomuyetoBajo","REMPomuyetoBajo"],
+      ["REMPomuyetoBajo","REMPomuyetoBajoSup"],
+      ["REMPomuyetoBajoSup","bocatoma14"],
+      ["REMPomuyetoBajo","REMPomuyetoBajoSub"],
+      ["TUCMBPOMLC","FRLasCulebras"],
+      ["FRLasCulebras","LasCulebrasSup"],
+      ["FRLasCulebras", "LasCulebrasMix"],
+      ["FRLasCulebras","REMLasCulebras"],
+      ["REMLasCulebras","REMLasCulebrasSup"],
+      ["REMLasCulebrasSup","bocatoma14"],
+      ["REMLasCulebras","REMLasCulebrasSub"],
       ["bocatoma14", "bocatoma15"],
       ["bocatoma15", "LasDumas"],
       ["bocatoma15", "rQuileltoMBFerrada"],
@@ -2593,7 +2858,215 @@
                             0]
                           }]
                         },
-      "flowBellavista": 
+                        "flowBellavistaSup": 
+                        {
+                        "type": "aggregated",
+                        "agg_func": "product",
+                        "parameters": [
+                              "FlowNubleSanFabian",
+                              0.014285714285714285]
+                        },
+                        "flowBellavistaMix": 
+                        {
+                        "type": "aggregated",
+                        "agg_func": "product",
+                        "parameters": [
+                              "FlowNubleSanFabian",
+                              0.014285714285714285]
+                        },
+                        "Bellavista":
+                        {
+                          "type": "aggregated",
+                          "agg_func": "sum",
+                          "parameters": [
+                                "flowBellavistaMix",
+                                "flowBellavistaSup"]
+                          },
+                        "FRBellavista": 
+                        {
+                          "type": "aggregated",
+                          "agg_func": "sum",
+                          "parameters": [
+                            "flowBellavistaMix",
+                            "flowBellavistaSup"]
+                        },
+                        "DAASubBellavista": 
+                        {
+                        "type": "aggregated",
+                        "agg_func": "product",
+                        "parameters": [
+                              "FlowNubleSanFabian",
+                              0.00014285714285714285]
+                        },
+                        "REMBellavista": 
+                        {
+                          "type": "aggregated",
+                          "agg_func": "max",
+                          "parameters": 
+                          [
+                              {
+                              "type": "aggregated",
+                              "agg_func": "sum",
+                              "parameters": 
+                              [
+                                    "FRBellavista",
+                                    {
+                                      "type": "aggregated",
+                                      "agg_func": "product",
+                                      "parameters": 
+                                      ["Bellavista",-1]
+                                    }     
+                              ]
+                              },
+                          0]
+                          },
+                          "REMBellavistaSup": 
+                          {
+                          "type": "aggregated",
+                          "agg_func": "product",
+                          "parameters": [
+                                "REMBellavista",
+                                0.05]
+                          },
+                          "REMBellavistaSub": 
+                          {
+                          "type": "aggregated",
+                          "agg_func": "product",
+                          "parameters": [
+                                "REMBellavista",
+                                0.95]
+                          },
+                        "deficitBellavista": 
+                          {
+                          "type": "aggregated",
+                          "agg_func": "min",
+                          "parameters": [
+                          "DAASubBellavista",
+                          {
+                            "type": "aggregated",
+                            "agg_func": "max",
+                            "parameters": [
+                              {
+                                "type": "aggregated",
+                                "agg_func": "sum",
+                                "parameters": 
+                                ["Bellavista",
+                                      {
+                                        "type": "aggregated",
+                                        "agg_func": "product",
+                                        "parameters": [
+                                              "FRBellavista",
+                                              -1]
+                                        }]
+                              },
+                              0]
+                            }]
+                    },
+    "flowMoreiraSup": 
+    {
+    "type": "aggregated",
+    "agg_func": "product",
+    "parameters": [
+          "FlowNubleSanFabian",
+          0.014285714285714285]
+    },
+    "flowMoreiraMix": 
+    {
+    "type": "aggregated",
+    "agg_func": "product",
+    "parameters": [
+          "FlowNubleSanFabian",
+          0.014285714285714285]
+    },
+    "Moreira":
+    {
+      "type": "aggregated",
+      "agg_func": "sum",
+      "parameters": [
+            "flowMoreiraMix",
+            "flowMoreiraSup"]
+      },
+    "FRMoreira": 
+    {
+      "type": "aggregated",
+      "agg_func": "sum",
+      "parameters": [
+        "flowMoreiraMix",
+        "flowMoreiraSup"]
+    },
+    "DAASubMoreira": 
+    {
+    "type": "aggregated",
+    "agg_func": "product",
+    "parameters": [
+          "FlowNubleSanFabian",
+          0.00014285714285714285]
+    },
+    "REMMoreira": 
+    {
+      "type": "aggregated",
+      "agg_func": "max",
+      "parameters": 
+      [
+          {
+          "type": "aggregated",
+          "agg_func": "sum",
+          "parameters": 
+          [
+                "FRMoreira",
+                {
+                  "type": "aggregated",
+                  "agg_func": "product",
+                  "parameters": 
+                  ["Moreira",-1]
+                }     
+          ]
+          },
+      0]
+      },
+      "REMMoreiraSup": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "REMMoreira",
+            0.05]
+      },
+      "REMMoreiraSub": 
+      {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "REMMoreira",
+            0.95]
+      },
+    "deficitMoreira": 
+      {
+      "type": "aggregated",
+      "agg_func": "min",
+      "parameters": [
+      "DAASubMoreira",
+      {
+        "type": "aggregated",
+        "agg_func": "max",
+        "parameters": [
+          {
+            "type": "aggregated",
+            "agg_func": "sum",
+            "parameters": 
+            ["Moreira",
+                  {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": [
+                          "FRMoreira",
+                          -1]
+                    }]
+          },
+          0]
+        }]
+      },
+      "flowLilahueSup": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -2601,7 +3074,7 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowMoreira": 
+      "flowLilahueMix": 
       {
       "type": "aggregated",
       "agg_func": "product",
@@ -2609,30 +3082,406 @@
             "FlowNubleSanFabian",
             0.014285714285714285]
       },
-      "flowLilahue": 
+      "Lilahue":
+      {
+        "type": "aggregated",
+        "agg_func": "sum",
+        "parameters": [
+              "flowLilahueMix",
+              "flowLilahueSup"]
+        },
+      "FRLilahue": 
+      {
+        "type": "aggregated",
+        "agg_func": "sum",
+        "parameters": [
+          "flowLilahueMix",
+          "flowLilahueSup"]
+      },
+      "DAASubLilahue": 
       {
       "type": "aggregated",
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
-      "flowMonteBlancoBurgos": 
+      "REMLilahue": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.014285714285714285]
-      },
-      "flowPomuyetoDelBajo": 
-      {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.014285714285714285]
-      },
+        "type": "aggregated",
+        "agg_func": "max",
+        "parameters": 
+        [
+            {
+            "type": "aggregated",
+            "agg_func": "sum",
+            "parameters": 
+            [
+                  "FRLilahue",
+                  {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": 
+                    ["Lilahue",-1]
+                  }     
+            ]
+            },
+        0]
+        },
+        "REMLilahueSup": 
+        {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "REMLilahue",
+              0.05]
+        },
+        "REMLilahueSub": 
+        {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "REMLilahue",
+              0.95]
+        },
+      "deficitLilahue": 
+        {
+        "type": "aggregated",
+        "agg_func": "min",
+        "parameters": [
+        "DAASubLilahue",
+        {
+          "type": "aggregated",
+          "agg_func": "max",
+          "parameters": [
+            {
+              "type": "aggregated",
+              "agg_func": "sum",
+              "parameters": 
+              ["Lilahue",
+                    {
+                      "type": "aggregated",
+                      "agg_func": "product",
+                      "parameters": [
+                            "FRLilahue",
+                            -1]
+                      }]
+            },
+            0]
+          }]
+        },
+        "flowMonteBlancoBSup": 
+        {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FlowNubleSanFabian",
+              0.014285714285714285]
+        },
+        "flowMonteBlancoBMix": 
+        {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FlowNubleSanFabian",
+              0.014285714285714285]
+        },
+        "MonteBlancoB":
+        {
+          "type": "aggregated",
+          "agg_func": "sum",
+          "parameters": [
+                "flowMonteBlancoBMix",
+                "flowMonteBlancoBSup"]
+          },
+        "FRMonteBlancoB": 
+        {
+          "type": "aggregated",
+          "agg_func": "sum",
+          "parameters": [
+            "flowMonteBlancoBMix",
+            "flowMonteBlancoBSup"]
+        },
+        "DAASubMonteBlancoB": 
+        {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FlowNubleSanFabian",
+              0.00014285714285714285]
+        },
+        "REMMonteBlancoB": 
+        {
+          "type": "aggregated",
+          "agg_func": "max",
+          "parameters": 
+          [
+              {
+              "type": "aggregated",
+              "agg_func": "sum",
+              "parameters": 
+              [
+                    "FRMonteBlancoB",
+                    {
+                      "type": "aggregated",
+                      "agg_func": "product",
+                      "parameters": 
+                      ["MonteBlancoB",-1]
+                    }     
+              ]
+              },
+          0]
+          },
+          "REMMonteBlancoBSup": 
+          {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "REMMonteBlancoB",
+                0.05]
+          },
+          "REMMonteBlancoBSub": 
+          {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "REMMonteBlancoB",
+                0.95]
+          },
+        "deficitMonteBlancoB": 
+          {
+          "type": "aggregated",
+          "agg_func": "min",
+          "parameters": [
+          "DAASubMonteBlancoB",
+          {
+            "type": "aggregated",
+            "agg_func": "max",
+            "parameters": [
+              {
+                "type": "aggregated",
+                "agg_func": "sum",
+                "parameters": 
+                ["MonteBlancoB",
+                      {
+                        "type": "aggregated",
+                        "agg_func": "product",
+                        "parameters": [
+                              "FRMonteBlancoB",
+                              -1]
+                        }]
+              },
+              0]
+            }]
+          },
+          "flowPomuyetoBajoSup": 
+          {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "FlowNubleSanFabian",
+                0.014285714285714285]
+          },
+          "flowPomuyetoBajoMix": 
+          {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "FlowNubleSanFabian",
+                0.014285714285714285]
+          },
+          "PomuyetoBajo":
+          {
+            "type": "aggregated",
+            "agg_func": "sum",
+            "parameters": [
+                  "flowPomuyetoBajoMix",
+                  "flowPomuyetoBajoSup"]
+            },
+          "FRPomuyetoBajo": 
+          {
+            "type": "aggregated",
+            "agg_func": "sum",
+            "parameters": [
+              "flowPomuyetoBajoMix",
+              "flowPomuyetoBajoSup"]
+          },
+          "DAASubPomuyetoBajo": 
+          {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "FlowNubleSanFabian",
+                0.00014285714285714285]
+          },
+          "REMPomuyetoBajo": 
+          {
+            "type": "aggregated",
+            "agg_func": "max",
+            "parameters": 
+            [
+                {
+                "type": "aggregated",
+                "agg_func": "sum",
+                "parameters": 
+                [
+                      "FRPomuyetoBajo",
+                      {
+                        "type": "aggregated",
+                        "agg_func": "product",
+                        "parameters": 
+                        ["PomuyetoBajo",-1]
+                      }     
+                ]
+                },
+            0]
+            },
+            "REMPomuyetoBajoSup": 
+            {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "REMPomuyetoBajo",
+                  0.05]
+            },
+            "REMPomuyetoBajoSub": 
+            {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "REMPomuyetoBajo",
+                  0.95]
+            },
+          "deficitPomuyetoBajo": 
+            {
+            "type": "aggregated",
+            "agg_func": "min",
+            "parameters": [
+            "DAASubPomuyetoBajo",
+            {
+              "type": "aggregated",
+              "agg_func": "max",
+              "parameters": [
+                {
+                  "type": "aggregated",
+                  "agg_func": "sum",
+                  "parameters": 
+                  ["PomuyetoBajo",
+                        {
+                          "type": "aggregated",
+                          "agg_func": "product",
+                          "parameters": [
+                                "FRPomuyetoBajo",
+                                -1]
+                          }]
+                },
+                0]
+              }]
+            },
+            "flowLasCulebrasSup": 
+            {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FlowNubleSanFabian",
+                  0.014285714285714285]
+            },
+            "flowLasCulebrasMix": 
+            {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FlowNubleSanFabian",
+                  0.014285714285714285]
+            },
+            "LasCulebras":
+            {
+              "type": "aggregated",
+              "agg_func": "sum",
+              "parameters": [
+                    "flowLasCulebrasMix",
+                    "flowLasCulebrasSup"]
+              },
+            "FRLasCulebras": 
+            {
+              "type": "aggregated",
+              "agg_func": "sum",
+              "parameters": [
+                "flowLasCulebrasMix",
+                "flowLasCulebrasSup"]
+            },
+            "DAASubLasCulebras": 
+            {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FlowNubleSanFabian",
+                  0.00014285714285714285]
+            },
+            "REMLasCulebras": 
+            {
+              "type": "aggregated",
+              "agg_func": "max",
+              "parameters": 
+              [
+                  {
+                  "type": "aggregated",
+                  "agg_func": "sum",
+                  "parameters": 
+                  [
+                        "FRLasCulebras",
+                        {
+                          "type": "aggregated",
+                          "agg_func": "product",
+                          "parameters": 
+                          ["LasCulebras",-1]
+                        }     
+                  ]
+                  },
+              0]
+              },
+              "REMLasCulebrasSup": 
+              {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "REMLasCulebras",
+                    0.05]
+              },
+              "REMLasCulebrasSub": 
+              {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "REMLasCulebras",
+                    0.95]
+              },
+            "deficitLasCulebras": 
+              {
+              "type": "aggregated",
+              "agg_func": "min",
+              "parameters": [
+              "DAASubLasCulebras",
+              {
+                "type": "aggregated",
+                "agg_func": "max",
+                "parameters": [
+                  {
+                    "type": "aggregated",
+                    "agg_func": "sum",
+                    "parameters": 
+                    ["LasCulebras",
+                          {
+                            "type": "aggregated",
+                            "agg_func": "product",
+                            "parameters": [
+                                  "FRLasCulebras",
+                                  -1]
+                            }]
+                  },
+                  0]
+                }]
+              },
       "flowMBFerrada": 
       {
       "type": "aggregated",

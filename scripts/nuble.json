@@ -893,6 +893,48 @@
           "max_flow": "deficitLasCulebras"
         },
         {
+          "name":"FRLasDumas",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRLasDumas"
+        },   
+        {
+          "name":"LasDumasSup",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowLasDumasSup"
+        },
+        {
+          "name":"LasDumasMix",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "flowLasDumasMix"
+        },
+        {
+          "name": "REMLasDumas",
+            "type": "output",
+            "max_flow": "REMLasDumas",
+            "cost": 100
+        },
+        {
+          "name": "REMLasDumasSup",
+            "type": "input",
+            "max_flow": "REMLasDumasSup",
+            "cost": 100
+        },
+        {
+          "name": "REMLasDumasSub",
+            "type": "input",
+            "max_flow": "REMLasDumas",
+            "cost": 100
+        },
+        {
+          "name":"deficitLasDumas",
+          "type": "Output",
+          "cost": -100,
+          "max_flow": "deficitLasDumas"
+        },
+        {
           "name":"MBFerrada",
           "type": "Output",
           "cost": -100,
@@ -903,13 +945,6 @@
           "type": "Output",
           "cost": -100,
           "max_flow": "flowSantaRosaNorte"
-        },
-
-        {
-          "name":"LasDumas",
-          "type": "Output",
-          "cost": -100,
-          "max_flow": "flowLasDumas"
         },
         {
           "name":"Quilelto",
@@ -1111,6 +1146,12 @@
         },
         {
           "name": "TUCChacayal",
+            "type": "link",
+            "max_flow": 13200000,
+            "cost": 100
+        },
+        {
+          "name": "TUCbocatoma15",
             "type": "link",
             "max_flow": 13200000,
             "cost": 100
@@ -1533,16 +1574,22 @@
       ["REMLasCulebrasSup","bocatoma14"],
       ["REMLasCulebras","REMLasCulebrasSub"],
       ["bocatoma14", "bocatoma15"],
-      ["bocatoma15", "LasDumas"],
-      ["bocatoma15", "rQuileltoMBFerrada"],
-      ["bocatoma15", "rQuileltoMBFerrada"],
-      ["bocatoma15","rQuileltoMBFerrada"],
+      ["bocatoma15","TUCbocatoma15"],
+      ["TUCbocatoma15","FRLasDumas"],
+      ["FRLasDumas","LasDumasSup"],
+      ["FRLasDumas", "LasDumasMix"],
+      ["FRLasDumas","REMLasDumas"],
+      ["REMLasDumas","REMLasDumasSup"],
+      ["REMLasDumasSup","bocatoma14"],
+      ["REMLasDumas","REMLasDumasSub"],      ["TUCbocatoma15", "rQuileltoMBFerrada"],
+      ["TUCbocatoma15", "rQuileltoMBFerrada"],
+      ["TUCbocatoma15","rQuileltoMBFerrada"],
       ["rQuileltoMBFerrada", "MBFerrada"],
       ["rQuileltoMBFerrada", "Quilelto"],
-      ["bocatoma15", "SantaRosaNorte"],
-      ["bocatoma15", "MonteBlancoMendez"],
-      ["bocatoma15", "ElPenonElCaballo"],
-      ["bocatoma15", "bocatoma16"],
+      ["TUCbocatoma15", "SantaRosaNorte"],
+      ["TUCbocatoma15", "MonteBlancoMendez"],
+      ["TUCbocatoma15", "ElPenonElCaballo"],
+      ["TUCbocatoma15", "bocatoma16"],
       ["bocatoma15", "bocatoma16"],
       ["bocatoma16", "Alazan"],
       ["bocatoma16", "bocatoma17"],
@@ -3482,6 +3529,110 @@
                   0]
                 }]
               },
+              "flowLasDumasSup": 
+              {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "FlowNubleSanFabian",
+                    0.014285714285714285]
+              },
+              "flowLasDumasMix": 
+              {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "FlowNubleSanFabian",
+                    0.014285714285714285]
+              },
+              "LasDumas":
+              {
+                "type": "aggregated",
+                "agg_func": "sum",
+                "parameters": [
+                      "flowLasDumasMix",
+                      "flowLasDumasSup"]
+                },
+              "FRLasDumas": 
+              {
+                "type": "aggregated",
+                "agg_func": "sum",
+                "parameters": [
+                  "flowLasDumasMix",
+                  "flowLasDumasSup"]
+              },
+              "DAASubLasDumas": 
+              {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "FlowNubleSanFabian",
+                    0.00014285714285714285]
+              },
+              "REMLasDumas": 
+              {
+                "type": "aggregated",
+                "agg_func": "max",
+                "parameters": 
+                [
+                    {
+                    "type": "aggregated",
+                    "agg_func": "sum",
+                    "parameters": 
+                    [
+                          "FRLasDumas",
+                          {
+                            "type": "aggregated",
+                            "agg_func": "product",
+                            "parameters": 
+                            ["LasDumas",-1]
+                          }     
+                    ]
+                    },
+                0]
+                },
+                "REMLasDumasSup": 
+                {
+                "type": "aggregated",
+                "agg_func": "product",
+                "parameters": [
+                      "REMLasDumas",
+                      0.05]
+                },
+                "REMLasDumasSub": 
+                {
+                "type": "aggregated",
+                "agg_func": "product",
+                "parameters": [
+                      "REMLasDumas",
+                      0.95]
+                },
+              "deficitLasDumas": 
+                {
+                "type": "aggregated",
+                "agg_func": "min",
+                "parameters": [
+                "DAASubLasDumas",
+                {
+                  "type": "aggregated",
+                  "agg_func": "max",
+                  "parameters": [
+                    {
+                      "type": "aggregated",
+                      "agg_func": "sum",
+                      "parameters": 
+                      ["LasDumas",
+                            {
+                              "type": "aggregated",
+                              "agg_func": "product",
+                              "parameters": [
+                                    "FRLasDumas",
+                                    -1]
+                              }]
+                    },
+                    0]
+                  }]
+                },
       "flowMBFerrada": 
       {
       "type": "aggregated",

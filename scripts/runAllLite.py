@@ -130,9 +130,21 @@ recargas,descargas)
     # plt.show()
 
         # correr modelo
-    model.solver.name="glpk-edge"
+    # model.solver.name="glpk-edge"
     # run the model and see if it works
     run_stats = model.run()
 
     run_stats = run_stats.to_dataframe()
     print(run_stats)
+
+    # bocatoma 3
+    print((model.nodes['NubleSanFabian'].flow-model.nodes["bocatoma3"].flow)/2)
+    #validar el balance de masa en canal Virguin
+    #validar balance de masa en canal Collico
+    print(model.nodes["CollicoSup"].flow)
+    print(model.nodes["CollicoMix"].flow)
+    print(model.nodes["REMCollico"].flow)
+    print(model.nodes["deficitCollico"].flow)
+    print(model.nodes["FRCollico"].flow)
+    print(model.nodes["bocatoma3"].flow)
+    print(model.nodes["bocatoma4"].flow)

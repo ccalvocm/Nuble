@@ -1875,7 +1875,7 @@
         {
           "name": "rioNuble",
           "type": "output",
-          "cost":100
+          "cost":10000
         }   
     ],
     "edges": [
@@ -2114,7 +2114,7 @@
     "parameters": {
       "FlowNubleSanFabian": {
       "type": "constant",
-      "value": 10000
+      "value": 1000000
       },
       "flowFlorDeQihua": 
       {

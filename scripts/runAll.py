@@ -80,11 +80,11 @@ if __name__ == "__main__":
                                      descargas)
 
 #     conectar nodos existentes al acuifero Changaral
-    recargas=['REMGYMSub','REMMunicipalSub','REMSACCSSub','REMSACCSSub',
+    recargas=['REMGYMSub','REMMunicipalSub','REMSACCSSub',
 'REMRanchilloGPSub','REMArrauNiquenSub','REMLurinSilvaSub','REMSSaraPomSMartaSub',
 'REMLilahueMoreiraSub','REMSanJoseNSub']
     
-    descargas=['abstraccionAqCha','GreeneYMairaMix','deficitMunicipal',
+    descargas=['abstraccionAqCha']+['GreeneYMairaMix','deficitMunicipal',
 'deficitSACCS','deficitRanchilloGP','deficitArrauNiquen',
 'deficitLurinSilva','deficitSSaraPomSMarta',
 'deficitLilahueMoreira','deficitSanJoseN']
@@ -106,11 +106,11 @@ if __name__ == "__main__":
 recargas,descargas)
         
 #     conectar los nodos de déficit que faltan
-    entradas=['deficitCollico','deficitChacayalO','deficitChacayalP',
-'deficitMunicipal','deficitRanchilloGP',
+    entradas=['deficitJFRVirguinZemita','deficitCollico','deficitChacayalO','deficitChacayalP',
+'deficitMunicipal','deficitRanchilloGP','deficitSACCS',
 'deficitSanPedro','deficitArrauNiquen','deficitLurinSilva','deficitMuticura',
-'deficitSSaraPomSMarta',
-'deficitLilahueMoreira','deficitMonteBlancoB','deficitPomuyetoBajoA','deficitPomuyetoBajoB',
+'deficitSSaraPomSMarta','deficitStaRita',
+'deficitLilahueMoreira','deficitBellavista','deficitMonteBlancoB','deficitPomuyetoBajoA','deficitPomuyetoBajoB',
 'deficitLasDumas','deficitQuilelto','deficitMBFerrada','deficitStaRosaN',
 'deficitMBMendez','deficitElPenon','deficitAlazan','deficitReloca','deficitRomeral',
 'deficitSanLuisC','deficitQuinquehua','deficitSantaRosaCato','deficitMonteBlancoL',

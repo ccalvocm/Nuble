@@ -36,19 +36,19 @@
         },
         {
           "name":"REMCollico",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "REMCollico"
         },
         {
           "name":"REMCollicoSub",
-          "type": "link",
+          "type": "input",
           "cost": -100,
           "max_flow": "REMCollico"
         },
         {
           "name":"deficitCollico",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubCollico"
         },
@@ -60,25 +60,25 @@
         },
         {
           "name":"deficitChacayalO",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubChacayalO"
         },
         {
           "name":"deficitChacayalP",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubChacayalP"
         },
         {
           "name":"deficitRanchilloGP",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubRanchilloGP"
         },
         {
           "name":"deficitSACCS",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubSACCS"
         },
@@ -162,7 +162,7 @@
         },
         {
           "name":"deficitJFRVirguinZemita",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubJFRVirguinZemita"
         },
@@ -192,7 +192,7 @@
         },
         {
         "name":"deficitMunicipal",
-        "type": "link",
+        "type": "Output",
         "cost": -100,
         "max_flow": "DAASubMunicipal"
         },
@@ -310,7 +310,7 @@
         },
         {
           "name":"deficitSanPedro",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubSanPedro"
         },
@@ -346,7 +346,7 @@
         },
         {
           "name":"deficitArrauNiquen",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubArrauNiquen"
         },
@@ -387,7 +387,7 @@
         },
         {
           "name":"deficitLurinSilva",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubLurinSilva"
         },
@@ -435,7 +435,7 @@
         },
         {
           "name":"deficitMuticura",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubMuticura"
         },
@@ -477,7 +477,7 @@
         },
         {
           "name":"deficitSSaraPomSMarta",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubSSaraPomSMarta"
         },
@@ -519,7 +519,7 @@
         },
         {
           "name":"deficitBellavista",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubBellavista"
         },
@@ -561,7 +561,7 @@
         },
         {
           "name":"deficitLilahueMoreira",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubLilahueMoreira"
         },
@@ -603,7 +603,7 @@
         },
         {
           "name":"deficitMonteBlancoB",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubMonteBlancoB"
         },
@@ -645,7 +645,7 @@
         },
         {
           "name":"deficitPomuyetoBajoA",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubPomuyetoBajoA"
         },
@@ -687,7 +687,7 @@
         },
         {
           "name":"deficitPomuyetoBajoB",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubPomuyetoBajoB"
         },
@@ -729,7 +729,7 @@
         },
         {
           "name":"deficitLasDumas",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubLasDumas"
         },
@@ -771,7 +771,7 @@
         },
         {
           "name":"deficitQuilelto",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubQuilelto"
         },
@@ -813,7 +813,7 @@
         },
         {
           "name":"deficitMBFerrada",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubMBFerrada"
         },
@@ -855,7 +855,7 @@
         },
         {
           "name":"deficitStaRosaN",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubStaRosaN"
         },
@@ -897,7 +897,7 @@
         },
         {
           "name":"deficitMBMendez",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubMBMendez"
         },
@@ -939,7 +939,7 @@
         },
         {
           "name":"deficitElPenon",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubElPenon"
         },
@@ -969,7 +969,7 @@
         },
         {
           "name":"deficitAlazan",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubAlazan"
         },
@@ -1011,7 +1011,7 @@
         },
         {
           "name":"deficitReloca",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubReloca"
         },
@@ -1047,7 +1047,7 @@
         },
         {
           "name":"deficitRomeral",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubRomeral"
         },
@@ -1083,7 +1083,7 @@
         },
         {
           "name":"deficitSanLuisC",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubSanLuisC"
         },
@@ -1119,7 +1119,7 @@
         },
         {
           "name":"deficitQuinquehua",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubQuinquehua"
         },
@@ -1161,7 +1161,7 @@
         },
         {
           "name":"deficitSantaRosaCato",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubSantaRosaCato"
         },
@@ -1203,7 +1203,7 @@
         },
         {
           "name":"deficitMonteBlancoL",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubMonteBlancoL"
         },
@@ -1245,7 +1245,7 @@
         },
         {
           "name":"deficitMonteBlancoJ",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubMonteBlancoJ"
         },
@@ -1281,7 +1281,7 @@
         },
         {
           "name":"deficitStaRita",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubStaRita"
         },
@@ -1317,7 +1317,7 @@
         },
         {
           "name":"deficitDadinco",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubDadinco"
         },
@@ -1359,7 +1359,7 @@
         },
         {
           "name":"deficitSanJoseS",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubSanJoseS"
         },
@@ -1401,7 +1401,7 @@
         },
         {
           "name":"deficitCapillaCox",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubCapillaCox"
         },
@@ -1443,7 +1443,7 @@
         },
         {
           "name":"deficitCapillaN",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubCapillaN"
         },
@@ -1473,7 +1473,7 @@
         },
         {
           "name":"deficitSanJoseN",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubSanJoseN"
         },
@@ -1515,7 +1515,7 @@
         },
         {
           "name":"deficitArancibia",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubArancibia"
         },
@@ -1557,7 +1557,7 @@
         },
         {
           "name":"deficitRinconadaC",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubRinconadaC"
         },
@@ -1593,7 +1593,7 @@
         },
         {
           "name":"deficitStaLaura",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubStaLaura"
         },
@@ -1629,7 +1629,7 @@
         },
         {
           "name":"deficitLaPalma",
-          "type": "link",
+          "type": "Output",
           "cost": -100,
           "max_flow": "DAASubLaPalma"
         },
@@ -1875,7 +1875,7 @@
         {
           "name": "rioNuble",
           "type": "output",
-          "cost":100
+          "cost":10000
         }   
     ],
     "edges": [
@@ -1886,7 +1886,6 @@
       ["FRCollico", "CollicoSup"],
       ["FRCollico", "CollicoMix"],
       ["FRCollico","REMCollico"],
-      ["REMCollico","REMCollicoSub"],
       ["bocatoma2", "bocatoma3"],
       ["bocatoma3", "FRGYM"],
       ["FRGYM", "GreeneYMairaSup"],
@@ -2114,12 +2113,9 @@
     },
     "parameters": {
       "FlowNubleSanFabian": {
-        "type": "dataframe",
-        "url": "../inputs/qNuble_m3d.csv",
-        "index_col": "Date",
-        "parse_dates": true,
-        "column": "08106001-0"
-        },
+      "type": "constant",
+      "value": 1000000
+      },
       "flowFlorDeQihua": 
       {
       "type": "aggregated",

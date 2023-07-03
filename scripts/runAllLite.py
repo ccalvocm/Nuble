@@ -22,9 +22,9 @@ def createAquifer(model,name):
     transmissivity = [100, 2000]  # m2/d
     transmissivity = [t * 0.0001 for t in transmissivity]  # m3 to Ml
     coefficient = 1  # no units
-    storativity = [0.000005]  # % este parámetro es clave
+    storativity = [0.00005]  # % este parámetro es clave
     levels = [1.0, 10.0]  # m
-    area = 5000 * 5000  # m2
+    area = 50000 * 50000  # m2
     
     aqfer=KeatingAquifer(
         model,
@@ -38,7 +38,7 @@ def createAquifer(model,name):
         area=area,
         storativity=storativity)
 
-    aqfer.initial_level=1
+    aqfer.initial_level=3
     
     return aqfer
 
@@ -130,7 +130,7 @@ recargas,descargas)
     # plt.show()
 
         # correr modelo
-    model.solver.name="glpk-edge"
+    # model.solver.name="glpk-edge"
     # run the model and see if it works
     run_stats = model.run()
 
@@ -143,8 +143,10 @@ recargas,descargas)
     #validar balance de masa en canal Collico
     print(model.nodes["CollicoSup"].flow)
     print(model.nodes["CollicoMix"].flow)
-    print(model.nodes["REMCollico"].flow)
-    print(model.nodes["deficitCollico"].flow)
     print(model.nodes["FRCollico"].flow)
-    print(model.nodes["bocatoma3"].flow)
-    print(model.nodes["bocatoma4"].flow)
+    print(model.nodes["REMCollico"].flow)
+    print(model.nodes["REMCollicoSub"].flow)
+    print(model.nodes["deficitCollico"].flow)
+ 
+
+

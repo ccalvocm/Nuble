@@ -50,7 +50,7 @@
           "name":"deficitCollico",
           "type": "link",
           "cost": -100,
-          "max_flow": "deficitCollico"
+          "max_flow": "DAASubCollico"
         },
         {
           "name": "FRCollico",

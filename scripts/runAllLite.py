@@ -16,7 +16,31 @@ import pytest
 
 def createAquifer(model,name):
 
-    return Storage(model,name)
+    num_streams = 1
+    num_additional_inputs = 0
+    stream_flow_levels = [[1.0, 10.0]]  # m
+    transmissivity = [100, 2000]  # m2/d
+    transmissivity = [t * 0.0001 for t in transmissivity]  # m3 to Ml
+    coefficient = 1  # no units
+    storativity = [0.000005]  # % este parámetro es clave
+    levels = [1.0, 10.0]  # m
+    area = 5000 * 5000  # m2
+    
+    aqfer=KeatingAquifer(
+        model,
+        name,
+        num_streams,
+        num_additional_inputs,
+        stream_flow_levels,
+        transmissivity,
+        coefficient,
+        levels,
+        area=area,
+        storativity=storativity)
+
+    aqfer.initial_level=1
+    
+    return aqfer
 
 def connectAquifer(modelo,acuifero,nodosRecarga,nodosDescarga):
     for nodoR in nodosRecarga:
@@ -57,11 +81,11 @@ if __name__ == "__main__":
                                      descargas)
 
 #     conectar nodos existentes al acuifero Changaral
-    recargas=['REMGYMSub','REMMunicipalSub','REMSACCSSub','REMSACCSSub',
+    recargas=['REMGYMSub','REMMunicipalSub','REMSACCSSub',
 'REMRanchilloGPSub','REMArrauNiquenSub','REMLurinSilvaSub','REMSSaraPomSMartaSub',
 'REMLilahueMoreiraSub','REMSanJoseNSub']
     
-    descargas=['abstraccionAqCha','GreeneYMairaMix','deficitMunicipal',
+    descargas=['abstraccionAqCha']+['GreeneYMairaMix','deficitMunicipal',
 'deficitSACCS','deficitRanchilloGP','deficitArrauNiquen',
 'deficitLurinSilva','deficitSSaraPomSMarta',
 'deficitLilahueMoreira','deficitSanJoseN']
@@ -83,11 +107,11 @@ if __name__ == "__main__":
 recargas,descargas)
         
 #     conectar los nodos de déficit que faltan
-    entradas=['deficitCollico','deficitChacayalO','deficitChacayalP',
-'deficitMunicipal','deficitRanchilloGP',
+    entradas=['deficitJFRVirguinZemita','deficitCollico','deficitChacayalO','deficitChacayalP',
+'deficitMunicipal','deficitRanchilloGP','deficitSACCS',
 'deficitSanPedro','deficitArrauNiquen','deficitLurinSilva','deficitMuticura',
-'deficitSSaraPomSMarta',
-'deficitLilahueMoreira','deficitMonteBlancoB','deficitPomuyetoBajoA','deficitPomuyetoBajoB',
+'deficitSSaraPomSMarta','deficitStaRita',
+'deficitLilahueMoreira','deficitBellavista','deficitMonteBlancoB','deficitPomuyetoBajoA','deficitPomuyetoBajoB',
 'deficitLasDumas','deficitQuilelto','deficitMBFerrada','deficitStaRosaN',
 'deficitMBMendez','deficitElPenon','deficitAlazan','deficitReloca','deficitRomeral',
 'deficitSanLuisC','deficitQuinquehua','deficitSantaRosaCato','deficitMonteBlancoL',

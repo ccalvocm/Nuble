@@ -42,7 +42,7 @@ def getOutputs(lista):
 
 if __name__ == "__main__":
     
-    path="nuble.json"
+    path="nubleLite.json"
     model = Model.load(path)
     
 #     crear objetos acuíferos

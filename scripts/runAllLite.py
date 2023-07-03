@@ -130,7 +130,7 @@ recargas,descargas)
     # plt.show()
 
         # correr modelo
-    # model.solver.name="glpk-edge"
+    model.solver.name="glpk-edge"
     # run the model and see if it works
     run_stats = model.run()
 

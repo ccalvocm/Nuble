@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os
 from pywr.domains.groundwater import KeatingAquifer
 from pywr.parameters.groundwater import KeatingStreamFlowParameter
-from pywr.core import Model, Input, Output, Link, Storage, Node, Catchment
+from pywr.core import (Model, Input, Output, Link, Storage, Node, Catchment)
 from pywr.recorders import (
     NumpyArrayNodeRecorder,
     NumpyArrayLevelRecorder,
@@ -23,7 +23,7 @@ def createAquifer(model,name):
     transmissivity = [100, 2000]  # m2/d
     transmissivity = [t * 0.0001 for t in transmissivity]  # m3 to Ml
     coefficient = 1  # no units
-    storativity = [0.00005]  # % este parámetro es clave
+    storativity = [0.0005]  # % este parámetro es clave
     levels = [1.0, 10.0]  # m
     area = 50000 * 50000  # m2
     
@@ -39,7 +39,7 @@ def createAquifer(model,name):
         area=area,
         storativity=storativity)
 
-    aqfer.initial_level=3
+    aqfer.initial_level=5
     
     return aqfer
 
@@ -125,10 +125,10 @@ recargas,descargas)
 #     conectar los sitios de bombeo de aguas subterráneas
     model=connectNodes(model,entradas,salidas)
 
-    # plt.figure()
-    # draw_graph(model,labels=True,attributes=False,
-    #            width=1300,height=1300)
-    # plt.show()
+    plt.figure()
+    draw_graph(model,labels=True,attributes=False,
+               width=1300,height=1300)
+    plt.show()
 
     # workaround
     # en vez de devolver los excedentes al río, demandar menos
@@ -157,6 +157,7 @@ recargas,descargas)
     print(model.nodes["BellavistaMix"].flow)
     print(model.nodes["FRBellavista"].flow)
     print(model.nodes["REMBellavistaSub"].flow)
+    print(model.nodes["REMBellavistaSup"].flow)
     print(model.nodes["rioNuble"].flow)
 
 

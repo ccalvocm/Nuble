@@ -13,6 +13,7 @@ from pywr.recorders import (
 import pandas
 import numpy as np
 import pytest
+import time
 
 def createAquifer(model,name):
 
@@ -129,10 +130,16 @@ recargas,descargas)
     #            width=1300,height=1300)
     # plt.show()
 
+    # workaround
+    # en vez de devolver los excedentes al río, demandar menos
+
         # correr modelo
     model.solver.name="glpk-edge"
     # run the model and see if it works
+    start_time = time.time()
     run_stats = model.run()
+
+    print("--- %s seconds ---" % (time.time() - start_time))
 
     run_stats = run_stats.to_dataframe()
     print(run_stats)
@@ -144,9 +151,12 @@ recargas,descargas)
     print(model.nodes["CollicoSup"].flow)
     print(model.nodes["CollicoMix"].flow)
     print(model.nodes["FRCollico"].flow)
-    print(model.nodes["REMCollico"].flow)
     print(model.nodes["REMCollicoSub"].flow)
     print(model.nodes["deficitCollico"].flow)
- 
+    print(model.nodes["BellavistaSup"].flow)
+    print(model.nodes["BellavistaMix"].flow)
+    print(model.nodes["FRBellavista"].flow)
+    print(model.nodes["REMBellavistaSub"].flow)
+    print(model.nodes["deficitBellavista"].flow)
 
 

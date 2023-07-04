@@ -410,21 +410,15 @@
           "max_flow": "flowMuticuraMix"
         },
         {
-          "name": "REMMuticura",
-            "type": "link",
-            "max_flow": "REMMuticura",
-            "cost": 100
-        },
-        {
           "name": "REMMuticuraSub",
             "type": "link",
             "max_flow": "REMMuticuraSub",
             "cost": 100
         },
         {
-          "name": "REMMuticuraSub",
+          "name": "REMMuticuraSup",
             "type": "link",
-            "max_flow": "REMMuticura",
+            "max_flow": "REMMuticuraSup",
             "cost": 100
         },
         {
@@ -452,15 +446,15 @@
           "max_flow": "flowSSaraPomSMartaMix"
         },
         {
-          "name": "REMSSaraPomSMarta",
+          "name": "REMSSaraPomSMartaSub",
             "type": "link",
             "max_flow": "REMSSaraPomSMarta",
             "cost": 100
         },
         {
-          "name": "REMSSaraPomSMartaSub",
+          "name": "REMSSaraPomSMartaSup",
             "type": "link",
-            "max_flow": "REMSSaraPomSMarta",
+            "max_flow": "REMSSaraPomSMartaSup",
             "cost": 100
         },
         {
@@ -488,15 +482,15 @@
           "max_flow": "flowBellavistaMix"
         },
         {
-          "name": "REMBellavista",
+          "name": "REMBellavistaSub",
             "type": "link",
-            "max_flow": "REMBellavista",
+            "max_flow": "REMBellavistaSub",
             "cost": 100
         },
         {
-          "name": "REMBellavistaSub",
+          "name": "REMBellavistaSup",
             "type": "link",
-            "max_flow": "REMBellavista",
+            "max_flow": "REMBellavistaSup",
             "cost": 100
         },
         {
@@ -524,15 +518,15 @@
           "max_flow": "flowLilahueMoreiraMix"
         },
         {
-          "name": "REMLilahueMoreira",
+          "name": "REMLilahueMoreiraSub",
             "type": "link",
-            "max_flow": "REMLilahueMoreira",
+            "max_flow": "REMLilahueMoreiraSub",
             "cost": 100
         },
         {
-          "name": "REMLilahueMoreiraSub",
+          "name": "REMLilahueMoreiraSup",
             "type": "link",
-            "max_flow": "REMLilahueMoreira",
+            "max_flow": "REMLilahueMoreiraSup",
             "cost": 100
         },
         {
@@ -560,15 +554,15 @@
           "max_flow": "flowMonteBlancoBMix"
         },
         {
-          "name": "REMMonteBlancoB",
+          "name": "REMMonteBlancoBSub",
             "type": "link",
-            "max_flow": "REMMonteBlancoB",
+            "max_flow": "REMMonteBlancoBSub",
             "cost": 100
         },
         {
-          "name": "REMMonteBlancoBSub",
+          "name": "REMMonteBlancoBSup",
             "type": "link",
-            "max_flow": "REMMonteBlancoB",
+            "max_flow": "REMMonteBlancoBSup",
             "cost": 100
         },
         {
@@ -1825,33 +1819,38 @@
       ["TUCLSM","FRMuticura"],
       ["FRMuticura","MuticuraSup"],
       ["FRMuticura", "MuticuraMix"],
-      ["FRMuticura","REMMuticura"],
-      ["REMMuticura","REMMuticuraSub"],
+      ["FRMuticura","REMMuticuraSub"],
+      ["FRMuticura","REMMuticuraSup"],
+      ["REMMuticuraSup","bocatoma11"],
       ["bocatoma10", "bocatoma11"],
       ["bocatoma11","TUCSPS"],
       ["TUCSPS","SSaraPomSMartaSup"],
       ["TUCSPS", "SSaraPomSMartaMix"],
-      ["TUCSPS","REMSSaraPomSMarta"],
-      ["REMSSaraPomSMarta","REMSSaraPomSMartaSub"],
+      ["TUCSPS","REMSSaraPomSMartaSub"],
+      ["TUCSPS","REMSSaraPomSMartaSup"],
+      ["REMSSaraPomSMartaSup","bocatoma12"],
       ["bocatoma11", "bocatoma12"],
       ["bocatoma12","FRBellavista"],
       ["FRBellavista","BellavistaSup"],
       ["FRBellavista", "BellavistaMix"],
-      ["FRBellavista","REMBellavista"],
-      ["REMBellavista","REMBellavistaSub"],
+      ["FRBellavista","REMBellavistaSub"],
+      ["FRBellavista","REMBellavistaSup"],
+      ["REMBellavistaSup","bocatoma13"],
       ["bocatoma12", "bocatoma13"],
       ["bocatoma13", "TUCMORLIL"],
       ["TUCMORLIL","LilahueMoreiraSup"],
       ["TUCMORLIL", "LilahueMoreiraMix"],
-      ["TUCMORLIL","REMLilahueMoreira"],
-      ["REMLilahueMoreira","REMLilahueMoreiraSub"],
+      ["TUCMORLIL","REMLilahueMoreiraSub"],
+      ["TUCMORLIL","REMLilahueMoreiraSup"],
+      ["REMLilahueMoreiraSup","bocatoma13"],
       ["bocatoma13", "bocatoma14"],
       ["bocatoma14","TUCMBPOMLC"],
       ["TUCMBPOMLC","FRMonteBlancoB"],
       ["FRMonteBlancoB","MonteBlancoBSup"],
       ["FRMonteBlancoB", "MonteBlancoBMix"],
-      ["FRMonteBlancoB","REMMonteBlancoB"],
-      ["REMMonteBlancoB","REMMonteBlancoBSub"],
+      ["FRMonteBlancoB","REMMonteBlancoBSub"],
+      ["FRMonteBlancoB","REMMonteBlancoBSup"],
+      ["REMMonteBlancoBSup","bocatoma15"],
       ["TUCMBPOMLC","FRPomuyetoBajoA"],
       ["FRPomuyetoBajoA","PomuyetoBajoASup"],
       ["FRPomuyetoBajoA", "PomuyetoBajoAMix"],
@@ -2214,7 +2213,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "JFRVirguinZemita":
       {
@@ -2268,7 +2267,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "flowSACCSMix": 
       {
@@ -2276,7 +2275,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "flowRanchilloGPSup": 
       {
@@ -2284,7 +2283,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "flowRanchilloGPMix": 
       {
@@ -2292,7 +2291,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "RanchilloGP":
       {
@@ -2344,7 +2343,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "flowSanPedroMix": 
           {
@@ -2352,7 +2351,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "SanPedro":
           {
@@ -2406,7 +2405,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.014285714285714285]
+                  0.00014285714285714285]
             },
             "flowArrauNiquenMix": 
             {
@@ -2414,7 +2413,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.014285714285714285]
+                  0.00014285714285714285]
             },
             "ArrauNiquen":
             {
@@ -2468,7 +2467,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.014285714285714285]
+                    0.00014285714285714285]
               },
               "flowLurinSilvaMix": 
               {
@@ -2476,7 +2475,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.014285714285714285]
+                    0.00014285714285714285]
               },
               "LurinSilva":
               {
@@ -2529,7 +2528,7 @@
                 "agg_func": "product",
                 "parameters": [
                       "FlowNubleSanFabian",
-                      0.014285714285714285]
+                      0.00014285714285714285]
                 },
                 "flowMuticuraMix": 
                 {
@@ -2537,7 +2536,7 @@
                 "agg_func": "product",
                 "parameters": [
                       "FlowNubleSanFabian",
-                      0.014285714285714285]
+                      0.00014285714285714285]
                 },
                 "Muticura":
                 {
@@ -2607,7 +2606,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.014285714285714285]
+              0.00014285714285714285]
         },
         "flowSSaraPomSMartaMix": 
         {
@@ -2615,7 +2614,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.014285714285714285]
+              0.00014285714285714285]
         },
         "SSaraPomSMarta":
         {
@@ -2685,7 +2684,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.014285714285714285]
+                  0.00014285714285714285]
             },
             "flowBellavistaMix": 
             {
@@ -2693,7 +2692,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.014285714285714285]
+                  0.00014285714285714285]
             },
             "Bellavista":
             {
@@ -2763,7 +2762,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "flowLilahueMoreiraMix": 
       {
@@ -2771,7 +2770,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "LilahueMoreira":
       {
@@ -2841,7 +2840,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.014285714285714285]
+              0.00014285714285714285]
         },
         "flowMonteBlancoBMix": 
         {
@@ -2849,7 +2848,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.014285714285714285]
+              0.00014285714285714285]
         },
         "MonteBlancoB":
         {
@@ -2919,7 +2918,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "flowPomuyetoBajoAMix": 
           {
@@ -2927,7 +2926,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "PomuyetoBajoA":
           {
@@ -2997,7 +2996,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.014285714285714285]
+                  0.00014285714285714285]
             },
             "flowPomuyetoBajoBMix": 
             {
@@ -3005,7 +3004,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.014285714285714285]
+                  0.00014285714285714285]
             },
             "PomuyetoBajoB":
             {
@@ -3075,7 +3074,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "flowLasDumasMix": 
           {
@@ -3083,7 +3082,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "LasDumas":
           {
@@ -3153,7 +3152,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "flowQuileltoMix": 
           {
@@ -3161,7 +3160,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "Quilelto":
           {
@@ -3231,7 +3230,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.014285714285714285]
+                  0.00014285714285714285]
             },
             "flowMBFerradaMix": 
             {
@@ -3239,7 +3238,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.014285714285714285]
+                  0.00014285714285714285]
             },
             "MBFerrada":
             {
@@ -3310,7 +3309,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.014285714285714285]
+              0.00014285714285714285]
         },
         "flowStaRosaNMix": 
         {
@@ -3318,7 +3317,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.014285714285714285]
+              0.00014285714285714285]
         },
         "StaRosaN":
         {
@@ -3389,7 +3388,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "flowMBMendezMix": 
           {
@@ -3397,7 +3396,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "MBMendez":
           {
@@ -3468,7 +3467,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.014285714285714285]
+                  0.00014285714285714285]
             },
             "flowElPenonMix": 
             {
@@ -3476,7 +3475,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.014285714285714285]
+                  0.00014285714285714285]
             },
             "ElPenon":
             {
@@ -3547,7 +3546,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.014285714285714285]
+                    0.00014285714285714285]
               },
               "flowAlazanMix": 
               {
@@ -3555,7 +3554,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.014285714285714285]
+                    0.00014285714285714285]
               },
               "Alazan":
               {
@@ -3610,7 +3609,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "flowRelocaMix": 
           {
@@ -3618,7 +3617,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "Reloca":
           {
@@ -3689,7 +3688,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "flowRomeralMix": 
       {
@@ -3697,7 +3696,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "Romeral":
       {
@@ -3752,7 +3751,7 @@
   "agg_func": "product",
   "parameters": [
         "FlowNubleSanFabian",
-        0.014285714285714285]
+        0.00014285714285714285]
   },
   "flowSanLuisCMix": 
   {
@@ -3760,7 +3759,7 @@
   "agg_func": "product",
   "parameters": [
         "FlowNubleSanFabian",
-        0.014285714285714285]
+        0.00014285714285714285]
   },
   "SanLuisC":
   {
@@ -3823,7 +3822,7 @@
   "agg_func": "product",
   "parameters": [
         "FlowNubleSanFabian",
-        0.014285714285714285]
+        0.00014285714285714285]
   },
   "flowQuinquehuaMix": 
   {
@@ -3831,7 +3830,7 @@
   "agg_func": "product",
   "parameters": [
         "FlowNubleSanFabian",
-        0.014285714285714285]
+        0.00014285714285714285]
   },
   "Quinquehua":
   {
@@ -3886,7 +3885,7 @@
   "agg_func": "product",
   "parameters": [
         "FlowNubleSanFabian",
-        0.014285714285714285]
+        0.00014285714285714285]
   },
   "flowSantaRosaCatoMix": 
   {
@@ -3894,7 +3893,7 @@
   "agg_func": "product",
   "parameters": [
         "FlowNubleSanFabian",
-        0.014285714285714285]
+        0.00014285714285714285]
   },
   "SantaRosaCato":
   {
@@ -3965,7 +3964,7 @@
   "agg_func": "product",
   "parameters": [
         "FlowNubleSanFabian",
-        0.014285714285714285]
+        0.00014285714285714285]
   },
   "flowMonteBlancoLMix": 
   {
@@ -3973,7 +3972,7 @@
   "agg_func": "product",
   "parameters": [
         "FlowNubleSanFabian",
-        0.014285714285714285]
+        0.00014285714285714285]
   },
   "MonteBlancoL":
   {
@@ -4044,7 +4043,7 @@
     "agg_func": "product",
     "parameters": [
           "FlowNubleSanFabian",
-          0.014285714285714285]
+          0.00014285714285714285]
     },
     "flowMonteBlancoJMix": 
     {
@@ -4052,7 +4051,7 @@
     "agg_func": "product",
     "parameters": [
           "FlowNubleSanFabian",
-          0.014285714285714285]
+          0.00014285714285714285]
     },
     "MonteBlancoJ":
     {
@@ -4123,7 +4122,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "flowStaRitaMix": 
       {
@@ -4131,7 +4130,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "StaRita":
       {
@@ -4186,7 +4185,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "flowDadincoMix": 
       {
@@ -4194,7 +4193,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "Dadinco":
       {
@@ -4257,7 +4256,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "flowSanJoseSMix": 
       {
@@ -4265,7 +4264,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "SanJoseS":
       {
@@ -4336,7 +4335,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.014285714285714285]
+              0.00014285714285714285]
         },
         "flowCapillaCoxMix": 
         {
@@ -4344,7 +4343,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.014285714285714285]
+              0.00014285714285714285]
         },
         "CapillaCox":
         {
@@ -4415,7 +4414,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "flowCapillaNMix": 
           {
@@ -4423,7 +4422,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.014285714285714285]
+                0.00014285714285714285]
           },
           "CapillaN":
           {
@@ -4494,7 +4493,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.014285714285714285]
+                  0.00014285714285714285]
             },
             "flowSanJoseNMix": 
             {
@@ -4502,7 +4501,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.014285714285714285]
+                  0.00014285714285714285]
             },
             "FRSanJoseN": 
             {
@@ -4565,7 +4564,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.014285714285714285]
+                    0.00014285714285714285]
               },
               "flowArancibiaMix": 
               {
@@ -4573,7 +4572,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.014285714285714285]
+                    0.00014285714285714285]
               },
               "Arancibia":
               {
@@ -4637,7 +4636,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "flowRinconadaCMix": 
       {
@@ -4645,7 +4644,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.014285714285714285]
+            0.00014285714285714285]
       },
       "RinconadaC":
       {
@@ -4715,7 +4714,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.014285714285714285]
+              0.00014285714285714285]
         },
         "flowStaLauraMix": 
         {
@@ -4723,7 +4722,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.014285714285714285]
+              0.00014285714285714285]
         },
         "StaLaura":
         {
@@ -4778,7 +4777,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.014285714285714285]
+              0.00014285714285714285]
         },
         "flowLaPalmaMix": 
         {
@@ -4786,7 +4785,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.014285714285714285]
+              0.00014285714285714285]
         },
         "LaPalma":
         {

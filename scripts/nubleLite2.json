@@ -96,13 +96,13 @@
         },
         {
           "name":"REMGYM",
-          "type": "Output",
+          "type": "link",
           "cost": -100,
           "max_flow": "REMGYM"
         },
         {
           "name":"REMGYMSub",
-          "type": "Input",
+          "type": "link",
           "cost": -100,
           "max_flow": "REMGYM"
         },
@@ -150,13 +150,13 @@
         },
         {
           "name":"REMJFRVirguinZemita",
-          "type": "Output",
+          "type": "link",
           "cost": -100,
           "max_flow": "REMJFRVirguinZemita"
         },
         {
           "name":"REMJFRVirguinZemitaSub",
-          "type": "Input",
+          "type": "link",
           "cost": -100,
           "max_flow": "REMJFRVirguinZemita"
         },
@@ -198,13 +198,13 @@
         },
         {
           "name": "REMMunicipal",
-          "type": "output",
+          "type": "link",
           "max_flow":"REMMunicipal",
           "cost": 100
         },
         {
           "name": "REMMunicipalSub",
-          "type": "input",
+          "type": "link",
           "max_flow":"REMMunicipal",
           "cost": 100
         },  
@@ -228,13 +228,13 @@
         },
         {
           "name": "REMSACCS",
-          "type": "output",
+          "type": "link",
           "max_flow":"REMSACCS",
           "cost": 100
         },
         {
           "name": "REMSACCSSub",
-          "type": "input",
+          "type": "link",
           "max_flow":"REMSACCS",
           "cost": 100
         },   
@@ -268,13 +268,13 @@
         },
         {
           "name": "REMRanchilloGP",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMRanchilloGP",
             "cost": 100
         },
         {
           "name": "REMRanchilloGPSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMRanchilloGP",
             "cost": 100
         },
@@ -298,13 +298,13 @@
         },
         {
           "name": "REMSanPedro",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMSanPedro",
             "cost": 100
         },
         {
           "name": "REMSanPedroSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMSanPedro",
             "cost": 100
         },
@@ -334,13 +334,13 @@
         },
         {
           "name": "REMArrauNiquen",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMArrauNiquen",
             "cost": 100
         },
         {
           "name": "REMArrauNiquenSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMArrauNiquen",
             "cost": 100
         },
@@ -375,13 +375,13 @@
         },
         {
           "name": "REMLurinSilva",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMLurinSilva",
             "cost": 100
         },
         {
           "name": "REMLurinSilvaSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMLurinSilva",
             "cost": 100
         },
@@ -411,25 +411,19 @@
         },
         {
           "name": "REMMuticura",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMMuticura",
             "cost": 100
         },
         {
-          "name": "REMMuticuraSup",
-            "type": "input",
-            "max_flow": "REMMuticuraSup",
-            "cost": 100
-        },
-        {
           "name": "REMMuticuraSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMMuticuraSub",
             "cost": 100
         },
         {
           "name": "REMMuticuraSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMMuticura",
             "cost": 100
         },
@@ -459,19 +453,13 @@
         },
         {
           "name": "REMSSaraPomSMarta",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMSSaraPomSMarta",
             "cost": 100
         },
         {
-          "name": "REMSSaraPomSMartaSup",
-            "type": "input",
-            "max_flow": "REMSSaraPomSMartaSup",
-            "cost": 100
-        },
-        {
           "name": "REMSSaraPomSMartaSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMSSaraPomSMarta",
             "cost": 100
         },
@@ -501,19 +489,13 @@
         },
         {
           "name": "REMBellavista",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMBellavista",
             "cost": 100
         },
         {
-          "name": "REMBellavistaSup",
-            "type": "input",
-            "max_flow": "REMBellavistaSup",
-            "cost": 100
-        },
-        {
           "name": "REMBellavistaSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMBellavista",
             "cost": 100
         },
@@ -543,19 +525,13 @@
         },
         {
           "name": "REMLilahueMoreira",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMLilahueMoreira",
             "cost": 100
         },
         {
-          "name": "REMLilahueMoreiraSup",
-            "type": "input",
-            "max_flow": "REMLilahueMoreiraSup",
-            "cost": 100
-        },
-        {
           "name": "REMLilahueMoreiraSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMLilahueMoreira",
             "cost": 100
         },
@@ -585,19 +561,13 @@
         },
         {
           "name": "REMMonteBlancoB",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMMonteBlancoB",
             "cost": 100
         },
         {
-          "name": "REMMonteBlancoBSup",
-            "type": "input",
-            "max_flow": "REMMonteBlancoBSup",
-            "cost": 100
-        },
-        {
           "name": "REMMonteBlancoBSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMMonteBlancoB",
             "cost": 100
         },
@@ -627,19 +597,13 @@
         },
         {
           "name": "REMPomuyetoBajoA",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMPomuyetoBajoA",
             "cost": 100
         },
         {
-          "name": "REMPomuyetoBajoASup",
-            "type": "input",
-            "max_flow": "REMPomuyetoBajoASup",
-            "cost": 100
-        },
-        {
           "name": "REMPomuyetoBajoASub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMPomuyetoBajoA",
             "cost": 100
         },
@@ -669,19 +633,13 @@
         },
         {
           "name": "REMPomuyetoBajoB",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMPomuyetoBajoB",
             "cost": 100
         },
         {
-          "name": "REMPomuyetoBajoBSup",
-            "type": "input",
-            "max_flow": "REMPomuyetoBajoBSup",
-            "cost": 100
-        },
-        {
           "name": "REMPomuyetoBajoBSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMPomuyetoBajoB",
             "cost": 100
         },
@@ -711,19 +669,13 @@
         },
         {
           "name": "REMLasDumas",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMLasDumas",
             "cost": 100
         },
         {
-          "name": "REMLasDumasSup",
-            "type": "input",
-            "max_flow": "REMLasDumasSup",
-            "cost": 100
-        },
-        {
           "name": "REMLasDumasSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMLasDumas",
             "cost": 100
         },
@@ -753,19 +705,13 @@
         },
         {
           "name": "REMQuilelto",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMQuilelto",
             "cost": 100
         },
         {
-          "name": "REMQuileltoSup",
-            "type": "input",
-            "max_flow": "REMQuileltoSup",
-            "cost": 100
-        },
-        {
           "name": "REMQuileltoSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMQuilelto",
             "cost": 100
         },
@@ -795,19 +741,13 @@
         },
         {
           "name": "REMMBFerrada",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMMBFerrada",
             "cost": 100
         },
         {
-          "name": "REMMBFerradaSup",
-            "type": "input",
-            "max_flow": "REMMBFerradaSup",
-            "cost": 100
-        },
-        {
           "name": "REMMBFerradaSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMMBFerrada",
             "cost": 100
         },
@@ -837,19 +777,13 @@
         },
         {
           "name": "REMStaRosaN",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMStaRosaN",
             "cost": 100
         },
         {
-          "name": "REMStaRosaNSup",
-            "type": "input",
-            "max_flow": "REMStaRosaNSup",
-            "cost": 100
-        },
-        {
           "name": "REMStaRosaNSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMStaRosaN",
             "cost": 100
         },
@@ -879,19 +813,13 @@
         },
         {
           "name": "REMMBMendez",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMMBMendez",
             "cost": 100
         },
         {
-          "name": "REMMBMendezSup",
-            "type": "input",
-            "max_flow": "REMMBMendezSup",
-            "cost": 100
-        },
-        {
           "name": "REMMBMendezSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMMBMendez",
             "cost": 100
         },
@@ -921,19 +849,13 @@
         },
         {
           "name": "REMElPenon",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMElPenon",
             "cost": 100
         },
         {
-          "name": "REMElPenonSup",
-            "type": "input",
-            "max_flow": "REMElPenonSup",
-            "cost": 100
-        },
-        {
           "name": "REMElPenonSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMElPenon",
             "cost": 100
         },
@@ -957,13 +879,13 @@
         },
         {
           "name": "REMAlazan",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMAlazan",
             "cost": 100
         },
         {
           "name": "REMAlazanSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMAlazan",
             "cost": 100
         },
@@ -993,19 +915,13 @@
         },
         {
           "name": "REMReloca",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMReloca",
             "cost": 100
         },
         {
-          "name": "REMRelocaSup",
-            "type": "input",
-            "max_flow": "REMRelocaSup",
-            "cost": 100
-        },
-        {
           "name": "REMRelocaSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMReloca",
             "cost": 100
         },
@@ -1035,13 +951,13 @@
         },
         {
           "name": "REMRomeral",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMRomeral",
             "cost": 100
         },
         {
           "name": "REMRomeralSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMRomeral",
             "cost": 100
         },
@@ -1071,13 +987,13 @@
         },
         {
           "name": "REMSanLuisC",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMSanLuisC",
             "cost": 100
         },
         {
           "name": "REMSanLuisCSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMSanLuisC",
             "cost": 100
         },
@@ -1107,13 +1023,13 @@
         },
         {
           "name": "REMQuinquehua",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMQuinquehua",
             "cost": 100
         },
         {
           "name": "REMQuinquehuaSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMQuinquehua",
             "cost": 100
         },
@@ -1143,19 +1059,13 @@
         },
         {
           "name": "REMSantaRosaCato",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMSantaRosaCato",
             "cost": 100
         },
         {
-          "name": "REMSantaRosaCatoSup",
-            "type": "input",
-            "max_flow": "REMSantaRosaCatoSup",
-            "cost": 100
-        },
-        {
           "name": "REMSantaRosaCatoSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMSantaRosaCato",
             "cost": 100
         },
@@ -1185,19 +1095,13 @@
         },
         {
           "name": "REMMonteBlancoL",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMMonteBlancoL",
             "cost": 100
         },
         {
-          "name": "REMMonteBlancoLSup",
-            "type": "input",
-            "max_flow": "REMMonteBlancoLSup",
-            "cost": 100
-        },
-        {
           "name": "REMMonteBlancoLSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMMonteBlancoL",
             "cost": 100
         },
@@ -1227,19 +1131,13 @@
         },
         {
           "name": "REMMonteBlancoJ",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMMonteBlancoJ",
             "cost": 100
         },
         {
-          "name": "REMMonteBlancoJSup",
-            "type": "input",
-            "max_flow": "REMMonteBlancoJSup",
-            "cost": 100
-        },
-        {
           "name": "REMMonteBlancoJSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMMonteBlancoJ",
             "cost": 100
         },
@@ -1269,13 +1167,13 @@
         },
         {
           "name": "REMStaRita",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMStaRita",
             "cost": 100
         },
         {
           "name": "REMStaRitaSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMStaRita",
             "cost": 100
         },
@@ -1305,13 +1203,13 @@
         },
         {
           "name": "REMDadinco",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMDadinco",
             "cost": 100
         },
         {
           "name": "REMDadincoSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMDadinco",
             "cost": 100
         },
@@ -1341,19 +1239,13 @@
         },
         {
           "name": "REMSanJoseS",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMSanJoseS",
             "cost": 100
         },
         {
-          "name": "REMSanJoseSSup",
-            "type": "input",
-            "max_flow": "REMSanJoseSSup",
-            "cost": 100
-        },
-        {
           "name": "REMSanJoseSSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMSanJoseS",
             "cost": 100
         },
@@ -1383,19 +1275,13 @@
         },
         {
           "name": "REMCapillaCox",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMCapillaCox",
             "cost": 100
         },
         {
-          "name": "REMCapillaCoxSup",
-            "type": "input",
-            "max_flow": "REMCapillaCoxSup",
-            "cost": 100
-        },
-        {
           "name": "REMCapillaCoxSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMCapillaCox",
             "cost": 100
         },
@@ -1425,19 +1311,13 @@
         },
         {
           "name": "REMCapillaN",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMCapillaN",
             "cost": 100
         },
         {
-          "name": "REMCapillaNSup",
-            "type": "input",
-            "max_flow": "REMCapillaNSup",
-            "cost": 100
-        },
-        {
           "name": "REMCapillaNSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMCapillaN",
             "cost": 100
         },
@@ -1461,13 +1341,13 @@
         },
         {
           "name":"REMSanJoseN",
-          "type": "Output",
+          "type": "link",
           "cost": -100,
           "max_flow": "REMSanJoseN"
         },
         {
           "name":"REMSanJoseNSub",
-          "type": "input",
+          "type": "link",
           "cost": -100,
           "max_flow": "REMSanJoseN"
         },
@@ -1503,13 +1383,13 @@
         },
         {
           "name": "REMArancibia",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMArancibia",
             "cost": 100
         },
         {
           "name": "REMArancibiaSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMArancibia",
             "cost": 100
         },
@@ -1539,19 +1419,13 @@
         },
         {
           "name": "REMRinconadaC",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMRinconadaC",
             "cost": 100
         },
         {
-          "name": "REMRinconadaCSup",
-            "type": "input",
-            "max_flow": "REMRinconadaCSup",
-            "cost": 100
-        },
-        {
           "name": "REMRinconadaCSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMRinconadaC",
             "cost": 100
         },
@@ -1581,13 +1455,13 @@
         },
         {
           "name": "REMStaLaura",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMStaLaura",
             "cost": 100
         },
         {
           "name": "REMStaLauraSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMStaLaura",
             "cost": 100
         },
@@ -1617,13 +1491,13 @@
         },
         {
           "name": "REMLaPalma",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMLaPalma",
             "cost": 100
         },
         {
           "name": "REMLaPalmaSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMLaPalma",
             "cost": 100
         },
@@ -1786,7 +1660,7 @@
         },
         {
           "name": "REMChacayalO",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMChacayalO",
             "cost": 100
         },
@@ -1798,19 +1672,19 @@
         }, 
         {
           "name": "REMChacayalOSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMChacayalO",
             "cost": 100
         },
         {
           "name": "REMChacayalP",
-            "type": "output",
+            "type": "link",
             "max_flow": "REMChacayalP",
             "cost": 100
         },
         {
           "name": "REMChacayalPSub",
-            "type": "input",
+            "type": "link",
             "max_flow": "REMChacayalP",
             "cost": 100
         },
@@ -1875,7 +1749,7 @@
         {
           "name": "rioNuble",
           "type": "output",
-          "cost":100
+          "cost":-100
         }   
     ],
     "edges": [
@@ -1892,6 +1766,7 @@
       ["FRGYM", "GreeneYMairaSup"],
       ["FRGYM", "GreeneYMairaMix"],
       ["FRGYM", "REMGYM"],
+      ["REMGYM", "REMGYMSub"],
       ["bocatoma3", "bocatoma4"],
       ["bocatoma4","TUCChacayal"],
       ["TUCChacayal","FRChacayalO"],
@@ -1899,215 +1774,234 @@
       ["FRChacayalO","ChacayalOSup"],
       ["FRChacayalO","ChacayalOMix"],
       ["FRChacayalO","REMChacayalO"],
+      ["REMChacayalO","REMChacayalOSub"],
       ["FRChacayalP", "ChacayalPSup"],
       ["FRChacayalP", "ChacayalPMix"],
       ["FRChacayalP", "REMChacayalP"],
+      ["REMChacayalP", "REMChacayalPSub"],
       ["bocatoma4", "bocatoma5"],
       ["bocatoma5", "FRMunicipal"],
       ["FRMunicipal", "MunicipalSup"],
       ["FRMunicipal", "MunicipalMix"],
       ["FRMunicipal", "REMMunicipal"],
+      ["REMMunicipal", "REMMunicipalSub"],
       ["bocatoma5", "bocatoma6"],
       ["bocatoma6","TUCJFR"],
       ["TUCJFR", "JFRVirguinZemitaMix"],
       ["TUCJFR", "JFRVirguinZemitaSup"],
       ["TUCJFR","REMJFRVirguinZemita"],
+      ["REMJFRVirguinZemita","REMJFRVirguinZemitaSub"],
       ["bocatoma6", "bocatoma7"],
       ["bocatoma7","TUCCSC"],
       ["TUCCSC","SACCSSup"],
       ["TUCCSC","SACCSMix"],
       ["TUCCSC","REMSACCS"],
+      ["REMSACCS","REMSACCSSub"],
       ["bocatoma7", "bocatoma8"],
       ["bocatoma8", "TUCRG"],
       ["TUCRG","RanchilloGPSup"],
       ["TUCRG", "RanchilloGPMix"],
       ["TUCRG","REMRanchilloGP"],
+      ["REMRanchilloGP","REMRanchilloGPSub"],
       ["bocatoma8", "bocatoma9"],
       ["bocatoma9", "TUCSA"],
       ["TUCSA","FRSanPedro"],
       ["FRSanPedro","SanPedroSup"],
       ["FRSanPedro", "SanPedroMix"],
       ["FRSanPedro","REMSanPedro"],
+      ["REMSanPedro","REMSanPedroSub"],
       ["TUCSA","FRArrauNiquen"],
       ["FRArrauNiquen","ArrauNiquenSup"],
       ["FRArrauNiquen", "ArrauNiquenMix"],
       ["FRArrauNiquen","REMArrauNiquen"],
+      ["REMArrauNiquen","REMArrauNiquenSub"],
       ["bocatoma9", "bocatoma10"],
       ["bocatoma10", "TUCLSM"],
       ["TUCLSM","FRLurinSilva"],
       ["FRLurinSilva","LurinSilvaSup"],
       ["FRLurinSilva", "LurinSilvaMix"],
       ["FRLurinSilva","REMLurinSilva"],
+      ["REMLurinSilva","REMLurinSilvaSub"],
       ["TUCLSM","FRMuticura"],
       ["FRMuticura","MuticuraSup"],
       ["FRMuticura", "MuticuraMix"],
       ["FRMuticura","REMMuticura"],
-      ["REMMuticuraSup","bocatoma11"],
+      ["REMMuticura","REMMuticuraSub"],
       ["bocatoma10", "bocatoma11"],
       ["bocatoma11","TUCSPS"],
       ["TUCSPS","SSaraPomSMartaSup"],
       ["TUCSPS", "SSaraPomSMartaMix"],
       ["TUCSPS","REMSSaraPomSMarta"],
-      ["REMSSaraPomSMartaSup","bocatoma12"],
+      ["REMSSaraPomSMarta","REMSSaraPomSMartaSub"],
       ["bocatoma11", "bocatoma12"],
       ["bocatoma12","FRBellavista"],
       ["FRBellavista","BellavistaSup"],
       ["FRBellavista", "BellavistaMix"],
       ["FRBellavista","REMBellavista"],
-      ["REMBellavistaSup","bocatoma13"],
+      ["REMBellavista","REMBellavistaSub"],
       ["bocatoma12", "bocatoma13"],
       ["bocatoma13", "TUCMORLIL"],
       ["TUCMORLIL","LilahueMoreiraSup"],
       ["TUCMORLIL", "LilahueMoreiraMix"],
       ["TUCMORLIL","REMLilahueMoreira"],
-      ["REMLilahueMoreiraSup","bocatoma14"],
+      ["REMLilahueMoreira","REMLilahueMoreiraSub"],
       ["bocatoma13", "bocatoma14"],
       ["bocatoma14","TUCMBPOMLC"],
       ["TUCMBPOMLC","FRMonteBlancoB"],
       ["FRMonteBlancoB","MonteBlancoBSup"],
       ["FRMonteBlancoB", "MonteBlancoBMix"],
       ["FRMonteBlancoB","REMMonteBlancoB"],
-      ["REMMonteBlancoBSup","bocatoma14"],
+      ["REMMonteBlancoB","REMMonteBlancoBSub"],
       ["TUCMBPOMLC","FRPomuyetoBajoA"],
       ["FRPomuyetoBajoA","PomuyetoBajoASup"],
       ["FRPomuyetoBajoA", "PomuyetoBajoAMix"],
       ["FRPomuyetoBajoA","REMPomuyetoBajoA"],
-      ["REMPomuyetoBajoASup","bocatoma14"],
+      ["REMPomuyetoBajoA","REMPomuyetoBajoASub"],
       ["TUCMBPOMLC","FRPomuyetoBajoB"],
       ["FRPomuyetoBajoB","PomuyetoBajoBSup"],
       ["FRPomuyetoBajoB", "PomuyetoBajoBMix"],
       ["FRPomuyetoBajoB","REMPomuyetoBajoB"],
-      ["REMPomuyetoBajoBSup","bocatoma14"],
+      ["REMPomuyetoBajoB","REMPomuyetoBajoBSub"],
       ["bocatoma14", "bocatoma15"],
       ["bocatoma15","TUCbocatoma15"],
       ["TUCbocatoma15","FRLasDumas"],
       ["FRLasDumas","LasDumasSup"],
       ["FRLasDumas", "LasDumasMix"],
       ["FRLasDumas","REMLasDumas"],
-      ["REMLasDumasSup","bocatoma16"],
+      ["REMLasDumas","REMLasDumasSub"],
       ["TUCbocatoma15", "TUCQUIMBF"],
       ["TUCQUIMBF","FRQuilelto"],
       ["FRQuilelto","QuileltoSup"],
       ["FRQuilelto", "QuileltoMix"],
       ["FRQuilelto","REMQuilelto"],
-      ["REMQuileltoSup","bocatoma16"],
+      ["REMQuilelto","REMQuileltoSub"],
       ["TUCQUIMBF","FRMBFerrada"],
       ["FRMBFerrada","MBFerradaSup"],
       ["FRMBFerrada", "MBFerradaMix"],
       ["FRMBFerrada","REMMBFerrada"],
-      ["REMMBFerradaSup","bocatoma16"],
+      ["REMMBFerrada","REMMBFerradaSub"],
       ["TUCbocatoma15","FRStaRosaN"],
       ["FRStaRosaN","StaRosaNSup"],
       ["FRStaRosaN", "StaRosaNMix"],
       ["FRStaRosaN","REMStaRosaN"],
-      ["REMStaRosaNSup","bocatoma16"],
+      ["REMStaRosaN","REMStaRosaNSub"],
       ["TUCbocatoma15","FRMBMendez"],
       ["FRMBMendez","MBMendezSup"],
       ["FRMBMendez", "MBMendezMix"],
       ["FRMBMendez","REMMBMendez"],
-      ["REMMBMendezSup","bocatoma16"],
+      ["REMMBMendez","REMMBMendezSub"],
       ["TUCbocatoma15","FRElPenon"],
       ["FRElPenon","ElPenonSup"],
       ["FRElPenon", "ElPenonMix"],
       ["FRElPenon","REMElPenon"],
-      ["REMElPenonSup","bocatoma16"],
+      ["REMElPenon","REMElPenonSub"],
       ["bocatoma15", "bocatoma16"],
       ["bocatoma16","FRAlazan"],
       ["FRAlazan", "AlazanMix"],
       ["FRAlazan","REMAlazan"],
+      ["REMAlazan","REMAlazanSub"],
       ["bocatoma16", "bocatoma17"],
       ["bocatoma17","FRReloca"],
       ["FRReloca","RelocaSup"],
       ["FRReloca", "RelocaMix"],
       ["FRReloca","REMReloca"],
-      ["REMRelocaSup","bocatoma18"],
+      ["REMReloca","REMRelocaSub"],
       ["bocatoma17", "bocatoma18"],
       ["bocatoma18","FRRomeral"],
       ["FRRomeral","RomeralSup"],
       ["FRRomeral", "RomeralMix"],
       ["FRRomeral","REMRomeral"],
+      ["REMRomeral","REMRomeralSub"],
       ["bocatoma18", "bocatoma19"],
       ["bocatoma19","FRSanLuisC"],
       ["FRSanLuisC","SanLuisCSup"],
       ["FRSanLuisC", "SanLuisCMix"],
       ["FRSanLuisC","REMSanLuisC"],
+      ["REMSanLuisC","REMSanLuisCSub"],
       ["bocatoma19", "bocatoma20"],
       ["bocatoma19","FRQuinquehua"],
       ["FRQuinquehua","QuinquehuaSup"],
       ["FRQuinquehua", "QuinquehuaMix"],
       ["FRQuinquehua","REMQuinquehua"],
+      ["REMQuinquehua","REMQuinquehuaSub"],
       ["bocatoma20", "bocatoma21"],
       ["bocatoma21","FRSantaRosaCato"],
       ["FRSantaRosaCato","SantaRosaCatoSup"],
       ["FRSantaRosaCato", "SantaRosaCatoMix"],
       ["FRSantaRosaCato","REMSantaRosaCato"],
-      ["REMSantaRosaCatoSup","bocatoma22"],
+      ["REMSantaRosaCato","REMSantaRosaCatoSub"],
       ["bocatoma21", "bocatoma22"],
       ["bocatoma22","FRMonteBlancoL"],
       ["FRMonteBlancoL","MonteBlancoLSup"],
       ["FRMonteBlancoL", "MonteBlancoLMix"],
       ["FRMonteBlancoL","REMMonteBlancoL"],
-      ["REMMonteBlancoLSup","bocatoma23"],
+      ["REMMonteBlancoL","REMMonteBlancoLSub"],
       ["bocatoma22", "bocatoma23"],
       ["bocatoma23","FRMonteBlancoJ"],
       ["FRMonteBlancoJ","MonteBlancoJSup"],
       ["FRMonteBlancoJ", "MonteBlancoJMix"],
       ["FRMonteBlancoJ","REMMonteBlancoJ"],
-      ["REMMonteBlancoJSup","bocatoma24"],
+      ["REMMonteBlancoJ","REMMonteBlancoJSub"],
       ["bocatoma23", "bocatoma24"],
       ["bocatoma24","FRStaRita"],
       ["FRStaRita","StaRitaSup"],
       ["FRStaRita", "StaRitaMix"],
       ["FRStaRita","REMStaRita"],
+      ["REMStaRita","REMStaRitaSub"],
       ["bocatoma24", "bocatoma25"],
       ["bocatoma25","FRDadinco"],
       ["FRDadinco","DadincoSup"],
       ["FRDadinco", "DadincoMix"],
       ["FRDadinco","REMDadinco"],
+      ["REMDadinco","REMDadincoSub"],
       ["bocatoma25", "bocatoma26"],
       ["bocatoma26","TUCSnJoseCox"],
       ["TUCSnJoseCox","FRSanJoseS"],
       ["FRSanJoseS","SanJoseSSup"],
       ["FRSanJoseS", "SanJoseSMix"],
       ["FRSanJoseS","REMSanJoseS"],
-      ["REMSanJoseSSup","bocatoma27"],
+      ["REMSanJoseS","REMSanJoseSSub"],
       ["TUCSnJoseCox","FRCapillaCox"],
       ["FRCapillaCox","CapillaCoxSup"],
       ["FRCapillaCox", "CapillaCoxMix"],
       ["FRCapillaCox","REMCapillaCox"],
-      ["REMCapillaCoxSup","bocatoma27"],
+      ["REMCapillaCox","REMCapillaCoxSub"],
       ["bocatoma26", "bocatoma27"],
       ["bocatoma27","FRCapillaN"],
       ["FRCapillaN","CapillaNSup"],
       ["FRCapillaN", "CapillaNMix"],
       ["FRCapillaN","REMCapillaN"],
-      ["REMCapillaNSup","bocatoma28"],
+      ["REMCapillaN","REMCapillaNSub"],
       ["bocatoma27", "bocatoma28"],
       ["bocatoma28","FRSanJoseN"],
       ["FRSanJoseN", "SanJoseNSup"],
       ["FRSanJoseN", "SanJoseNMix"],
       ["FRSanJoseN","REMSanJoseN"],
+      ["REMSanJoseN","REMSanJoseNSub"],
       ["bocatoma28", "bocatoma29"],
       ["bocatoma29","FRRinconadaC"],
       ["FRRinconadaC","RinconadaCSup"],
       ["FRRinconadaC", "RinconadaCMix"],
       ["FRRinconadaC","REMRinconadaC"],
-      ["REMRinconadaCSup","bocatoma30"],
+      ["REMRinconadaC","REMRinconadaCSub"],
       ["bocatoma29", "bocatoma30"],
       ["bocatoma30","FRArancibia"],
       ["FRArancibia","ArancibiaSup"],
       ["FRArancibia", "ArancibiaMix"],
       ["FRArancibia","REMArancibia"],
+      ["REMArancibia","REMArancibiaSub"],
       ["bocatoma30", "bocatoma31"],
       ["bocatoma31","FRStaLaura"],
       ["FRStaLaura","StaLauraSup"],
       ["FRStaLaura", "StaLauraMix"],
       ["FRStaLaura","REMStaLaura"],
+      ["REMStaLaura","REMStaLauraSub"],
       ["bocatoma31","bocatoma32"],
       ["bocatoma32","FRLaPalma"],
       ["FRLaPalma","LaPalmaSup"],
       ["FRLaPalma", "LaPalmaMix"],
       ["FRLaPalma","REMLaPalma"],
+      ["REMLaPalma","REMLaPalmaSub"],
       ["bocatoma32", "rioNuble"]
     ],
      "recorders": {

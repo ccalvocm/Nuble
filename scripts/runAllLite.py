@@ -134,7 +134,7 @@ recargas,descargas)
     # en vez de devolver los excedentes al río, demandar menos
 
         # correr modelo
-    model.solver.name="glpk-edge"
+    model.solver.name="glpk"
     # run the model and see if it works
     start_time = time.time()
     run_stats = model.run()

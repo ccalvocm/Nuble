@@ -590,15 +590,15 @@
           "max_flow": "flowPomuyetoBajoAMix"
         },
         {
-          "name": "REMPomuyetoBajoA",
+          "name": "REMPomuyetoBajoASub",
             "type": "link",
-            "max_flow": "REMPomuyetoBajoA",
+            "max_flow": "REMPomuyetoBajoASub",
             "cost": 100
         },
         {
-          "name": "REMPomuyetoBajoASub",
+          "name": "REMPomuyetoBajoASup",
             "type": "link",
-            "max_flow": "REMPomuyetoBajoA",
+            "max_flow": "REMPomuyetoBajoASup",
             "cost": 100
         },
         {
@@ -626,15 +626,15 @@
           "max_flow": "flowPomuyetoBajoBMix"
         },
         {
-          "name": "REMPomuyetoBajoB",
+          "name": "REMPomuyetoBajoBSub",
             "type": "link",
-            "max_flow": "REMPomuyetoBajoB",
+            "max_flow": "REMPomuyetoBajoBSub",
             "cost": 100
         },
         {
-          "name": "REMPomuyetoBajoBSub",
+          "name": "REMPomuyetoBajoBSup",
             "type": "link",
-            "max_flow": "REMPomuyetoBajoB",
+            "max_flow": "REMPomuyetoBajoBSup",
             "cost": 100
         },
         {
@@ -662,15 +662,15 @@
           "max_flow": "flowLasDumasMix"
         },
         {
-          "name": "REMLasDumas",
+          "name": "REMLasDumasSup",
             "type": "link",
-            "max_flow": "REMLasDumas",
+            "max_flow": "REMLasDumasSup",
             "cost": 100
         },
         {
           "name": "REMLasDumasSub",
             "type": "link",
-            "max_flow": "REMLasDumas",
+            "max_flow": "REMLasDumasSub",
             "cost": 100
         },
         {
@@ -698,15 +698,15 @@
           "max_flow": "flowQuileltoMix"
         },
         {
-          "name": "REMQuilelto",
+          "name": "REMQuileltoSub",
             "type": "link",
-            "max_flow": "REMQuilelto",
+            "max_flow": "REMQuileltoSub",
             "cost": 100
         },
         {
-          "name": "REMQuileltoSub",
+          "name": "REMQuileltoSup",
             "type": "link",
-            "max_flow": "REMQuilelto",
+            "max_flow": "REMQuileltoSup",
             "cost": 100
         },
         {
@@ -1854,26 +1854,30 @@
       ["TUCMBPOMLC","FRPomuyetoBajoA"],
       ["FRPomuyetoBajoA","PomuyetoBajoASup"],
       ["FRPomuyetoBajoA", "PomuyetoBajoAMix"],
-      ["FRPomuyetoBajoA","REMPomuyetoBajoA"],
-      ["REMPomuyetoBajoA","REMPomuyetoBajoASub"],
+      ["FRPomuyetoBajoA","REMPomuyetoBajoASub"],
+      ["FRPomuyetoBajoA","REMPomuyetoBajoASup"],
+      ["REMPomuyetoBajoASup","bocatoma15"],
       ["TUCMBPOMLC","FRPomuyetoBajoB"],
       ["FRPomuyetoBajoB","PomuyetoBajoBSup"],
       ["FRPomuyetoBajoB", "PomuyetoBajoBMix"],
-      ["FRPomuyetoBajoB","REMPomuyetoBajoB"],
-      ["REMPomuyetoBajoB","REMPomuyetoBajoBSub"],
+      ["FRPomuyetoBajoB","REMPomuyetoBajoBSub"],
+      ["FRPomuyetoBajoB","REMPomuyetoBajoBSup"],
+      ["REMPomuyetoBajoBSup","bocatoma15"],
       ["bocatoma14", "bocatoma15"],
       ["bocatoma15","TUCbocatoma15"],
       ["TUCbocatoma15","FRLasDumas"],
       ["FRLasDumas","LasDumasSup"],
       ["FRLasDumas", "LasDumasMix"],
-      ["FRLasDumas","REMLasDumas"],
-      ["REMLasDumas","REMLasDumasSub"],
+      ["FRLasDumas","REMLasDumasSub"],
+      ["FRLasDumas","REMLasDumasSup"],
+      ["REMLasDumasSup","bocatoma16"],
       ["TUCbocatoma15", "TUCQUIMBF"],
       ["TUCQUIMBF","FRQuilelto"],
       ["FRQuilelto","QuileltoSup"],
       ["FRQuilelto", "QuileltoMix"],
-      ["FRQuilelto","REMQuilelto"],
-      ["REMQuilelto","REMQuileltoSub"],
+      ["FRQuilelto","REMQuileltoSub"],
+      ["FRQuilelto","REMQuileltoSup"],
+      ["REMQuileltoSup","bocatoma16"],
       ["TUCQUIMBF","FRMBFerrada"],
       ["FRMBFerrada","MBFerradaSup"],
       ["FRMBFerrada", "MBFerradaMix"],
@@ -3208,7 +3212,7 @@
             "parameters": 
             ["superhQuilelto",0]
             },
-            "REMQuileltoSup": 
+          "REMQuileltoSup": 
             {
             "type": "aggregated",
             "agg_func": "product",

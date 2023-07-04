@@ -145,7 +145,7 @@ recargas,descargas)
     print(run_stats)
 
     # bocatoma 3
-    print((model.nodes['NubleSanFabian'].flow-model.nodes["bocatoma3"].flow)/2)
+    print((model.nodes['NubleSanFabian'].flow-model.nodes["bocatoma3"].flow))
     #validar el balance de masa en canal Virguin
     #validar balance de masa en canal Collico
     print(model.nodes["CollicoSup"].flow)
@@ -157,6 +157,6 @@ recargas,descargas)
     print(model.nodes["BellavistaMix"].flow)
     print(model.nodes["FRBellavista"].flow)
     print(model.nodes["REMBellavistaSub"].flow)
-    print(model.nodes["deficitBellavista"].flow)
+    print(model.nodes["rioNuble"].flow)
 
 

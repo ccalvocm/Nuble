@@ -410,6 +410,12 @@
           "max_flow": "flowMuticuraMix"
         },
         {
+          "name": "REMMuticura",
+            "type": "link",
+            "max_flow": "REMMuticura",
+            "cost": 100
+        },
+        {
           "name": "REMMuticuraSub",
             "type": "link",
             "max_flow": "REMMuticuraSub",
@@ -446,9 +452,15 @@
           "max_flow": "flowSSaraPomSMartaMix"
         },
         {
-          "name": "REMSSaraPomSMartaSub",
+          "name": "REMSSaraPomSMarta",
             "type": "link",
             "max_flow": "REMSSaraPomSMarta",
+            "cost": 100
+        },
+        {
+          "name": "REMSSaraPomSMartaSub",
+            "type": "link",
+            "max_flow": "REMSSaraPomSMartaSub",
             "cost": 100
         },
         {
@@ -480,6 +492,12 @@
           "type": "Output",
           "cost": -100,
           "max_flow": "flowBellavistaMix"
+        },
+        {
+          "name": "REMBellavista",
+            "type": "link",
+            "max_flow": "REMBellavista",
+            "cost": 100
         },
         {
           "name": "REMBellavistaSub",
@@ -518,6 +536,12 @@
           "max_flow": "flowLilahueMoreiraMix"
         },
         {
+          "name": "REMLilahueMoreira",
+            "type": "link",
+            "max_flow": "REMLilahueMoreira",
+            "cost": 100
+        },
+        {
           "name": "REMLilahueMoreiraSub",
             "type": "link",
             "max_flow": "REMLilahueMoreiraSub",
@@ -552,6 +576,12 @@
           "type": "Output",
           "cost": -100,
           "max_flow": "flowMonteBlancoBMix"
+        },
+        {
+          "name": "REMMonteBlancoB",
+            "type": "link",
+            "max_flow": "REMMonteBlancoB",
+            "cost": 100
         },
         {
           "name": "REMMonteBlancoBSub",
@@ -590,6 +620,12 @@
           "max_flow": "flowPomuyetoBajoAMix"
         },
         {
+          "name": "REMPomuyetoBajoA",
+            "type": "link",
+            "max_flow": "REMPomuyetoBajoA",
+            "cost": 100
+        },
+        {
           "name": "REMPomuyetoBajoASub",
             "type": "link",
             "max_flow": "REMPomuyetoBajoASub",
@@ -624,6 +660,12 @@
           "type": "Output",
           "cost": -100,
           "max_flow": "flowPomuyetoBajoBMix"
+        },
+        {
+          "name": "REMPomuyetoBajoB",
+            "type": "link",
+            "max_flow": "REMPomuyetoBajoB",
+            "cost": 100
         },
         {
           "name": "REMPomuyetoBajoBSub",
@@ -662,6 +704,12 @@
           "max_flow": "flowLasDumasMix"
         },
         {
+          "name": "REMLasDumas",
+            "type": "link",
+            "max_flow": "REMLasDumas",
+            "cost": 100
+        },
+        {
           "name": "REMLasDumasSup",
             "type": "link",
             "max_flow": "REMLasDumasSup",
@@ -696,6 +744,12 @@
           "type": "Output",
           "cost": -100,
           "max_flow": "flowQuileltoMix"
+        },
+        {
+          "name": "REMQuilelto",
+            "type": "link",
+            "max_flow": "REMQuilelto",
+            "cost": 100
         },
         {
           "name": "REMQuileltoSub",
@@ -742,7 +796,13 @@
         {
           "name": "REMMBFerradaSub",
             "type": "link",
-            "max_flow": "REMMBFerrada",
+            "max_flow": "REMMBFerradaSub",
+            "cost": 100
+        },
+        {
+          "name": "REMMBFerradaSup",
+            "type": "link",
+            "max_flow": "REMMBFerradaSup",
             "cost": 100
         },
         {
@@ -776,9 +836,15 @@
             "cost": 100
         },
         {
+          "name": "REMStaRosaNSup",
+            "type": "link",
+            "max_flow": "REMStaRosaNSup",
+            "cost": 100
+        },
+        {
           "name": "REMStaRosaNSub",
             "type": "link",
-            "max_flow": "REMStaRosaN",
+            "max_flow": "REMStaRosaNSub",
             "cost": 100
         },
         {
@@ -812,9 +878,15 @@
             "cost": 100
         },
         {
+          "name": "REMMBMendezSup",
+            "type": "link",
+            "max_flow": "REMMBMendezSup",
+            "cost": 100
+        },
+        {
           "name": "REMMBMendezSub",
             "type": "link",
-            "max_flow": "REMMBMendez",
+            "max_flow": "REMMBMendezSub",
             "cost": 100
         },
         {
@@ -848,9 +920,15 @@
             "cost": 100
         },
         {
+          "name": "REMElPenonSup",
+            "type": "link",
+            "max_flow": "REMElPenonSup",
+            "cost": 100
+        },
+        {
           "name": "REMElPenonSub",
             "type": "link",
-            "max_flow": "REMElPenon",
+            "max_flow": "REMElPenonSub",
             "cost": 100
         },
         {
@@ -916,7 +994,13 @@
         {
           "name": "REMRelocaSub",
             "type": "link",
-            "max_flow": "REMReloca",
+            "max_flow": "REMRelocaSub",
+            "cost": 100
+        },
+        {
+          "name": "REMRelocaSup",
+            "type": "link",
+            "max_flow": "REMRelocaSup",
             "cost": 100
         },
         {
@@ -988,7 +1072,7 @@
         {
           "name": "REMSanLuisCSub",
             "type": "link",
-            "max_flow": "REMSanLuisC",
+            "max_flow": "REMSanLuisCSub",
             "cost": 100
         },
         {
@@ -1058,9 +1142,15 @@
             "cost": 100
         },
         {
+          "name": "REMSantaRosaCatoSup",
+            "type": "link",
+            "max_flow": "REMSantaRosaCatoSup",
+            "cost": 100
+        },
+        {
           "name": "REMSantaRosaCatoSub",
             "type": "link",
-            "max_flow": "REMSantaRosaCato",
+            "max_flow": "REMSantaRosaCatoSub",
             "cost": 100
         },
         {
@@ -1096,7 +1186,13 @@
         {
           "name": "REMMonteBlancoLSub",
             "type": "link",
-            "max_flow": "REMMonteBlancoL",
+            "max_flow": "REMMonteBlancoLSub",
+            "cost": 100
+        },
+        {
+          "name": "REMMonteBlancoLSup",
+            "type": "link",
+            "max_flow": "REMMonteBlancoLSup",
             "cost": 100
         },
         {
@@ -1132,7 +1228,13 @@
         {
           "name": "REMMonteBlancoJSub",
             "type": "link",
-            "max_flow": "REMMonteBlancoJ",
+            "max_flow": "REMMonteBlancoJSub",
+            "cost": 100
+        },
+        {
+          "name": "REMMonteBlancoJSup",
+            "type": "link",
+            "max_flow": "REMMonteBlancoJSup",
             "cost": 100
         },
         {
@@ -1204,7 +1306,7 @@
         {
           "name": "REMDadincoSub",
             "type": "link",
-            "max_flow": "REMDadinco",
+            "max_flow": "REMDadincoSub",
             "cost": 100
         },
         {
@@ -1240,7 +1342,13 @@
         {
           "name": "REMSanJoseSSub",
             "type": "link",
-            "max_flow": "REMSanJoseS",
+            "max_flow": "REMSanJoseSSub",
+            "cost": 100
+        },
+        {
+          "name": "REMSanJoseSSup",
+            "type": "link",
+            "max_flow": "REMSanJoseSSup",
             "cost": 100
         },
         {
@@ -1276,7 +1384,13 @@
         {
           "name": "REMCapillaCoxSub",
             "type": "link",
-            "max_flow": "REMCapillaCox",
+            "max_flow": "REMCapillaCoxSub",
+            "cost": 100
+        },
+        {
+          "name": "REMCapillaCoxSup",
+            "type": "link",
+            "max_flow": "REMCapillaCoxSup",
             "cost": 100
         },
         {
@@ -1312,7 +1426,13 @@
         {
           "name": "REMCapillaNSub",
             "type": "link",
-            "max_flow": "REMCapillaN",
+            "max_flow": "REMCapillaNSub",
+            "cost": 100
+        },
+        {
+          "name": "REMCapillaNSup",
+            "type": "link",
+            "max_flow": "REMCapillaNSup",
             "cost": 100
         },
         {
@@ -1384,7 +1504,7 @@
         {
           "name": "REMArancibiaSub",
             "type": "link",
-            "max_flow": "REMArancibia",
+            "max_flow": "REMArancibiaSub",
             "cost": 100
         },
         {
@@ -1420,7 +1540,13 @@
         {
           "name": "REMRinconadaCSub",
             "type": "link",
-            "max_flow": "REMRinconadaC",
+            "max_flow": "REMRinconadaCSub",
+            "cost": 100
+        },
+        {
+          "name": "REMRinconadaCSup",
+            "type": "link",
+            "max_flow": "REMRinconadaCSup",
             "cost": 100
         },
         {
@@ -1743,7 +1869,7 @@
         {
           "name": "rioNuble",
           "type": "output",
-          "cost":-100
+          "cost":100
         }   
     ],
     "edges": [
@@ -1819,85 +1945,103 @@
       ["TUCLSM","FRMuticura"],
       ["FRMuticura","MuticuraSup"],
       ["FRMuticura", "MuticuraMix"],
-      ["FRMuticura","REMMuticuraSub"],
-      ["FRMuticura","REMMuticuraSup"],
-      ["REMMuticuraSup","bocatoma11"],
+      ["FRMuticura","REMMuticura"],
+      ["REMMuticura","REMMuticuraSub"],
+      ["REMMuticura","REMMuticuraSup"],
+      ["REMMuticuraSup","bocatoma10"],
       ["bocatoma10", "bocatoma11"],
       ["bocatoma11","TUCSPS"],
       ["TUCSPS","SSaraPomSMartaSup"],
       ["TUCSPS", "SSaraPomSMartaMix"],
-      ["TUCSPS","REMSSaraPomSMartaSub"],
-      ["TUCSPS","REMSSaraPomSMartaSup"],
-      ["REMSSaraPomSMartaSup","bocatoma12"],
+      ["TUCSPS","REMSSaraPomSMarta"],
+      ["REMSSaraPomSMarta","REMSSaraPomSMartaSub"],
+      ["REMSSaraPomSMarta","REMSSaraPomSMartaSup"],
+      ["REMSSaraPomSMartaSup","bocatoma11"],
       ["bocatoma11", "bocatoma12"],
       ["bocatoma12","FRBellavista"],
       ["FRBellavista","BellavistaSup"],
       ["FRBellavista", "BellavistaMix"],
-      ["FRBellavista","REMBellavistaSub"],
-      ["FRBellavista","REMBellavistaSup"],
-      ["REMBellavistaSup","bocatoma13"],
+      ["FRBellavista","REMBellavista"],
+      ["REMBellavista","REMBellavistaSub"],
+      ["REMBellavista","REMBellavistaSup"],
+      ["REMBellavistaSup","bocatoma12"],
       ["bocatoma12", "bocatoma13"],
       ["bocatoma13", "TUCMORLIL"],
       ["TUCMORLIL","LilahueMoreiraSup"],
       ["TUCMORLIL", "LilahueMoreiraMix"],
-      ["TUCMORLIL","REMLilahueMoreiraSub"],
-      ["TUCMORLIL","REMLilahueMoreiraSup"],
-      ["REMLilahueMoreiraSup","bocatoma13"],
+      ["TUCMORLIL","REMLilahueMoreira"],
+      ["REMLilahueMoreira","REMLilahueMoreiraSub"],
+      ["REMLilahueMoreira","REMLilahueMoreiraSup"],
+      ["REMLilahueMoreiraSup","bocatoma12"],
       ["bocatoma13", "bocatoma14"],
       ["bocatoma14","TUCMBPOMLC"],
       ["TUCMBPOMLC","FRMonteBlancoB"],
       ["FRMonteBlancoB","MonteBlancoBSup"],
       ["FRMonteBlancoB", "MonteBlancoBMix"],
-      ["FRMonteBlancoB","REMMonteBlancoBSub"],
-      ["FRMonteBlancoB","REMMonteBlancoBSup"],
-      ["REMMonteBlancoBSup","bocatoma15"],
+      ["FRMonteBlancoB","REMMonteBlancoB"],
+      ["REMMonteBlancoB","REMMonteBlancoBSub"],
+      ["REMMonteBlancoB","REMMonteBlancoBSup"],
+      ["REMMonteBlancoBSup","bocatoma14"],
       ["TUCMBPOMLC","FRPomuyetoBajoA"],
       ["FRPomuyetoBajoA","PomuyetoBajoASup"],
       ["FRPomuyetoBajoA", "PomuyetoBajoAMix"],
-      ["FRPomuyetoBajoA","REMPomuyetoBajoASub"],
-      ["FRPomuyetoBajoA","REMPomuyetoBajoASup"],
-      ["REMPomuyetoBajoASup","bocatoma15"],
+      ["FRPomuyetoBajoA","REMPomuyetoBajoA"],
+      ["REMPomuyetoBajoA","REMPomuyetoBajoASub"],
+      ["REMPomuyetoBajoA","REMPomuyetoBajoASup"],
+      ["REMPomuyetoBajoASup","bocatoma14"],
       ["TUCMBPOMLC","FRPomuyetoBajoB"],
       ["FRPomuyetoBajoB","PomuyetoBajoBSup"],
       ["FRPomuyetoBajoB", "PomuyetoBajoBMix"],
-      ["FRPomuyetoBajoB","REMPomuyetoBajoBSub"],
-      ["FRPomuyetoBajoB","REMPomuyetoBajoBSup"],
-      ["REMPomuyetoBajoBSup","bocatoma15"],
+      ["FRPomuyetoBajoB","REMPomuyetoBajoB"],
+      ["REMPomuyetoBajoB","REMPomuyetoBajoBSub"],
+      ["REMPomuyetoBajoB","REMPomuyetoBajoBSup"],
+      ["REMPomuyetoBajoBSup","bocatoma14"],
       ["bocatoma14", "bocatoma15"],
       ["bocatoma15","TUCbocatoma15"],
       ["TUCbocatoma15","FRLasDumas"],
       ["FRLasDumas","LasDumasSup"],
       ["FRLasDumas", "LasDumasMix"],
-      ["FRLasDumas","REMLasDumasSub"],
-      ["FRLasDumas","REMLasDumasSup"],
-      ["REMLasDumasSup","bocatoma16"],
+      ["FRLasDumas","REMLasDumas"],
+      ["REMLasDumas","REMLasDumasSub"],
+      ["REMLasDumas","REMLasDumasSup"],
+      ["REMLasDumasSup","bocatoma15"],
       ["TUCbocatoma15", "TUCQUIMBF"],
       ["TUCQUIMBF","FRQuilelto"],
       ["FRQuilelto","QuileltoSup"],
       ["FRQuilelto", "QuileltoMix"],
-      ["FRQuilelto","REMQuileltoSub"],
-      ["FRQuilelto","REMQuileltoSup"],
-      ["REMQuileltoSup","bocatoma16"],
+      ["FRQuilelto","REMQuilelto"],
+      ["REMQuilelto","REMQuileltoSub"],
+      ["REMQuilelto","REMQuileltoSup"],
+      ["REMQuileltoSup","TUCbocatoma15"],
       ["TUCQUIMBF","FRMBFerrada"],
       ["FRMBFerrada","MBFerradaSup"],
       ["FRMBFerrada", "MBFerradaMix"],
       ["FRMBFerrada","REMMBFerrada"],
       ["REMMBFerrada","REMMBFerradaSub"],
+      ["REMMBFerrada","REMMBFerradaSup"],
+      ["REMMBFerradaSup","bocatoma15"],
       ["TUCbocatoma15","FRStaRosaN"],
       ["FRStaRosaN","StaRosaNSup"],
       ["FRStaRosaN", "StaRosaNMix"],
       ["FRStaRosaN","REMStaRosaN"],
       ["REMStaRosaN","REMStaRosaNSub"],
+      ["REMStaRosaN","REMStaRosaNSup"],
+      ["REMStaRosaNSup","bocatoma15"],
       ["TUCbocatoma15","FRMBMendez"],
       ["FRMBMendez","MBMendezSup"],
       ["FRMBMendez", "MBMendezMix"],
       ["FRMBMendez","REMMBMendez"],
       ["REMMBMendez","REMMBMendezSub"],
+      ["REMMBMendez","REMMBMendezSup"],
+      ["REMMBMendezSup","bocatoma15"],
       ["TUCbocatoma15","FRElPenon"],
       ["FRElPenon","ElPenonSup"],
       ["FRElPenon", "ElPenonMix"],
       ["FRElPenon","REMElPenon"],
+      ["REMElPenon","REMElPenon"],
       ["REMElPenon","REMElPenonSub"],
+      ["REMElPenon","REMElPenonSup"],
+      ["REMElPenonSup","bocatoma15"],
       ["bocatoma15", "bocatoma16"],
       ["bocatoma16","FRAlazan"],
       ["FRAlazan", "AlazanMix"],
@@ -1909,6 +2053,8 @@
       ["FRReloca", "RelocaMix"],
       ["FRReloca","REMReloca"],
       ["REMReloca","REMRelocaSub"],
+      ["REMReloca","REMRelocaSup"],
+      ["REMRelocaSup","bocatoma17"],
       ["bocatoma17", "bocatoma18"],
       ["bocatoma18","FRRomeral"],
       ["FRRomeral","RomeralSup"],
@@ -1933,18 +2079,24 @@
       ["FRSantaRosaCato", "SantaRosaCatoMix"],
       ["FRSantaRosaCato","REMSantaRosaCato"],
       ["REMSantaRosaCato","REMSantaRosaCatoSub"],
+      ["REMSantaRosaCato","REMSantaRosaCatoSup"],
+      ["REMSantaRosaCatoSup","bocatoma21"],
       ["bocatoma21", "bocatoma22"],
       ["bocatoma22","FRMonteBlancoL"],
       ["FRMonteBlancoL","MonteBlancoLSup"],
       ["FRMonteBlancoL", "MonteBlancoLMix"],
       ["FRMonteBlancoL","REMMonteBlancoL"],
       ["REMMonteBlancoL","REMMonteBlancoLSub"],
+      ["REMMonteBlancoL","REMMonteBlancoLSup"],
+      ["REMMonteBlancoLSup","bocatoma22"],
       ["bocatoma22", "bocatoma23"],
       ["bocatoma23","FRMonteBlancoJ"],
       ["FRMonteBlancoJ","MonteBlancoJSup"],
       ["FRMonteBlancoJ", "MonteBlancoJMix"],
       ["FRMonteBlancoJ","REMMonteBlancoJ"],
       ["REMMonteBlancoJ","REMMonteBlancoJSub"],
+      ["REMMonteBlancoJ","REMMonteBlancoJSup"],
+      ["REMMonteBlancoJSup","bocatoma23"],
       ["bocatoma23", "bocatoma24"],
       ["bocatoma24","FRStaRita"],
       ["FRStaRita","StaRitaSup"],
@@ -1964,17 +2116,23 @@
       ["FRSanJoseS", "SanJoseSMix"],
       ["FRSanJoseS","REMSanJoseS"],
       ["REMSanJoseS","REMSanJoseSSub"],
+      ["REMSanJoseS","REMSanJoseSSup"],
+      ["REMSanJoseSSup","bocatoma26"],
       ["TUCSnJoseCox","FRCapillaCox"],
       ["FRCapillaCox","CapillaCoxSup"],
       ["FRCapillaCox", "CapillaCoxMix"],
       ["FRCapillaCox","REMCapillaCox"],
       ["REMCapillaCox","REMCapillaCoxSub"],
+      ["REMCapillaCox","REMCapillaCoxSup"],
+      ["REMCapillaCoxSup","bocatoma26"],
       ["bocatoma26", "bocatoma27"],
       ["bocatoma27","FRCapillaN"],
       ["FRCapillaN","CapillaNSup"],
       ["FRCapillaN", "CapillaNMix"],
       ["FRCapillaN","REMCapillaN"],
       ["REMCapillaN","REMCapillaNSub"],
+      ["REMCapillaN","REMCapillaNSup"],
+      ["REMCapillaNSup","bocatoma27"],
       ["bocatoma27", "bocatoma28"],
       ["bocatoma28","FRSanJoseN"],
       ["FRSanJoseN", "SanJoseNSup"],
@@ -1987,6 +2145,8 @@
       ["FRRinconadaC", "RinconadaCMix"],
       ["FRRinconadaC","REMRinconadaC"],
       ["REMRinconadaC","REMRinconadaCSub"],
+      ["REMRinconadaC","REMRinconadaCSup"],
+      ["REMRinconadaCSup","bocatoma29"],
       ["bocatoma29", "bocatoma30"],
       ["bocatoma30","FRArancibia"],
       ["FRArancibia","ArancibiaSup"],
@@ -2029,7 +2189,7 @@
           "parse_dates": true,
           "column": "08106001-0"
           },
-            0.1]
+            0]
       },
       "flowCollicoSup": 
       {
@@ -2053,7 +2213,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.002]
+            0.0335744715055059025909933723142]
       },
       "superhCollico":
       {
@@ -2123,7 +2283,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.002]
+              0.0480236599100695993325160770837]
         },
       "superhGYM":
       {
@@ -2217,7 +2377,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.00014285714285714285]
+            0.205295110568944200180041548265]
       },
       "JFRVirguinZemita":
       {
@@ -2233,7 +2393,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.002]
+              0.205295110568944200180041548265]
         },
       "DAASubJFRVirguinZemita": 
       {
@@ -2241,7 +2401,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.00014285714285714285]
+            0.001]
       },
       "superhJFRVirguinZemita":
       {
@@ -2267,36 +2427,36 @@
         },
       "flowSACCSSup": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "flowSACCSMix": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "flowRanchilloGPSup": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "flowRanchilloGPMix": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "RanchilloGP":
       {
         "type": "aggregated",
@@ -2311,7 +2471,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.002]
+              0.0313470167425541970662727919716]
         },
       "DAASubRanchilloGP": 
       {
@@ -2319,7 +2479,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.00014285714285714285]
+            0.001]
       },
       "superhRanchilloGP": {
           "type": "aggregated",
@@ -2343,20 +2503,20 @@
         },
           "flowSanPedroSup": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "flowSanPedroMix": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "SanPedro":
           {
             "type": "aggregated",
@@ -2371,7 +2531,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.002]
+                  0.00784124597512020002354482528517]
             },
           "DAASubSanPedro": 
           {
@@ -2379,7 +2539,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.00014285714285714285]
+                0.001]
           },
           "superhSanPedro":
           {
@@ -2405,20 +2565,20 @@
           },
             "flowArrauNiquenSup": 
             {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "FlowNubleSanFabian",
-                  0.00014285714285714285]
-            },
+              "type": "dataframe",
+              "url": "../inputs/qdda_m3d.csv",
+              "index_col": "Date",
+              "parse_dates": true,
+              "column": "08106001-0"
+              },
             "flowArrauNiquenMix": 
             {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "FlowNubleSanFabian",
-                  0.00014285714285714285]
-            },
+              "type": "dataframe",
+              "url": "../inputs/qdda_m3d.csv",
+              "index_col": "Date",
+              "parse_dates": true,
+              "column": "08106001-0"
+              },
             "ArrauNiquen":
             {
               "type": "aggregated",
@@ -2433,7 +2593,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.002]
+                    0.0235700742800134012411295003631]
               },
             "DAASubArrauNiquen": 
             {
@@ -2441,7 +2601,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.00014285714285714285]
+                  0.0001]
             },
             "superhArrauNiquen":
             {
@@ -2467,20 +2627,20 @@
               },
               "flowLurinSilvaSup": 
               {
-              "type": "aggregated",
-              "agg_func": "product",
-              "parameters": [
-                    "FlowNubleSanFabian",
-                    0.00014285714285714285]
-              },
+                "type": "dataframe",
+                "url": "../inputs/qdda_m3d.csv",
+                "index_col": "Date",
+                "parse_dates": true,
+                "column": "08106001-0"
+                },
               "flowLurinSilvaMix": 
               {
-              "type": "aggregated",
-              "agg_func": "product",
-              "parameters": [
-                    "FlowNubleSanFabian",
-                    0.00014285714285714285]
-              },
+                "type": "dataframe",
+                "url": "../inputs/qdda_m3d.csv",
+                "index_col": "Date",
+                "parse_dates": true,
+                "column": "08106001-0"
+                },
               "LurinSilva":
               {
                 "type": "aggregated",
@@ -2495,7 +2655,7 @@
                 "agg_func": "product",
                 "parameters": [
                       "FlowNubleSanFabian",
-                      0.002]
+                      0.0108611469666235992137526267243]
                 },
               "DAASubLurinSilva": 
               {
@@ -2503,7 +2663,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.00014285714285714285]
+                    0.0001]
               },
               "superhLurinSilva":
               {
@@ -2528,20 +2688,20 @@
                 },
                 "flowMuticuraSup": 
                 {
-                "type": "aggregated",
-                "agg_func": "product",
-                "parameters": [
-                      "FlowNubleSanFabian",
-                      0.00014285714285714285]
-                },
+                  "type": "dataframe",
+                  "url": "../inputs/qdda_m3d.csv",
+                  "index_col": "Date",
+                  "parse_dates": true,
+                  "column": "08106001-0"
+                  },
                 "flowMuticuraMix": 
                 {
-                "type": "aggregated",
-                "agg_func": "product",
-                "parameters": [
-                      "FlowNubleSanFabian",
-                      0.00014285714285714285]
-                },
+                  "type": "dataframe",
+                  "url": "../inputs/qdda_m3d.csv",
+                  "index_col": "Date",
+                  "parse_dates": true,
+                  "column": "08106001-0"
+                  },
                 "Muticura":
                 {
                   "type": "aggregated",
@@ -2556,7 +2716,7 @@
                   "agg_func": "product",
                   "parameters": [
                         "FlowNubleSanFabian",
-                        0.002]
+                        0.00992921885416809917035418919795]
                   },
                 "DAASubMuticura": 
                 {
@@ -2564,7 +2724,7 @@
                 "agg_func": "product",
                 "parameters": [
                       "FlowNubleSanFabian",
-                      0.00014285714285714285]
+                      0.0001]
                 },
                 "superhMuticura":
                 {
@@ -2606,20 +2766,20 @@
                   },
         "flowSSaraPomSMartaSup": 
         {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "FlowNubleSanFabian",
-              0.00014285714285714285]
-        },
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
         "flowSSaraPomSMartaMix": 
         {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "FlowNubleSanFabian",
-              0.00014285714285714285]
-        },
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
         "SSaraPomSMarta":
         {
           "type": "aggregated",
@@ -2634,7 +2794,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.002]
+                0.0513478205364615025718677543409]
           },
         "DAASubSSaraPomSMarta": 
         {
@@ -2642,7 +2802,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.00014285714285714285]
+              0.0001]
         },
         "superhSataPomSMarta":
         {
@@ -2684,20 +2844,20 @@
           },
             "flowBellavistaSup": 
             {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "FlowNubleSanFabian",
-                  0.00014285714285714285]
-            },
+              "type": "dataframe",
+              "url": "../inputs/qdda_m3d.csv",
+              "index_col": "Date",
+              "parse_dates": true,
+              "column": "08106001-0"
+              },
             "flowBellavistaMix": 
             {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "FlowNubleSanFabian",
-                  0.00014285714285714285]
-            },
+              "type": "dataframe",
+              "url": "../inputs/qdda_m3d.csv",
+              "index_col": "Date",
+              "parse_dates": true,
+              "column": "08106001-0"
+              },
             "Bellavista":
             {
               "type": "aggregated",
@@ -2712,7 +2872,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.002]
+                    0.0118204986359143997265430670041]
               },
             "DAASubBellavista": 
             {
@@ -2720,7 +2880,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.00014285714285714285]
+                  0.0001]
             },
             "superhBellavista":
             {
@@ -2762,20 +2922,20 @@
               },
       "flowLilahueMoreiraSup": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "flowLilahueMoreiraMix": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "LilahueMoreira":
       {
         "type": "aggregated",
@@ -2790,7 +2950,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.002]
+              0.0922409774133911980475986069905]
         },
       "DAASubLilahueMoreira": 
       {
@@ -2798,7 +2958,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.00014285714285714285]
+            0.0001]
       },
      "superhLilahueMoreira":
        {
@@ -2840,20 +3000,20 @@
         },
         "flowMonteBlancoBSup": 
         {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "FlowNubleSanFabian",
-              0.00014285714285714285]
-        },
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
         "flowMonteBlancoBMix": 
         {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "FlowNubleSanFabian",
-              0.00014285714285714285]
-        },
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
         "MonteBlancoB":
         {
           "type": "aggregated",
@@ -2868,7 +3028,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.002]
+                0.025316198338510700199810443678]
           },
         "DAASubMonteBlancoB": 
         {
@@ -2876,7 +3036,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.00014285714285714285]
+              0.0001]
         },
         "superhMonteBlancoB":
         {
@@ -2918,20 +3078,20 @@
           },
           "flowPomuyetoBajoASup": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "flowPomuyetoBajoAMix": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "PomuyetoBajoA":
           {
             "type": "aggregated",
@@ -2946,7 +3106,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.002]
+                  0.00425537950892920010387276974484]
             },
           "DAASubPomuyetoBajoA": 
           {
@@ -2954,7 +3114,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.00014285714285714285]
+                0.0001]
           },
           "superhPomuyetoBajoA":
           {
@@ -2996,20 +3156,20 @@
             },
             "flowPomuyetoBajoBSup": 
             {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "FlowNubleSanFabian",
-                  0.00014285714285714285]
-            },
+              "type": "dataframe",
+              "url": "../inputs/qdda_m3d.csv",
+              "index_col": "Date",
+              "parse_dates": true,
+              "column": "08106001-0"
+              },
             "flowPomuyetoBajoBMix": 
             {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "FlowNubleSanFabian",
-                  0.00014285714285714285]
-            },
+              "type": "dataframe",
+              "url": "../inputs/qdda_m3d.csv",
+              "index_col": "Date",
+              "parse_dates": true,
+              "column": "08106001-0"
+              },
             "PomuyetoBajoB":
             {
               "type": "aggregated",
@@ -3024,7 +3184,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.002]
+                    0.00472819945436570021612965319946]
               },
             "DAASubPomuyetoBajoB": 
             {
@@ -3032,7 +3192,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.00014285714285714285]
+                  0.0001]
             },
             "superhPomuyetoBajoB":
             {
@@ -3074,20 +3234,20 @@
               },
           "flowLasDumasSup": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "flowLasDumasMix": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "LasDumas":
           {
             "type": "aggregated",
@@ -3102,7 +3262,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.002]
+                  0.00493151203090350011976061850305]
             },
           "DAASubLasDumas": 
           {
@@ -3110,7 +3270,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.00014285714285714285]
+                0.0001]
           },
           "superHLasDumas":
           {
@@ -3152,20 +3312,20 @@
             },
           "flowQuileltoSup": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "flowQuileltoMix": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "Quilelto":
           {
             "type": "aggregated",
@@ -3180,7 +3340,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.002]
+                  0.00686624396563539993870728395109]
             },
           "DAASubQuilelto": 
           {
@@ -3188,7 +3348,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.00014285714285714285]
+                0.0001]
           },
           "superhQuilelto":
           {
@@ -3212,14 +3372,6 @@
             "parameters": 
             ["superhQuilelto",0]
             },
-          "REMQuileltoSup": 
-            {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "REMQuilelto",
-                  0.05]
-            },
             "REMQuileltoSub": 
             {
             "type": "aggregated",
@@ -3228,22 +3380,30 @@
                   "REMQuilelto",
                   0.95]
             },
+            "REMQuileltoSup": 
+            {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "REMQuilelto",
+                  0.05]
+            },
             "flowMBFerradaSup": 
             {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "FlowNubleSanFabian",
-                  0.00014285714285714285]
-            },
+              "type": "dataframe",
+              "url": "../inputs/qdda_m3d.csv",
+              "index_col": "Date",
+              "parse_dates": true,
+              "column": "08106001-0"
+              },
             "flowMBFerradaMix": 
             {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "FlowNubleSanFabian",
-                  0.00014285714285714285]
-            },
+              "type": "dataframe",
+              "url": "../inputs/qdda_m3d.csv",
+              "index_col": "Date",
+              "parse_dates": true,
+              "column": "08106001-0"
+              },
             "MBFerrada":
             {
               "type": "aggregated",
@@ -3258,7 +3418,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.002]
+                    0.00686624396563539993870728395109]
               },
             "DAASubMBFerrada": 
             {
@@ -3266,7 +3426,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.00014285714285714285]
+                  0.0001]
             },
             "superhMBFerrada":
             {
@@ -3309,20 +3469,20 @@
               },
         "flowStaRosaNSup": 
         {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "FlowNubleSanFabian",
-              0.00014285714285714285]
-        },
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
         "flowStaRosaNMix": 
         {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "FlowNubleSanFabian",
-              0.00014285714285714285]
-        },
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
         "StaRosaN":
         {
           "type": "aggregated",
@@ -3337,7 +3497,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.002]
+                0.0147733537591548998862966968204]
           },
         "DAASubStaRosaN": 
         {
@@ -3345,7 +3505,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.00014285714285714285]
+              0.0001]
         },
         "superhStaRosaN":
         {
@@ -3388,20 +3548,20 @@
           },
           "flowMBMendezSup": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "flowMBMendezMix": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "MBMendez":
           {
             "type": "aggregated",
@@ -3416,7 +3576,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.002]
+                  0.0018912797817462999056675743148]
             },
           "DAASubMBMendez": 
           {
@@ -3424,7 +3584,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.00014285714285714285]
+                0.0001]
           },
           "superhMBMendez":
           {
@@ -3467,20 +3627,20 @@
             },
             "flowElPenonSup": 
             {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "FlowNubleSanFabian",
-                  0.00014285714285714285]
-            },
+              "type": "dataframe",
+              "url": "../inputs/qdda_m3d.csv",
+              "index_col": "Date",
+              "parse_dates": true,
+              "column": "08106001-0"
+              },
             "flowElPenonMix": 
             {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "FlowNubleSanFabian",
-                  0.00014285714285714285]
-            },
+              "type": "dataframe",
+              "url": "../inputs/qdda_m3d.csv",
+              "index_col": "Date",
+              "parse_dates": true,
+              "column": "08106001-0"
+              },
             "ElPenon":
             {
               "type": "aggregated",
@@ -3495,7 +3655,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.002]
+                    0.00959824489236250043278086963028]
               },
             "DAASubElPenon": 
             {
@@ -3503,7 +3663,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.00014285714285714285]
+                  0.0001]
             },
             "superhElPenon":
             {
@@ -3546,20 +3706,20 @@
               },
               "flowAlazanSup": 
               {
-              "type": "aggregated",
-              "agg_func": "product",
-              "parameters": [
-                    "FlowNubleSanFabian",
-                    0.00014285714285714285]
-              },
+                "type": "dataframe",
+                "url": "../inputs/qdda_m3d.csv",
+                "index_col": "Date",
+                "parse_dates": true,
+                "column": "08106001-0"
+                },
               "flowAlazanMix": 
               {
-              "type": "aggregated",
-              "agg_func": "product",
-              "parameters": [
-                    "FlowNubleSanFabian",
-                    0.00014285714285714285]
-              },
+                "type": "dataframe",
+                "url": "../inputs/qdda_m3d.csv",
+                "index_col": "Date",
+                "parse_dates": true,
+                "column": "08106001-0"
+                },
               "Alazan":
               {
                 "type": "aggregated",
@@ -3574,7 +3734,7 @@
                 "agg_func": "product",
                 "parameters": [
                       "FlowNubleSanFabian",
-                      0.002]
+                      0.0141845983630973001415886969312]
                 },
               "DAASubAlazan": 
               {
@@ -3582,7 +3742,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.00014285714285714285]
+                    0.0001]
               },
               "superhAlazan":
               {
@@ -3609,20 +3769,20 @@
                 },
           "flowRelocaSup": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "flowRelocaMix": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "Reloca":
           {
             "type": "aggregated",
@@ -3637,7 +3797,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.002]
+                  0.0250594571081385990296563903712]
             },
           "DAASubReloca": 
           {
@@ -3645,7 +3805,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.00014285714285714285]
+                0.0001]
           },
           "superhReloca":
           {
@@ -3688,20 +3848,20 @@
             },
       "flowRomeralSup": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "flowRomeralMix": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "Romeral":
       {
         "type": "aggregated",
@@ -3716,7 +3876,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.002]
+              0.0130422653749225000985312306057]
         },
       "DAASubRomeral": 
       {
@@ -3724,7 +3884,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.00014285714285714285]
+            0.0001]
       },
       "superhRomeral":
       {
@@ -3751,20 +3911,20 @@
         },
   "flowSanLuisCSup": 
   {
-  "type": "aggregated",
-  "agg_func": "product",
-  "parameters": [
-        "FlowNubleSanFabian",
-        0.00014285714285714285]
-  },
+    "type": "dataframe",
+    "url": "../inputs/qdda_m3d.csv",
+    "index_col": "Date",
+    "parse_dates": true,
+    "column": "08106001-0"
+    },
   "flowSanLuisCMix": 
   {
-  "type": "aggregated",
-  "agg_func": "product",
-  "parameters": [
-        "FlowNubleSanFabian",
-        0.00014285714285714285]
-  },
+    "type": "dataframe",
+    "url": "../inputs/qdda_m3d.csv",
+    "index_col": "Date",
+    "parse_dates": true,
+    "column": "08106001-0"
+    },
   "SanLuisC":
   {
     "type": "aggregated",
@@ -3779,7 +3939,7 @@
     "agg_func": "product",
     "parameters": [
           "FlowNubleSanFabian",
-          0.002]
+          0.00472819945436570021612965319946]
     },
   "DAASubSanLuisC": 
   {
@@ -3787,7 +3947,7 @@
   "agg_func": "product",
   "parameters": [
         "FlowNubleSanFabian",
-        0.00014285714285714285]
+        0.0001]
   },
   "superhSanLuisC":
   {
@@ -3821,21 +3981,21 @@
           1]
     },
   "flowQuinquehuaSup": 
-  {
-  "type": "aggregated",
-  "agg_func": "product",
-  "parameters": [
-        "FlowNubleSanFabian",
-        0.00014285714285714285]
-  },
+   {
+    "type": "dataframe",
+    "url": "../inputs/qdda_m3d.csv",
+    "index_col": "Date",
+    "parse_dates": true,
+    "column": "08106001-0"
+    },
   "flowQuinquehuaMix": 
   {
-  "type": "aggregated",
-  "agg_func": "product",
-  "parameters": [
-        "FlowNubleSanFabian",
-        0.00014285714285714285]
-  },
+    "type": "dataframe",
+    "url": "../inputs/qdda_m3d.csv",
+    "index_col": "Date",
+    "parse_dates": true,
+    "column": "08106001-0"
+    },
   "Quinquehua":
   {
     "type": "aggregated",
@@ -3850,7 +4010,7 @@
     "agg_func": "product",
     "parameters": [
           "FlowNubleSanFabian",
-          0.002]
+          0.00283691967261940009362164438755]
     },
   "DAASubQuinquehua": 
   {
@@ -3858,7 +4018,7 @@
   "agg_func": "product",
   "parameters": [
         "FlowNubleSanFabian",
-        0.00014285714285714285]
+        0.0001]
   },
   "superhQuinquehua":
   {
@@ -3885,20 +4045,20 @@
     },
   "flowSantaRosaCatoSup": 
   {
-  "type": "aggregated",
-  "agg_func": "product",
-  "parameters": [
-        "FlowNubleSanFabian",
-        0.00014285714285714285]
-  },
+    "type": "dataframe",
+    "url": "../inputs/qdda_m3d.csv",
+    "index_col": "Date",
+    "parse_dates": true,
+    "column": "08106001-0"
+    },
   "flowSantaRosaCatoMix": 
   {
-  "type": "aggregated",
-  "agg_func": "product",
-  "parameters": [
-        "FlowNubleSanFabian",
-        0.00014285714285714285]
-  },
+    "type": "dataframe",
+    "url": "../inputs/qdda_m3d.csv",
+    "index_col": "Date",
+    "parse_dates": true,
+    "column": "08106001-0"
+    },
   "SantaRosaCato":
   {
     "type": "aggregated",
@@ -3913,7 +4073,7 @@
     "agg_func": "product",
     "parameters": [
           "FlowNubleSanFabian",
-          0.002]
+          0.00945639890873149931149743707692]
     },
   "DAASubSantaRosaCato": 
   {
@@ -3921,7 +4081,7 @@
   "agg_func": "product",
   "parameters": [
         "FlowNubleSanFabian",
-        0.00014285714285714285]
+        0.0001]
   },
   "superhSantaRosaCato":
   {
@@ -3964,20 +4124,20 @@
     },
   "flowMonteBlancoLSup": 
   {
-  "type": "aggregated",
-  "agg_func": "product",
-  "parameters": [
-        "FlowNubleSanFabian",
-        0.00014285714285714285]
-  },
+    "type": "dataframe",
+    "url": "../inputs/qdda_m3d.csv",
+    "index_col": "Date",
+    "parse_dates": true,
+    "column": "08106001-0"
+    },
   "flowMonteBlancoLMix": 
   {
-  "type": "aggregated",
-  "agg_func": "product",
-  "parameters": [
-        "FlowNubleSanFabian",
-        0.00014285714285714285]
-  },
+    "type": "dataframe",
+    "url": "../inputs/qdda_m3d.csv",
+    "index_col": "Date",
+    "parse_dates": true,
+    "column": "08106001-0"
+    },
   "MonteBlancoL":
   {
     "type": "aggregated",
@@ -3992,7 +4152,7 @@
     "agg_func": "product",
     "parameters": [
           "FlowNubleSanFabian",
-          0.002]
+          0.00851075901785840020774553948968]
     },
   "DAASubMonteBlancoL": 
   {
@@ -4000,7 +4160,7 @@
   "agg_func": "product",
   "parameters": [
         "FlowNubleSanFabian",
-        0.00014285714285714285]
+        0.0001]
   },
   "superhMonteBlancoL":
   {
@@ -4043,20 +4203,20 @@
     },
     "flowMonteBlancoJSup": 
     {
-    "type": "aggregated",
-    "agg_func": "product",
-    "parameters": [
-          "FlowNubleSanFabian",
-          0.00014285714285714285]
-    },
+      "type": "dataframe",
+      "url": "../inputs/qdda_m3d.csv",
+      "index_col": "Date",
+      "parse_dates": true,
+      "column": "08106001-0"
+      },
     "flowMonteBlancoJMix": 
     {
-    "type": "aggregated",
-    "agg_func": "product",
-    "parameters": [
-          "FlowNubleSanFabian",
-          0.00014285714285714285]
-    },
+      "type": "dataframe",
+      "url": "../inputs/qdda_m3d.csv",
+      "index_col": "Date",
+      "parse_dates": true,
+      "column": "08106001-0"
+      },
     "MonteBlancoJ":
     {
       "type": "aggregated",
@@ -4071,7 +4231,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.002]
+            0.00338066260987150007943924379106]
       },
     "DAASubMonteBlancoJ": 
     {
@@ -4079,7 +4239,7 @@
     "agg_func": "product",
     "parameters": [
           "FlowNubleSanFabian",
-          0.00014285714285714285]
+          0.0001]
     },
     "superhMonteBlancoJ":
     {
@@ -4122,20 +4282,20 @@
       },
       "flowStaRitaSup": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "flowStaRitaMix": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "StaRita":
       {
         "type": "aggregated",
@@ -4150,7 +4310,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.002]
+              0.00567383934523889993384315744152]
         },
       "DAASubStaRita": 
       {
@@ -4158,7 +4318,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.00014285714285714285]
+            0.0001]
       },
       "superhStaRita":
       {
@@ -4185,20 +4345,20 @@
         },
       "flowDadincoSup": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "flowDadincoMix": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "Dadinco":
       {
         "type": "aggregated",
@@ -4213,7 +4373,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.002]
+              0.0725522820654666000805832482001]
         },
       "DAASubDadinco": 
       {
@@ -4221,7 +4381,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.00014285714285714285]
+            0.0001]
       },
       "superhDadinco":
       {
@@ -4256,20 +4416,20 @@
         },
       "flowSanJoseSSup": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "flowSanJoseSMix": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "SanJoseS":
       {
         "type": "aggregated",
@@ -4284,7 +4444,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.002]
+              0.0141845983630973001415886969312]
         },
       "DAASubSanJoseS": 
       {
@@ -4292,7 +4452,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.00014285714285714285]
+            0.001]
       },
       "superhSanJoseS":
       {
@@ -4335,20 +4495,20 @@
         },
         "flowCapillaCoxSup": 
         {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "FlowNubleSanFabian",
-              0.00014285714285714285]
-        },
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
         "flowCapillaCoxMix": 
         {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "FlowNubleSanFabian",
-              0.00014285714285714285]
-        },
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
         "CapillaCox":
         {
           "type": "aggregated",
@@ -4363,7 +4523,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.002]
+                0.0283691967261946002831773938624]
           },
         "DAASubCapillaCox": 
         {
@@ -4371,7 +4531,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.00014285714285714285]
+              0.0001]
         },
         "superhCapillaCox":
         {
@@ -4414,20 +4574,20 @@
           },
           "flowCapillaNSup": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "flowCapillaNMix": 
           {
-          "type": "aggregated",
-          "agg_func": "product",
-          "parameters": [
-                "FlowNubleSanFabian",
-                0.00014285714285714285]
-          },
+            "type": "dataframe",
+            "url": "../inputs/qdda_m3d.csv",
+            "index_col": "Date",
+            "parse_dates": true,
+            "column": "08106001-0"
+            },
           "CapillaN":
           {
             "type": "aggregated",
@@ -4442,7 +4602,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.002]
+                  0.00756511912698519962267029725922]
             },
           "DAASubCapillaN": 
           {
@@ -4450,7 +4610,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.00014285714285714285]
+                0.0001]
           },
           "superhCapillaN":
           {
@@ -4493,27 +4653,27 @@
             },
             "flowSanJoseNSup": 
             {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "FlowNubleSanFabian",
-                  0.00014285714285714285]
-            },
+              "type": "dataframe",
+              "url": "../inputs/qdda_m3d.csv",
+              "index_col": "Date",
+              "parse_dates": true,
+              "column": "08106001-0"
+              },
             "flowSanJoseNMix": 
             {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "FlowNubleSanFabian",
-                  0.00014285714285714285]
-            },
+              "type": "dataframe",
+              "url": "../inputs/qdda_m3d.csv",
+              "index_col": "Date",
+              "parse_dates": true,
+              "column": "08106001-0"
+              },
             "FRSanJoseN": 
             {
               "type": "aggregated",
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.002]
+                    0.0261469429826426992546917205118]
               },
             "SanJoseN":
             {
@@ -4552,7 +4712,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.00014285714285714285]
+                    0.0001]
               },
               "DAASubSACCS": 
               {
@@ -4560,24 +4720,24 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.00014285714285714285]
+                    0.0001]
               },
               "flowArancibiaSup": 
               {
-              "type": "aggregated",
-              "agg_func": "product",
-              "parameters": [
-                    "FlowNubleSanFabian",
-                    0.00014285714285714285]
-              },
+                "type": "dataframe",
+                "url": "../inputs/qdda_m3d.csv",
+                "index_col": "Date",
+                "parse_dates": true,
+                "column": "08106001-0"
+                },
               "flowArancibiaMix": 
               {
-              "type": "aggregated",
-              "agg_func": "product",
-              "parameters": [
-                    "FlowNubleSanFabian",
-                    0.00014285714285714285]
-              },
+                "type": "dataframe",
+                "url": "../inputs/qdda_m3d.csv",
+                "index_col": "Date",
+                "parse_dates": true,
+                "column": "08106001-0"
+                },
               "Arancibia":
               {
                 "type": "aggregated",
@@ -4592,7 +4752,7 @@
                 "agg_func": "product",
                 "parameters": [
                       "FlowNubleSanFabian",
-                      0.002]
+                      0.00378255956349259981133514862961]
                 },
               "DAASubArancibia": 
               {
@@ -4600,7 +4760,7 @@
               "agg_func": "product",
               "parameters": [
                     "FlowNubleSanFabian",
-                    0.00014285714285714285]
+                    0.0001]
               },
               "superhArancibia":
               {
@@ -4636,20 +4796,20 @@
                 },
       "flowRinconadaCSup": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "flowRinconadaCMix": 
       {
-      "type": "aggregated",
-      "agg_func": "product",
-      "parameters": [
-            "FlowNubleSanFabian",
-            0.00014285714285714285]
-      },
+        "type": "dataframe",
+        "url": "../inputs/qdda_m3d.csv",
+        "index_col": "Date",
+        "parse_dates": true,
+        "column": "08106001-0"
+        },
       "RinconadaC":
       {
         "type": "aggregated",
@@ -4664,7 +4824,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.002]
+              0.00945639890873149931149743707692]
         },
       "DAASubRinconadaC": 
       {
@@ -4672,7 +4832,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.00014285714285714285]
+            0.0001]
       },
       "superhRinconadaC":
       {
@@ -4714,20 +4874,20 @@
         },
         "flowStaLauraSup": 
         {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "FlowNubleSanFabian",
-              0.00014285714285714285]
-        },
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
         "flowStaLauraMix": 
         {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "FlowNubleSanFabian",
-              0.00014285714285714285]
-        },
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
         "StaLaura":
         {
           "type": "aggregated",
@@ -4742,7 +4902,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.002]
+                0.00945639890873149931149743707692]
           },
         "DAASubStaLaura": 
         {
@@ -4750,7 +4910,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.00014285714285714285]
+              0.0001]
         },
         "superhStaLaura":
         {
@@ -4777,20 +4937,20 @@
           },
         "flowLaPalmaSup": 
         {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "FlowNubleSanFabian",
-              0.00014285714285714285]
-        },
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
         "flowLaPalmaMix": 
         {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": [
-              "FlowNubleSanFabian",
-              0.00014285714285714285]
-        },
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
         "LaPalma":
         {
           "type": "aggregated",
@@ -4805,7 +4965,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.002]
+                0.000378255956349200003069332964856]
           },
         "DAASubLaPalma": 
         {
@@ -4813,7 +4973,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.00014285714285714285]
+              0.0001]
         },
         "superhLaPalma":
         {
@@ -4844,7 +5004,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.002]
+            0.0425537950892920027734511734252]
       },
     "FRChacayalP": 
     {
@@ -4852,7 +5012,7 @@
       "agg_func": "product",
       "parameters": [
             "FlowNubleSanFabian",
-            0.002]
+            0.00137117784176599990207667811859]
       },
     "DAASubChacayalO": 
     {
@@ -4860,7 +5020,7 @@
     "agg_func": "product",
     "parameters": [
           "FlowNubleSanFabian",
-          0.00014285714285714285]
+          0.0001]
     },
     "DAASubChacayalP": 
     {
@@ -4868,7 +5028,7 @@
     "agg_func": "product",
     "parameters": [
           "FlowNubleSanFabian",
-          0.00014285714285714285]
+          0.0001]
     },
     "ChacayalO":
     {
@@ -4961,7 +5121,7 @@
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.002]
+                0.0470883274940070012393178444654]
           },
         "DAASubMunicipal": 
         {
@@ -4969,7 +5129,7 @@
         "agg_func": "product",
         "parameters": [
               "FlowNubleSanFabian",
-              0.00014285714285714285]
+              0.0001]
         },
         "Municipal":
         {
@@ -5008,7 +5168,7 @@
             "agg_func": "product",
             "parameters": [
                   "FlowNubleSanFabian",
-                  0.002]
+                  0.0513009640798686994411781370218]
             },
          "SACCS":
           {

@@ -39,7 +39,7 @@ def createAquifer(model,name):
         area=area,
         storativity=storativity)
 
-    aqfer.initial_level=5
+    aqfer.initial_level=9
     
     return aqfer
 

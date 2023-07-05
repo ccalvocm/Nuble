@@ -50,37 +50,37 @@
           "name":"deficitCollico",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubCollico"
+          "max_flow": "deficitCollico"
         },
         {
           "name": "FRCollico",
             "type": "rivergauge",
             "mrf": "FRCollico",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitChacayalO",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubChacayalO"
+          "max_flow": "deficitChacayalO"
         },
         {
           "name":"deficitChacayalP",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubChacayalP"
+          "max_flow": "deficitChacayalP"
         },
         {
           "name":"deficitRanchilloGP",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubRanchilloGP"
+          "max_flow": "deficitRanchilloGP"
         },
         {
           "name":"deficitSACCS",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubSACCS"
+          "max_flow": "deficitSACCS"
         },
         {
           "name":"GreeneYMairaSup",
@@ -110,7 +110,7 @@
           "name": "FRGYM",
             "type": "rivergauge",
             "mrf": "FRGYM",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"ChacayalOSup",
@@ -164,13 +164,13 @@
           "name":"deficitJFRVirguinZemita",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubJFRVirguinZemita"
+          "max_flow": "deficitJFRVirguinZemita"
         },
         {
           "name": "TUCJFR",
             "type": "rivergauge",
             "mrf": "TUCJFR",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"MunicipalSup",
@@ -194,19 +194,19 @@
         "name":"deficitMunicipal",
         "type": "link",
         "cost": -100,
-        "max_flow": "DAASubMunicipal"
+        "max_flow": "deficitMunicipal"
         },
         {
           "name": "REMMunicipal",
           "type": "output",
           "max_flow":"REMMunicipal",
-          "cost": 100
+          "cost": -100
         },
         {
           "name": "REMMunicipalSub",
           "type": "input",
           "max_flow":"REMMunicipal",
-          "cost": 100
+          "cost": -100
         },  
         {
           "name":"SACCSSup",
@@ -224,19 +224,19 @@
           "name": "TUCCSC",
           "type": "rivergauge",
           "mrf":"TUCCSC",
-          "cost": 100
+          "cost": -100
         },
         {
           "name": "REMSACCS",
           "type": "output",
           "max_flow":"REMSACCS",
-          "cost": 100
+          "cost": -100
         },
         {
           "name": "REMSACCSSub",
           "type": "input",
           "max_flow":"REMSACCS",
-          "cost": 100
+          "cost": -100
         },   
         {
           "name":"TUCSA",
@@ -270,13 +270,13 @@
           "name": "REMRanchilloGP",
             "type": "output",
             "max_flow": "REMRanchilloGP",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMRanchilloGPSub",
             "type": "input",
             "max_flow": "REMRanchilloGP",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"FRSanPedro",
@@ -300,19 +300,19 @@
           "name": "REMSanPedro",
             "type": "output",
             "max_flow": "REMSanPedro",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMSanPedroSub",
             "type": "input",
             "max_flow": "REMSanPedro",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitSanPedro",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubSanPedro"
+          "max_flow": "deficitSanPedro"
         },
         {
           "name":"FRArrauNiquen",
@@ -336,24 +336,24 @@
           "name": "REMArrauNiquen",
             "type": "output",
             "max_flow": "REMArrauNiquen",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMArrauNiquenSub",
             "type": "input",
             "max_flow": "REMArrauNiquen",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitArrauNiquen",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubArrauNiquen"
+          "max_flow": "deficitArrauNiquen"
         },
         {
           "name":"TUCLSM",
           "type": "link",
-          "cost": 100
+          "cost": -100
         },
         {
           "name":"FRLurinSilva",
@@ -377,19 +377,19 @@
           "name": "REMLurinSilva",
             "type": "output",
             "max_flow": "REMLurinSilva",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMLurinSilvaSub",
             "type": "input",
             "max_flow": "REMLurinSilva",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitLurinSilva",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubLurinSilva"
+          "max_flow": "deficitLurinSilva"
         },
         {
           "name":"FRMuticura",
@@ -413,31 +413,31 @@
           "name": "REMMuticura",
             "type": "output",
             "max_flow": "REMMuticura",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMMuticuraSup",
             "type": "input",
             "max_flow": "REMMuticuraSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMMuticuraSub",
             "type": "input",
             "max_flow": "REMMuticuraSub",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMMuticuraSub",
             "type": "input",
             "max_flow": "REMMuticura",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitMuticura",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubMuticura"
+          "max_flow": "deficitMuticura"
         },
         {
           "name":"TUCSPS",
@@ -461,25 +461,25 @@
           "name": "REMSSaraPomSMarta",
             "type": "output",
             "max_flow": "REMSSaraPomSMarta",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMSSaraPomSMartaSup",
             "type": "input",
             "max_flow": "REMSSaraPomSMartaSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMSSaraPomSMartaSub",
             "type": "input",
             "max_flow": "REMSSaraPomSMarta",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitSSaraPomSMarta",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubSSaraPomSMarta"
+          "max_flow": "deficitSSaraPomSMarta"
         },
         {
           "name":"FRBellavista",
@@ -503,25 +503,25 @@
           "name": "REMBellavista",
             "type": "output",
             "max_flow": "REMBellavista",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMBellavistaSup",
             "type": "input",
             "max_flow": "REMBellavistaSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMBellavistaSub",
             "type": "input",
             "max_flow": "REMBellavista",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitBellavista",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubBellavista"
+          "max_flow": "deficitBellavista"
         },
         {
           "name":"TUCMORLIL",
@@ -545,25 +545,25 @@
           "name": "REMLilahueMoreira",
             "type": "output",
             "max_flow": "REMLilahueMoreira",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMLilahueMoreiraSup",
             "type": "input",
             "max_flow": "REMLilahueMoreiraSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMLilahueMoreiraSub",
             "type": "input",
             "max_flow": "REMLilahueMoreira",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitLilahueMoreira",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubLilahueMoreira"
+          "max_flow": "deficitLilahueMoreira"
         },
         {
           "name":"FRMonteBlancoB",
@@ -587,25 +587,25 @@
           "name": "REMMonteBlancoB",
             "type": "output",
             "max_flow": "REMMonteBlancoB",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMMonteBlancoBSup",
             "type": "input",
             "max_flow": "REMMonteBlancoBSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMMonteBlancoBSub",
             "type": "input",
             "max_flow": "REMMonteBlancoB",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitMonteBlancoB",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubMonteBlancoB"
+          "max_flow": "deficitMonteBlancoB"
         },
         {
           "name":"FRPomuyetoBajoA",
@@ -629,25 +629,25 @@
           "name": "REMPomuyetoBajoA",
             "type": "output",
             "max_flow": "REMPomuyetoBajoA",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMPomuyetoBajoASup",
             "type": "input",
             "max_flow": "REMPomuyetoBajoASup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMPomuyetoBajoASub",
             "type": "input",
             "max_flow": "REMPomuyetoBajoA",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitPomuyetoBajoA",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubPomuyetoBajoA"
+          "max_flow": "deficitPomuyetoBajoA"
         },
         {
           "name":"FRPomuyetoBajoB",
@@ -671,25 +671,25 @@
           "name": "REMPomuyetoBajoB",
             "type": "output",
             "max_flow": "REMPomuyetoBajoB",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMPomuyetoBajoBSup",
             "type": "input",
             "max_flow": "REMPomuyetoBajoBSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMPomuyetoBajoBSub",
             "type": "input",
             "max_flow": "REMPomuyetoBajoB",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitPomuyetoBajoB",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubPomuyetoBajoB"
+          "max_flow": "deficitPomuyetoBajoB"
         },
         {
           "name":"FRLasDumas",
@@ -713,25 +713,25 @@
           "name": "REMLasDumas",
             "type": "output",
             "max_flow": "REMLasDumas",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMLasDumasSup",
             "type": "input",
             "max_flow": "REMLasDumasSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMLasDumasSub",
             "type": "input",
             "max_flow": "REMLasDumas",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitLasDumas",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubLasDumas"
+          "max_flow": "deficitLasDumas"
         },
         {
           "name":"FRQuilelto",
@@ -755,25 +755,25 @@
           "name": "REMQuilelto",
             "type": "output",
             "max_flow": "REMQuilelto",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMQuileltoSup",
             "type": "input",
             "max_flow": "REMQuileltoSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMQuileltoSub",
             "type": "input",
             "max_flow": "REMQuilelto",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitQuilelto",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubQuilelto"
+          "max_flow": "deficitQuilelto"
         },
         {
           "name":"FRMBFerrada",
@@ -797,25 +797,25 @@
           "name": "REMMBFerrada",
             "type": "output",
             "max_flow": "REMMBFerrada",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMMBFerradaSup",
             "type": "input",
             "max_flow": "REMMBFerradaSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMMBFerradaSub",
             "type": "input",
             "max_flow": "REMMBFerrada",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitMBFerrada",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubMBFerrada"
+          "max_flow": "deficitMBFerrada"
         },
         {
           "name":"FRStaRosaN",
@@ -839,25 +839,25 @@
           "name": "REMStaRosaN",
             "type": "output",
             "max_flow": "REMStaRosaN",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMStaRosaNSup",
             "type": "input",
             "max_flow": "REMStaRosaNSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMStaRosaNSub",
             "type": "input",
             "max_flow": "REMStaRosaN",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitStaRosaN",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubStaRosaN"
+          "max_flow": "deficitStaRosaN"
         },
         {
           "name":"FRMBMendez",
@@ -881,25 +881,25 @@
           "name": "REMMBMendez",
             "type": "output",
             "max_flow": "REMMBMendez",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMMBMendezSup",
             "type": "input",
             "max_flow": "REMMBMendezSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMMBMendezSub",
             "type": "input",
             "max_flow": "REMMBMendez",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitMBMendez",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubMBMendez"
+          "max_flow": "deficitMBMendez"
         },
         {
           "name":"FRElPenon",
@@ -923,25 +923,25 @@
           "name": "REMElPenon",
             "type": "output",
             "max_flow": "REMElPenon",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMElPenonSup",
             "type": "input",
             "max_flow": "REMElPenonSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMElPenonSub",
             "type": "input",
             "max_flow": "REMElPenon",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitElPenon",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubElPenon"
+          "max_flow": "deficitElPenon"
         },
         {
           "name":"FRAlazan",
@@ -959,19 +959,19 @@
           "name": "REMAlazan",
             "type": "output",
             "max_flow": "REMAlazan",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMAlazanSub",
             "type": "input",
             "max_flow": "REMAlazan",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitAlazan",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubAlazan"
+          "max_flow": "deficitAlazan"
         },
         {
           "name":"FRReloca",
@@ -995,25 +995,25 @@
           "name": "REMReloca",
             "type": "output",
             "max_flow": "REMReloca",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMRelocaSup",
             "type": "input",
             "max_flow": "REMRelocaSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMRelocaSub",
             "type": "input",
             "max_flow": "REMReloca",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitReloca",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubReloca"
+          "max_flow": "deficitReloca"
         },
         {
           "name":"FRRomeral",
@@ -1037,19 +1037,19 @@
           "name": "REMRomeral",
             "type": "output",
             "max_flow": "REMRomeral",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMRomeralSub",
             "type": "input",
             "max_flow": "REMRomeral",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitRomeral",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubRomeral"
+          "max_flow": "deficitRomeral"
         },
         {
           "name":"FRSanLuisC",
@@ -1073,19 +1073,19 @@
           "name": "REMSanLuisC",
             "type": "output",
             "max_flow": "REMSanLuisC",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMSanLuisCSub",
             "type": "input",
             "max_flow": "REMSanLuisC",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitSanLuisC",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubSanLuisC"
+          "max_flow": "deficitSanLuisC"
         },
         {
           "name":"FRQuinquehua",
@@ -1109,19 +1109,19 @@
           "name": "REMQuinquehua",
             "type": "output",
             "max_flow": "REMQuinquehua",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMQuinquehuaSub",
             "type": "input",
             "max_flow": "REMQuinquehua",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitQuinquehua",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubQuinquehua"
+          "max_flow": "deficitQuinquehua"
         },
         {
           "name":"FRSantaRosaCato",
@@ -1145,25 +1145,25 @@
           "name": "REMSantaRosaCato",
             "type": "output",
             "max_flow": "REMSantaRosaCato",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMSantaRosaCatoSup",
             "type": "input",
             "max_flow": "REMSantaRosaCatoSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMSantaRosaCatoSub",
             "type": "input",
             "max_flow": "REMSantaRosaCato",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitSantaRosaCato",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubSantaRosaCato"
+          "max_flow": "deficitSantaRosaCato"
         },
         {
           "name":"FRMonteBlancoL",
@@ -1187,25 +1187,25 @@
           "name": "REMMonteBlancoL",
             "type": "output",
             "max_flow": "REMMonteBlancoL",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMMonteBlancoLSup",
             "type": "input",
             "max_flow": "REMMonteBlancoLSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMMonteBlancoLSub",
             "type": "input",
             "max_flow": "REMMonteBlancoL",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitMonteBlancoL",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubMonteBlancoL"
+          "max_flow": "deficitMonteBlancoL"
         },
         {
           "name":"FRMonteBlancoJ",
@@ -1229,25 +1229,25 @@
           "name": "REMMonteBlancoJ",
             "type": "output",
             "max_flow": "REMMonteBlancoJ",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMMonteBlancoJSup",
             "type": "input",
             "max_flow": "REMMonteBlancoJSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMMonteBlancoJSub",
             "type": "input",
             "max_flow": "REMMonteBlancoJ",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitMonteBlancoJ",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubMonteBlancoJ"
+          "max_flow": "deficitMonteBlancoJ"
         },
         {
           "name":"FRStaRita",
@@ -1271,19 +1271,19 @@
           "name": "REMStaRita",
             "type": "output",
             "max_flow": "REMStaRita",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMStaRitaSub",
             "type": "input",
             "max_flow": "REMStaRita",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitStaRita",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubStaRita"
+          "max_flow": "deficitStaRita"
         },
         {
           "name":"FRDadinco",
@@ -1307,19 +1307,19 @@
           "name": "REMDadinco",
             "type": "output",
             "max_flow": "REMDadinco",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMDadincoSub",
             "type": "input",
             "max_flow": "REMDadinco",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitDadinco",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubDadinco"
+          "max_flow": "deficitDadinco"
         },
         {
           "name":"FRSanJoseS",
@@ -1343,25 +1343,25 @@
           "name": "REMSanJoseS",
             "type": "output",
             "max_flow": "REMSanJoseS",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMSanJoseSSup",
             "type": "input",
             "max_flow": "REMSanJoseSSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMSanJoseSSub",
             "type": "input",
             "max_flow": "REMSanJoseS",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitSanJoseS",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubSanJoseS"
+          "max_flow": "deficitSanJoseS"
         },
         {
           "name":"FRCapillaCox",
@@ -1385,25 +1385,25 @@
           "name": "REMCapillaCox",
             "type": "output",
             "max_flow": "REMCapillaCox",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMCapillaCoxSup",
             "type": "input",
             "max_flow": "REMCapillaCoxSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMCapillaCoxSub",
             "type": "input",
             "max_flow": "REMCapillaCox",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitCapillaCox",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubCapillaCox"
+          "max_flow": "deficitCapillaCox"
         },
         {
           "name":"FRCapillaN",
@@ -1427,25 +1427,25 @@
           "name": "REMCapillaN",
             "type": "output",
             "max_flow": "REMCapillaN",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMCapillaNSup",
             "type": "input",
             "max_flow": "REMCapillaNSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMCapillaNSub",
             "type": "input",
             "max_flow": "REMCapillaN",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitCapillaN",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubCapillaN"
+          "max_flow": "deficitCapillaN"
         },
         {
           "name":"SanJoseNSup",
@@ -1475,13 +1475,13 @@
           "name":"deficitSanJoseN",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubSanJoseN"
+          "max_flow": "deficitSanJoseN"
         },
         {
           "name": "FRSanJoseN",
             "type": "rivergauge",
             "mrf": "FRSanJoseN",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"FRArancibia",
@@ -1505,19 +1505,19 @@
           "name": "REMArancibia",
             "type": "output",
             "max_flow": "REMArancibia",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMArancibiaSub",
             "type": "input",
             "max_flow": "REMArancibia",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitArancibia",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubArancibia"
+          "max_flow": "deficitArancibia"
         },
         {
           "name":"FRRinconadaC",
@@ -1541,25 +1541,25 @@
           "name": "REMRinconadaC",
             "type": "output",
             "max_flow": "REMRinconadaC",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMRinconadaCSup",
             "type": "input",
             "max_flow": "REMRinconadaCSup",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMRinconadaCSub",
             "type": "input",
             "max_flow": "REMRinconadaC",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitRinconadaC",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubRinconadaC"
+          "max_flow": "deficitRinconadaC"
         },
         {
           "name":"FRStaLaura",
@@ -1583,19 +1583,19 @@
           "name": "REMStaLaura",
             "type": "output",
             "max_flow": "REMStaLaura",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMStaLauraSub",
             "type": "input",
             "max_flow": "REMStaLaura",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitStaLaura",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubStaLaura"
+          "max_flow": "deficitStaLaura"
         },
         {
           "name":"FRLaPalma",
@@ -1619,240 +1619,240 @@
           "name": "REMLaPalma",
             "type": "output",
             "max_flow": "REMLaPalma",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMLaPalmaSub",
             "type": "input",
             "max_flow": "REMLaPalma",
-            "cost": 100
+            "cost": -100
         },
         {
           "name":"deficitLaPalma",
           "type": "link",
           "cost": -100,
-          "max_flow": "DAASubLaPalma"
+          "max_flow": "deficitLaPalma"
         },
         {
           "name": "bocatoma20",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma8",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma21",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma23",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma24",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma30",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma4",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma7",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "TUCChacayal",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "TUCbocatoma15",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "TUCQUIMBF",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma13",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma26",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma25",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma14",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma15",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma22",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },   
         {
           "name": "bocatoma5",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma10",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma27",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma16",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma14",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma17",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma9",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma31",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma32",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma1",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma6",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "TUCSnJoseCox",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "FRChacayalO",
             "type": "rivergauge",
             "mrf": "FRChacayalO",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMChacayalO",
             "type": "output",
             "max_flow": "REMChacayalO",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "FRChacayalP",
             "type": "rivergauge",
             "mrf": "FRChacayalP",
-            "cost": 100
+            "cost": -100
         }, 
         {
           "name": "REMChacayalOSub",
             "type": "input",
             "max_flow": "REMChacayalO",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMChacayalP",
             "type": "output",
             "max_flow": "REMChacayalP",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "REMChacayalPSub",
             "type": "input",
             "max_flow": "REMChacayalP",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma11",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma2",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma3",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma28",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma29",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma12",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma18",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "bocatoma19",
             "type": "link",
-            "cost": 100
+            "cost": -100
         },
         {
           "name": "abstraccionAqNiq",
@@ -2196,6 +2196,24 @@
           "parse_dates": true,
           "column": "08106001-0"
           },
+          "deficitCollico": 
+          {
+          "type": "aggregated",
+          "agg_func": "min",
+          "parameters": [
+          "DAASubCollico",
+          {
+            "type": "aggregated",
+            "agg_func": "max",
+            "parameters": [
+              {
+                "type": "aggregated",
+                "agg_func": "product",
+                "parameters": ["superhCollico",-1]
+              },
+              0]
+            }]
+          },
         "DAASubSACCS": 
         {
           "type": "dataframe",
@@ -2368,6 +2386,23 @@
         "parameters": 
         ["superhJFRVirguinZemita",0]
         },
+        "deficitJFRVirguinZemita": 
+        {
+        "type": "aggregated",
+        "agg_func": "min",
+        "parameters": [
+        "DAASubJFRVirguinZemita",
+        {
+          "type": "aggregated",
+          "agg_func": "max",
+          "parameters": [{
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": 
+              ["superhJFRVirguinZemita",-1]},
+            0]
+          }]
+        },
       "flowSACCSSup": 
       {
       "type": "aggregated",
@@ -2444,6 +2479,25 @@
         "parameters": 
         ["superhRanchilloGP",0]
         },
+      "deficitRanchilloGP": 
+      {
+      "type": "aggregated",
+      "agg_func": "min",
+      "parameters": [
+      "DAASubRanchilloGP",
+      {
+        "type": "aggregated",
+        "agg_func": "max",
+        "parameters": [
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": 
+            ["superhRanchilloGP",-1]
+          },
+          0]
+        }]
+      },
           "flowSanPedroSup": 
           {
           "type": "aggregated",
@@ -2506,6 +2560,19 @@
           "parameters": 
           ["superhSanPedro",0]
           },
+          "deficitSanPedro": 
+            {
+            "type": "aggregated",
+            "agg_func": "min",
+            "parameters": [
+            "DAASubSanPedro",
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+               "superhSanPedro",-1]},
+                0]
+            },
             "flowArrauNiquenSup": 
             {
             "type": "aggregated",
@@ -2568,6 +2635,19 @@
               "parameters": 
               ["superhArrauNiquen",0]
               },
+              "deficitArrauNiquen": 
+              {
+              "type": "aggregated",
+              "agg_func": "min",
+              "parameters": [
+              "DAASubArrauNiquen",
+              {
+                "type": "aggregated",
+                "agg_func": "product",
+                "parameters": [
+                  "superhArrauNiquen",-1,0]
+                }]
+              },
               "flowLurinSilvaSup": 
               {
               "type": "aggregated",
@@ -2628,6 +2708,20 @@
                 "agg_func": "max",
                 "parameters": 
                 ["superhLurinSilva",0]
+                },
+                "deficitLurinSilva": 
+                {
+                "type": "aggregated",
+                "agg_func": "min",
+                "parameters": [
+                "DAASubLurinSilva",
+                {
+                  "type": "aggregated",
+                  "agg_func": "product",
+                  "parameters": [
+                    "superhLurinSilva",-1]
+                },
+                0]
                 },
                 "flowMuticuraSup": 
                 {
@@ -2707,6 +2801,20 @@
                       "REMMuticura",
                       0.1]
                   },
+                  "deficitMuticura": 
+                  {
+                  "type": "aggregated",
+                  "agg_func": "min",
+                  "parameters": [
+                  "DAASubMuticura",
+                  {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": [
+                      "superhMuticura",-1]
+                      },
+                      0]
+                  },
         "flowSSaraPomSMartaSup": 
         {
         "type": "aggregated",
@@ -2785,6 +2893,25 @@
                 "REMSSaraPomSMarta",
                 0.95]
           },
+          "deficitSSaraPomSMarta": 
+          {
+          "type": "aggregated",
+          "agg_func": "min",
+          "parameters": [
+          "DAASubSSaraPomSMarta",
+          {
+            "type": "aggregated",
+            "agg_func": "max",
+            "parameters": [
+              {
+                "type": "aggregated",
+                "agg_func": "product",
+                "parameters": 
+                ["superhSataPomSMarta",-1]
+              },
+              0]
+            }]
+            },
             "flowBellavistaSup": 
             {
             "type": "aggregated",
@@ -2863,6 +2990,25 @@
                     "REMBellavista",
                     0.95]
               },
+              "deficitBellavista": 
+              {
+              "type": "aggregated",
+              "agg_func": "min",
+              "parameters": [
+              "DAASubBellavista",
+              {
+                "type": "aggregated",
+                "agg_func": "max",
+                "parameters": [
+                  {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": 
+                    ["superhBellavista",-1]
+                  },
+                  0]
+                }]
+        },
       "flowLilahueMoreiraSup": 
       {
       "type": "aggregated",
@@ -2940,6 +3086,25 @@
         "parameters": [
               "REMLilahueMoreira",
               0.95]
+        },
+        "deficitLilahueMoreira": 
+        {
+        "type": "aggregated",
+        "agg_func": "min",
+        "parameters": [
+        "DAASubLilahueMoreira",
+        {
+          "type": "aggregated",
+          "agg_func": "max",
+          "parameters": [
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": 
+              ["superhLilahueMoreira",-1]
+            },
+            0]
+          }]
         },
         "flowMonteBlancoBSup": 
         {
@@ -3019,6 +3184,24 @@
                 "REMMonteBlancoB",
                 0.95]
           },
+          "deficitMonteBlancoB": 
+          {
+          "type": "aggregated",
+          "agg_func": "min",
+          "parameters": [
+          "DAASubMonteBlancoB",
+          {
+            "type": "aggregated",
+            "agg_func": "max",
+            "parameters": [
+              {
+                "type": "aggregated",
+                "agg_func": "product",
+                "parameters": 
+                ["superhMonteBlancoB",-1]
+              },0]
+            }]
+          },
           "flowPomuyetoBajoASup": 
           {
           "type": "aggregated",
@@ -3096,6 +3279,25 @@
             "parameters": [
                   "REMPomuyetoBajoA",
                   0.95]
+            },
+            "deficitPomuyetoBajoA": 
+            {
+            "type": "aggregated",
+            "agg_func": "min",
+            "parameters": [
+            "DAASubPomuyetoBajoA",
+            {
+              "type": "aggregated",
+              "agg_func": "max",
+              "parameters": [
+                {
+                  "type": "aggregated",
+                  "agg_func": "product",
+                  "parameters": 
+                  ["superhPomuyetoBajoA",-1]
+                }
+                ,0]
+              }]
             },
             "flowPomuyetoBajoBSup": 
             {
@@ -3175,6 +3377,25 @@
                     "REMPomuyetoBajoB",
                     0.95]
               },
+              "deficitPomuyetoBajoB": 
+              {
+              "type": "aggregated",
+              "agg_func": "min",
+              "parameters": [
+              "DAASubPomuyetoBajoB",
+              {
+                "type": "aggregated",
+                "agg_func": "max",
+                "parameters": [
+                  {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": 
+                    ["superhPomuyetoBajoB",-1]
+                            }]
+                  },
+                  0]
+              },
           "flowLasDumasSup": 
           {
           "type": "aggregated",
@@ -3253,6 +3474,20 @@
                   "REMLasDumas",
                   0.95]
             },
+            "deficitLasDumas": 
+            {
+            "type": "aggregated",
+            "agg_func": "min",
+            "parameters": [
+            "DAASubLasDumas",
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters":
+              ["superHLasDumas",-1]
+            },
+            0]
+            },
           "flowQuileltoSup": 
           {
           "type": "aggregated",
@@ -3330,6 +3565,25 @@
             "parameters": [
                   "REMQuilelto",
                   0.95]
+            },
+            "deficitQuilelto": 
+            {
+            "type": "aggregated",
+            "agg_func": "min",
+            "parameters": [
+            "DAASubQuilelto",
+            {
+              "type": "aggregated",
+              "agg_func": "max",
+              "parameters": [
+                {
+                  "type": "aggregated",
+                  "agg_func": "product",
+                  "parameters": 
+                  ["superhQuilelto",
+                  -1]
+                },
+                0]}]
             },
             "flowMBFerradaSup": 
             {
@@ -3410,6 +3664,25 @@
                     "REMMBFerrada",
                     0.95]
               },
+              "deficitMBFerrada": 
+              {
+              "type": "aggregated",
+              "agg_func": "min",
+              "parameters": [
+              "DAASubMBFerrada",
+              {
+                "type": "aggregated",
+                "agg_func": "max",
+                "parameters": [
+                  {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": 
+                    ["superhMBFerrada",-1]
+                            }]
+              },
+                  0]
+              },
         "flowStaRosaNSup": 
         {
         "type": "aggregated",
@@ -3488,6 +3761,26 @@
           "parameters": [
                 "REMStaRosaN",
                 0.95]
+          },
+          "deficitStaRosaN": 
+          {
+          "type": "aggregated",
+          "agg_func": "min",
+          "parameters": [
+          "DAASubStaRosaN",
+          {
+            "type": "aggregated",
+            "agg_func": "max",
+            "parameters": [
+              {
+                "type": "aggregated",
+                "agg_func": "product",
+                "parameters": 
+                ["superhStaRosaN",
+                -1]
+              }]
+              },
+              0]
           },
           "flowMBMendezSup": 
           {
@@ -3568,6 +3861,26 @@
                   "REMMBMendez",
                   0.95]
             },
+            "deficitMBMendez": 
+            {
+            "type": "aggregated",
+            "agg_func": "min",
+            "parameters": [
+            "DAASubMBMendez",
+            {
+              "type": "aggregated",
+              "agg_func": "max",
+              "parameters": [
+                {
+                  "type": "aggregated",
+                  "agg_func": "product",
+                  "parameters": 
+                  ["superhMBMendez",
+                                -1]
+                },
+                0]}
+              ]
+              },
             "flowElPenonSup": 
             {
             "type": "aggregated",
@@ -3647,6 +3960,26 @@
                     "REMElPenon",
                     0.95]
               },
+              "deficitElPenon": 
+              {
+              "type": "aggregated",
+              "agg_func": "min",
+              "parameters": [
+              "DAASubElPenon",
+              {
+                "type": "aggregated",
+                "agg_func": "max",
+                "parameters": [
+                  {
+                    "type": "aggregated",
+                    "agg_func": "product",
+                    "parameters": 
+                    ["superhElPenon",
+                                  -1]
+                  },
+                  0]
+                }]
+              },
               "flowAlazanSup": 
               {
               "type": "aggregated",
@@ -3710,6 +4043,26 @@
                 ["superhAlazan",
                 0]
                 },
+                "deficitAlazan": 
+                {
+                "type": "aggregated",
+                "agg_func": "min",
+                "parameters": [
+                "DAASubAlazan",
+                {
+                  "type": "aggregated",
+                  "agg_func": "max",
+                  "parameters": [
+                    {
+                      "type": "aggregated",
+                      "agg_func": "product",
+                      "parameters": 
+                      ["superhAlazan",
+                      -1]
+                    },
+                    0]
+                  }]
+          },
           "flowRelocaSup": 
           {
           "type": "aggregated",
@@ -3789,6 +4142,21 @@
                   "REMReloca",
                   0.95]
             },
+            "deficitReloca": 
+            {
+            "type": "aggregated",
+            "agg_func": "min",
+            "parameters": [
+            "DAASubReloca",
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                "superhReloca",
+                  -1]
+                },
+                0]
+      },
       "flowRomeralSup": 
       {
       "type": "aggregated",
@@ -3852,6 +4220,21 @@
         ["superhRomeral",
         0]
         },
+        "deficitRomeral": 
+        {
+        "type": "aggregated",
+        "agg_func": "min",
+        "parameters": [
+        "DAASubRomeral",
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+            "superhRomeral",
+                            -1]
+            },
+            0]
+  },
   "flowSanLuisCSup": 
   {
   "type": "aggregated",
@@ -3923,6 +4306,21 @@
           "REMSanLuisC",
           1]
     },
+    "deficitSanLuisC": 
+    {
+    "type": "aggregated",
+    "agg_func": "min",
+    "parameters": [
+    "DAASubSanLuisC",
+    {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+       "superhSanLuisC",
+        -1]
+        },
+        0]
+  },
   "flowQuinquehuaSup": 
   {
   "type": "aggregated",
@@ -3986,6 +4384,21 @@
     ["superhQuinquehua",
     0]
     },
+    "deficitQuinquehua": 
+    {
+    "type": "aggregated",
+    "agg_func": "min",
+    "parameters": [
+    "DAASubQuinquehua",
+    {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+       "superhQuinquehua",
+                        -1]
+        },
+        0]
+  },
   "flowSantaRosaCatoSup": 
   {
   "type": "aggregated",
@@ -4056,6 +4469,21 @@
     "parameters": [
           "REMSantaRosaCato",
           0.05]
+    },
+    "deficitSantaRosaCato": 
+    {
+    "type": "aggregated",
+    "agg_func": "min",
+    "parameters": [
+    "DAASubSantaRosaCato",
+    {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+        "superhSantaRosaCato",
+                        -1]
+        },
+        0]
     },
     "REMSantaRosaCatoSub": 
     {
@@ -4135,6 +4563,21 @@
     "parameters": [
           "REMMonteBlancoL",
           0.05]
+    },
+    "deficitMonteBlancoL": 
+    {
+    "type": "aggregated",
+    "agg_func": "min",
+    "parameters": [
+    "DAASubMonteBlancoL",
+    {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+        "superhMonteBlancoL",
+                        -1]
+        },
+        0]
     },
     "REMMonteBlancoLSub": 
     {
@@ -4223,6 +4666,21 @@
             "REMMonteBlancoJ",
             0.95]
       },
+      "deficitMonteBlancoJ": 
+      {
+      "type": "aggregated",
+      "agg_func": "min",
+      "parameters": [
+      "DAASubMonteBlancoJ",
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+          "superhMonteBlancoJ",
+                          -1]
+          },
+          0]
+      },
       "flowStaRitaSup": 
       {
       "type": "aggregated",
@@ -4286,6 +4744,21 @@
         ["superhStaRita",
         0]
         },
+        "deficitStaRita": 
+        {
+        "type": "aggregated",
+        "agg_func": "min",
+        "parameters": [
+        "DAASubStaRita",
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+            "superhStaRita",
+                            -1]
+            },
+            0]
+      },
       "flowDadincoSup": 
       {
       "type": "aggregated",
@@ -4357,6 +4830,21 @@
               "REMDadinco",
               1]
         },
+        "deficitDadinco": 
+        {
+        "type": "aggregated",
+        "agg_func": "min",
+        "parameters": [
+        "DAASubDadinco",
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+            "superhDadinco",
+                            -1]
+            },
+            0]
+      },
       "flowSanJoseSSup": 
       {
       "type": "aggregated",
@@ -4435,6 +4923,21 @@
         "parameters": [
               "REMSanJoseS",
               0.95]
+        },
+        "deficitSanJoseS": 
+        {
+        "type": "aggregated",
+        "agg_func": "min",
+        "parameters": [
+        "DAASubSanJoseS",
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+            "superhSanJoseS",
+                            -1]
+            },
+            0]
         },
         "flowCapillaCoxSup": 
         {
@@ -4515,6 +5018,21 @@
                 "REMCapillaCox",
                 0.95]
           },
+          "deficitCapillaCox": 
+          {
+          "type": "aggregated",
+          "agg_func": "min",
+          "parameters": [
+          "DAASubCapillaCox",
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+             "superhCapillaCox",
+                              -1]
+              },
+              0]
+          },
           "flowCapillaNSup": 
           {
           "type": "aggregated",
@@ -4586,6 +5104,21 @@
                   "REMCapillaN",
                   0.05]
             },
+            "deficitCapillaN": 
+            {
+            "type": "aggregated",
+            "agg_func": "min",
+            "parameters": [
+            "DAASubCapillaN",
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                "superhCapillaN",
+                                -1]
+                },
+                0]
+            },
             "REMCapillaNSub": 
             {
             "type": "aggregated",
@@ -4648,6 +5181,21 @@
               "parameters": 
               ["superhSanJoseN",
               0]
+              },
+              "deficitSanJoseN": 
+              {
+              "type": "aggregated",
+              "agg_func": "min",
+              "parameters": [
+              "DAASubSanJoseN",
+              {
+                "type": "aggregated",
+                "agg_func": "product",
+                "parameters": [
+                    "superhSanJoseN",
+                              -1]
+                  },
+                  0]
               },
               "DAASubSanJoseN": 
               {
@@ -4737,6 +5285,20 @@
                       "REMArancibia",
                       1]
                 },
+                "deficitArancibia": 
+                {
+                "type": "aggregated",
+                "agg_func": "min",
+                "parameters": [
+                "DAASubArancibia",
+                {
+                  "type": "aggregated",
+                  "agg_func": "product",
+                  "parameters": [
+                    "superhArancibia",-1]
+                    },
+                    0]
+              },
       "flowRinconadaCSup": 
       {
       "type": "aggregated",
@@ -4815,6 +5377,21 @@
               "REMRinconadaC",
               0.95]
         },
+        "deficitRinconadaC": 
+        {
+        "type": "aggregated",
+        "agg_func": "min",
+        "parameters": [
+        "DAASubRinconadaC",
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+            "superhRinconadaC",
+            -1]
+            },
+            0]
+        },
         "flowStaLauraSup": 
         {
         "type": "aggregated",
@@ -4878,6 +5455,21 @@
           ["superhStaLaura",
           0]
           },
+          "deficitStaLaura": 
+          {
+          "type": "aggregated",
+          "agg_func": "min",
+          "parameters": [
+          "DAASubStaLaura",
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+              "superhStaLaura",
+              -1]
+              },
+              0]
+        },
         "flowLaPalmaSup": 
         {
         "type": "aggregated",
@@ -4941,6 +5533,21 @@
           ["superhLaPalma",
           0]
           },
+          "deficitLaPalma": 
+          {
+          "type": "aggregated",
+          "agg_func": "min",
+          "parameters": [
+          "DAASubLaPalma",
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+             "superhLaPalma",
+                              -1]
+              },
+              0]
+        },
     "FRChacayalO": 
     {
       "type": "aggregated",
@@ -5058,6 +5665,36 @@
         ["superhChacayalO",
         0]
         },
+        "deficitChacayalO": 
+        {
+        "type": "aggregated",
+        "agg_func": "min",
+        "parameters": [
+        "DAASubChacayalO",
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+           "superhChacayalO",
+                            -1]
+            },
+            0]
+        },
+        "deficitChacayalP": 
+        {
+        "type": "aggregated",
+        "agg_func": "min",
+        "parameters": [
+        "DAASubChacayalP",
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+           "superhChacayalP",
+            -1]
+            },
+            0]
+        },
         "FRMunicipal":
         {
           "type": "aggregated",
@@ -5113,6 +5750,21 @@
                   "FlowNubleSanFabian",
                   0.002]
             },
+            "deficitMunicipal": 
+            {
+            "type": "aggregated",
+            "agg_func": "min",
+            "parameters": [
+            "DAASubMunicipal",
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+               "superhMunicipal",
+                                -1]
+                },
+                0]
+            },
          "SACCS":
           {
             "type": "aggregated",
@@ -5143,6 +5795,21 @@
             "parameters": 
             ["superhSACCS",
             0]
+          },
+          "deficitSACCS": 
+          {
+          "type": "aggregated",
+          "agg_func": "min",
+          "parameters": [
+          "DAASubSACCS",
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+             "superhSACCS",
+                              -1]
+              },
+              0]
           }
     }
 }

@@ -127,7 +127,7 @@ recargas,descargas)
 'FRSanLuisC_inf','FRQuinquehua_inf','FRMonteBlancoL_inf','FRMonteBlancoJ_inf',
 'FRStaRita_inf','FRDadinco_inf','FRSanJoseS_inf','FRCapillaCox_inf',
 'FRCapillaN_inf','FRArancibia_inf','FRStaLaura_inf','FRLaPalma_inf',
-'FRRinconadaC_inf']
+'FRRinconadaC_inf','FRQuilelto_inf','FRSantaRosaCato_inf']
     model,aqferNuble=connectAquifer(model,aqferNuble,infiltraciones,[])
         
 #     conectar los nodos de déficit que faltan

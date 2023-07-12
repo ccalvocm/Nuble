@@ -102,7 +102,7 @@ if __name__ == "__main__":
     # conectar las infiltraciones al acuífero Ñiquen
     infiltraciones=['FRGYM_inf','FRArrauNiquen_inf','TUCCSC_inf',
                     'TUCRG_inf','FRLurinSilva_inf','TUCSPS_inf',
-                    'TUCMORLIL_inf']
+                    'TUCMORLIL_inf','FRSanJoseN_inf','FRMunicipal_inf']
     model,aqferChan=connectAquifer(model,aqferChan,infiltraciones,[])
 
 #     conectar nodos existentes al acuifero Ñuble
@@ -122,7 +122,12 @@ recargas,descargas)
     # conectar las infiltraciones al acuífero Ñuble
     infiltraciones=['FRCollico_inf','FRChacayalO_inf','FRChacayalP_inf',
 'FRMuticura_inf','FRBellavista_inf','FRPomuyetoBajoA_inf','FRMonteBlancoB_inf',
-'FRPomuyetoBajoB_inf','FRLasDumas_inf']
+'FRPomuyetoBajoB_inf','FRLasDumas_inf','FRMBFerrada_inf','FRStaRosaN_inf',
+'FRMBMendez_inf','FRElPenon_inf','FRAlazan_inf','FRReloca_inf','FRRomeral_inf',
+'FRSanLuisC_inf','FRQuinquehua_inf','FRMonteBlancoL_inf','FRMonteBlancoJ_inf',
+'FRStaRita_inf','FRDadinco_inf','FRSanJoseS_inf','FRCapillaCox_inf',
+'FRCapillaN_inf','FRArancibia_inf','FRStaLaura_inf','FRLaPalma_inf',
+'FRRinconadaC_inf']
     model,aqferNuble=connectAquifer(model,aqferNuble,infiltraciones,[])
         
 #     conectar los nodos de déficit que faltan

@@ -227,6 +227,18 @@
           "mrf": "FRMunicipal"
         },
         {
+          "name":"FRMunicipal_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMunicipal_net"
+        },
+        {
+          "name":"FRMunicipal_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMunicipal_inf"
+        },
+        {
         "name":"deficitMunicipal",
         "type": "link",
         "cost": -100,
@@ -710,6 +722,18 @@
           "mrf": "FRMonteBlancoB"
         },   
         {
+          "name":"FRMonteBlancoB_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMonteBlancoB_net"
+        },   
+        {
+          "name":"FRMonteBlancoB_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMonteBlancoB_inf"
+        },   
+        {
           "name":"MonteBlancoBSup",
           "type": "Output",
           "cost": -100,
@@ -914,6 +938,18 @@
           "mrf": "FRQuilelto"
         },   
         {
+          "name":"FRQuilelto_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRQuilelto_net"
+        },   
+        {
+          "name":"FRQuilelto_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRQuilelto_inf"
+        },   
+        {
           "name":"QuileltoSup",
           "type": "Output",
           "cost": -100,
@@ -956,6 +992,18 @@
           "mrf": "FRMBFerrada"
         },   
         {
+          "name":"FRMBFerrada_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMBFerrada_net"
+        },  
+        {
+          "name":"FRMBFerrada_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMBFerrada_inf"
+        },  
+        {
           "name":"MBFerradaSup",
           "type": "Output",
           "cost": -100,
@@ -996,6 +1044,18 @@
           "type": "rivergauge",
           "cost": -100,
           "mrf": "FRStaRosaN"
+        },   
+        {
+          "name":"FRStaRosaN_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRStaRosaN_net"
+        },  
+        {
+          "name":"FRStaRosaN_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRStaRosaN_inf"
         },   
         {
           "name":"StaRosaNSup",
@@ -1040,6 +1100,18 @@
           "mrf": "FRMBMendez"
         },   
         {
+          "name":"FRMBMendez_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMBMendez_net"
+        },   
+        {
+          "name":"FRMBMendez_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMBMendez_inf"
+        },   
+        {
           "name":"MBMendezSup",
           "type": "Output",
           "cost": -100,
@@ -1081,6 +1153,18 @@
           "cost": -100,
           "mrf": "FRElPenon"
         },   
+        {
+          "name":"FRElPenon_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRElPenon_net"
+        },   
+        {
+          "name":"FRElPenon_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRElPenon_inf"
+        }, 
         {
           "name":"ElPenonSup",
           "type": "Output",
@@ -1124,6 +1208,18 @@
           "mrf": "FRAlazan"
         },   
         {
+          "name":"FRAlazan_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRAlazan_net"
+        },   
+        {
+          "name":"FRAlazan_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRAlazan_inf"
+        },   
+        {
           "name":"AlazanMix",
           "type": "Output",
           "cost": -100,
@@ -1152,6 +1248,18 @@
           "type": "rivergauge",
           "cost": -100,
           "mrf": "FRReloca"
+        },   
+        {
+          "name":"FRReloca_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRReloca_net"
+        },   
+        {
+          "name":"FRReloca_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRReloca_inf"
         },   
         {
           "name":"RelocaSup",
@@ -1196,6 +1304,18 @@
           "mrf": "FRRomeral"
         },   
         {
+          "name":"FRRomeral_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRRomeral_net"
+        },   
+        {
+          "name":"FRRomeral_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRRomeral_inf"
+        },   
+        {
           "name":"RomeralSup",
           "type": "Output",
           "cost": -100,
@@ -1232,6 +1352,18 @@
           "mrf": "FRSanLuisC"
         },   
         {
+          "name":"FRSanLuisC_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRSanLuisC_net"
+        },  
+        {
+          "name":"FRSanLuisC_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRSanLuisC_inf"
+        },    
+        {
           "name":"SanLuisCSup",
           "type": "Output",
           "cost": -100,
@@ -1266,6 +1398,18 @@
           "type": "rivergauge",
           "cost": -100,
           "mrf": "FRQuinquehua"
+        },
+        {
+          "name":"FRQuinquehua_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRQuinquehua_net"
+        },
+        {
+          "name":"FRQuinquehua_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRQuinquehua_inf"
         },   
         {
           "name":"QuinquehuaSup",
@@ -1303,6 +1447,18 @@
           "cost": -100,
           "mrf": "FRSantaRosaCato"
         },   
+        {
+          "name":"FRSantaRosaCato_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRSantaRosaCato_net"
+        },  
+        {
+          "name":"FRSantaRosaCato_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRSantaRosaCato_inf"
+        },  
         {
           "name":"SantaRosaCatoSup",
           "type": "Output",
@@ -1344,6 +1500,18 @@
           "type": "rivergauge",
           "cost": -100,
           "mrf": "FRMonteBlancoL"
+        },   
+        {
+          "name":"FRMonteBlancoL_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMonteBlancoL_net"
+        },   
+        {
+          "name":"FRMonteBlancoL_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMonteBlancoL_inf"
         },   
         {
           "name":"MonteBlancoLSup",
@@ -1388,6 +1556,18 @@
           "mrf": "FRMonteBlancoJ"
         },   
         {
+          "name":"FRMonteBlancoJ_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMonteBlancoJ_net"
+        },   
+        {
+          "name":"FRMonteBlancoJ_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRMonteBlancoJ_inf"
+        },   
+        {
           "name":"MonteBlancoJSup",
           "type": "Output",
           "cost": -100,
@@ -1430,6 +1610,18 @@
           "mrf": "FRStaRita"
         },   
         {
+          "name":"FRStaRita_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRStaRita_net"
+        },  
+        {
+          "name":"FRStaRita_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRStaRita_inf"
+        },  
+        {
           "name":"StaRitaSup",
           "type": "Output",
           "cost": -100,
@@ -1466,6 +1658,18 @@
           "mrf": "FRDadinco"
         },   
         {
+          "name":"FRDadinco_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRDadinco_net"
+        },  
+        {
+          "name":"FRDadinco_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRDadinco_inf"
+        },    
+        {
           "name":"DadincoSup",
           "type": "Output",
           "cost": -100,
@@ -1500,6 +1704,18 @@
           "type": "rivergauge",
           "cost": -100,
           "mrf": "FRSanJoseS"
+        },   
+        {
+          "name":"FRSanJoseS_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRSanJoseS_net"
+        },   
+        {
+          "name":"FRSanJoseS_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRSanJoseS_inf"
         },   
         {
           "name":"SanJoseSSup",
@@ -1544,6 +1760,18 @@
           "mrf": "FRCapillaCox"
         },   
         {
+          "name":"FRCapillaCox_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRCapillaCox_net"
+        },   
+        {
+          "name":"FRCapillaCox_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRCapillaCox_inf"
+        },   
+        {
           "name":"CapillaCoxSup",
           "type": "Output",
           "cost": -100,
@@ -1584,6 +1812,18 @@
           "type": "rivergauge",
           "cost": -100,
           "mrf": "FRCapillaN"
+        },   
+        {
+          "name":"FRCapillaN_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRCapillaN_net"
+        },   
+        {
+          "name":"FRCapillaN_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRCapillaN_inf"
         },   
         {
           "name":"CapillaNSup",
@@ -1658,10 +1898,34 @@
             "cost": 100
         },
         {
+          "name": "FRSanJoseN_net",
+            "type": "rivergauge",
+            "mrf": "FRSanJoseN_net",
+            "cost": 100
+        },
+        {
+          "name": "FRSanJoseN_inf",
+            "type": "rivergauge",
+            "mrf": "FRSanJoseN_inf",
+            "cost": 100
+        },
+        {
           "name":"FRArancibia",
           "type": "rivergauge",
           "cost": -100,
           "mrf": "FRArancibia"
+        },   
+        {
+          "name":"FRArancibia_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRArancibia_net"
+        },   
+        {
+          "name":"FRArancibia_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRArancibia_inf"
         },   
         {
           "name":"ArancibiaSup",
@@ -1698,7 +1962,19 @@
           "type": "rivergauge",
           "cost": -100,
           "mrf": "FRRinconadaC"
+        }, 
+        {
+          "name":"FRRinconadaC_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRRinconadaC_net"
         },   
+        {
+          "name":"FRRinconadaC_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRRinconadaC_inf"
+        },     
         {
           "name":"RinconadaCSup",
           "type": "Output",
@@ -1742,6 +2018,18 @@
           "mrf": "FRStaLaura"
         },   
         {
+          "name":"FRStaLaura_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRStaLaura_net"
+        },   
+        {
+          "name":"FRStaLaura_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRStaLaura_inf"
+        },   
+        {
           "name":"StaLauraSup",
           "type": "Output",
           "cost": -100,
@@ -1776,6 +2064,18 @@
           "type": "rivergauge",
           "cost": -100,
           "mrf": "FRLaPalma"
+        },   
+        {
+          "name":"FRLaPalma_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRLaPalma_net"
+        },   
+        {
+          "name":"FRLaPalma_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRLaPalma_inf"
         },   
         {
           "name":"LaPalmaSup",
@@ -2113,9 +2413,11 @@
       ["REMChacayalP", "REMChacayalPSub"],
       ["bocatoma4", "bocatoma5"],
       ["bocatoma5", "FRMunicipal"],
-      ["FRMunicipal", "MunicipalSup"],
-      ["FRMunicipal", "MunicipalMix"],
-      ["FRMunicipal", "REMMunicipal"],
+      ["FRMunicipal", "FRMunicipal_net"],
+      ["FRMunicipal", "FRMunicipal_inf"],
+      ["FRMunicipal_net", "MunicipalSup"],
+      ["FRMunicipal_net", "MunicipalMix"],
+      ["FRMunicipal_net", "REMMunicipal"],
       ["REMMunicipal", "REMMunicipalSub"],
       ["bocatoma5", "bocatoma6"],
       ["bocatoma6","TUCJFR"],
@@ -2247,163 +2549,209 @@
       ["REMLasDumasSup","bocatoma15"],
       ["TUCbocatoma15", "TUCQUIMBF"],
       ["TUCQUIMBF","FRQuilelto"],
-      ["FRQuilelto","QuileltoSup"],
-      ["FRQuilelto", "QuileltoMix"],
-      ["FRQuilelto","REMQuilelto"],
+      ["FRQuilelto","FRQuilelto_net"],
+      ["FRQuilelto","FRQuilelto_inf"],
+      ["FRQuilelto_net","QuileltoSup"],
+      ["FRQuilelto_net", "QuileltoMix"],
+      ["FRQuilelto_net","REMQuilelto"],
       ["REMQuilelto","REMQuileltoSub"],
       ["REMQuilelto","REMQuileltoSup"],
       ["REMQuileltoSup","TUCbocatoma15"],
       ["TUCQUIMBF","FRMBFerrada"],
-      ["FRMBFerrada","MBFerradaSup"],
-      ["FRMBFerrada", "MBFerradaMix"],
-      ["FRMBFerrada","REMMBFerrada"],
+      ["FRMBFerrada","FRMBFerrada_net"],
+      ["FRMBFerrada","FRMBFerrada_inf"],
+      ["FRMBFerrada_net","MBFerradaSup"],
+      ["FRMBFerrada_net", "MBFerradaMix"],
+      ["FRMBFerrada_net","REMMBFerrada"],
       ["REMMBFerrada","REMMBFerradaSub"],
       ["REMMBFerrada","REMMBFerradaSup"],
       ["REMMBFerradaSup","bocatoma15"],
       ["TUCbocatoma15","FRStaRosaN"],
-      ["FRStaRosaN","StaRosaNSup"],
-      ["FRStaRosaN", "StaRosaNMix"],
-      ["FRStaRosaN","REMStaRosaN"],
+      ["FRStaRosaN","FRStaRosaN_net"],
+      ["FRStaRosaN","FRStaRosaN_inf"],
+      ["FRStaRosaN_net","StaRosaNSup"],
+      ["FRStaRosaN_net", "StaRosaNMix"],
+      ["FRStaRosaN_net","REMStaRosaN"],
       ["REMStaRosaN","REMStaRosaNSub"],
       ["REMStaRosaN","REMStaRosaNSup"],
       ["REMStaRosaNSup","bocatoma15"],
       ["TUCbocatoma15","FRMBMendez"],
-      ["FRMBMendez","MBMendezSup"],
-      ["FRMBMendez", "MBMendezMix"],
-      ["FRMBMendez","REMMBMendez"],
+      ["FRMBMendez","FRMBMendez_net"],
+      ["FRMBMendez","FRMBMendez_inf"],
+      ["FRMBMendez_net","MBMendezSup"],
+      ["FRMBMendez_net", "MBMendezMix"],
+      ["FRMBMendez_net","REMMBMendez"],
       ["REMMBMendez","REMMBMendezSub"],
       ["REMMBMendez","REMMBMendezSup"],
       ["REMMBMendezSup","bocatoma15"],
       ["TUCbocatoma15","FRElPenon"],
-      ["FRElPenon","ElPenonSup"],
-      ["FRElPenon", "ElPenonMix"],
-      ["FRElPenon","REMElPenon"],
+      ["FRElPenon","FRElPenon_net"],
+      ["FRElPenon","FRElPenon_inf"],
+      ["FRElPenon_net","ElPenonSup"],
+      ["FRElPenon_net", "ElPenonMix"],
+      ["FRElPenon_net","REMElPenon"],
       ["REMElPenon","REMElPenon"],
       ["REMElPenon","REMElPenonSub"],
       ["REMElPenon","REMElPenonSup"],
       ["REMElPenonSup","bocatoma15"],
       ["bocatoma15", "bocatoma16"],
       ["bocatoma16","FRAlazan"],
-      ["FRAlazan", "AlazanMix"],
-      ["FRAlazan","REMAlazan"],
+      ["FRAlazan", "FRAlazan_net"],
+      ["FRAlazan", "FRAlazan_inf"],
+      ["FRAlazan_net", "AlazanMix"],
+      ["FRAlazan_net","REMAlazan"],
       ["REMAlazan","REMAlazanSub"],
       ["bocatoma16", "bocatoma17"],
       ["bocatoma17","FRReloca"],
-      ["FRReloca","RelocaSup"],
-      ["FRReloca", "RelocaMix"],
-      ["FRReloca","REMReloca"],
+      ["FRReloca","FRReloca_net"],
+      ["FRReloca_net","FRReloca_inf"],
+      ["FRReloca_net","RelocaSup"],
+      ["FRReloca_net", "RelocaMix"],
+      ["FRReloca_net","REMReloca"],
       ["REMReloca","REMRelocaSub"],
       ["REMReloca","REMRelocaSup"],
       ["REMRelocaSup","bocatoma17"],
       ["bocatoma17", "bocatoma18"],
       ["bocatoma18","FRRomeral"],
-      ["FRRomeral","RomeralSup"],
-      ["FRRomeral", "RomeralMix"],
-      ["FRRomeral","REMRomeral"],
+      ["FRRomeral","FRRomeral_net"],
+      ["FRRomeral_net","FRRomeral_inf"],
+      ["FRRomeral_net","RomeralSup"],
+      ["FRRomeral_net", "RomeralMix"],
+      ["FRRomeral_net","REMRomeral"],
       ["REMRomeral","REMRomeralSub"],
       ["bocatoma18", "bocatoma19"],
       ["bocatoma19","FRSanLuisC"],
-      ["FRSanLuisC","SanLuisCSup"],
-      ["FRSanLuisC", "SanLuisCMix"],
-      ["FRSanLuisC","REMSanLuisC"],
+      ["FRSanLuisC","FRSanLuisC_net"],
+      ["FRSanLuisC","FRSanLuisC_inf"],
+      ["FRSanLuisC_net","SanLuisCSup"],
+      ["FRSanLuisC_net", "SanLuisCMix"],
+      ["FRSanLuisC_net","REMSanLuisC"],
       ["REMSanLuisC","REMSanLuisCSub"],
       ["bocatoma19", "bocatoma20"],
       ["bocatoma19","FRQuinquehua"],
-      ["FRQuinquehua","QuinquehuaSup"],
-      ["FRQuinquehua", "QuinquehuaMix"],
-      ["FRQuinquehua","REMQuinquehua"],
+      ["FRQuinquehua","FRQuinquehua_net"],
+      ["FRQuinquehua_net","FRQuinquehua_inf"],
+      ["FRQuinquehua_net","QuinquehuaSup"],
+      ["FRQuinquehua_net", "QuinquehuaMix"],
+      ["FRQuinquehua_net","REMQuinquehua"],
       ["REMQuinquehua","REMQuinquehuaSub"],
       ["bocatoma20", "bocatoma21"],
       ["bocatoma21","FRSantaRosaCato"],
-      ["FRSantaRosaCato","SantaRosaCatoSup"],
-      ["FRSantaRosaCato", "SantaRosaCatoMix"],
-      ["FRSantaRosaCato","REMSantaRosaCato"],
+      ["FRSantaRosaCato","FRSantaRosaCato_net"],
+      ["FRSantaRosaCato","FRSantaRosaCato_inf"],
+      ["FRSantaRosaCato_net","SantaRosaCatoSup"],
+      ["FRSantaRosaCato_net", "SantaRosaCatoMix"],
+      ["FRSantaRosaCato_net","REMSantaRosaCato"],
       ["REMSantaRosaCato","REMSantaRosaCatoSub"],
       ["REMSantaRosaCato","REMSantaRosaCatoSup"],
       ["REMSantaRosaCatoSup","bocatoma21"],
       ["bocatoma21", "bocatoma22"],
       ["bocatoma22","FRMonteBlancoL"],
-      ["FRMonteBlancoL","MonteBlancoLSup"],
-      ["FRMonteBlancoL", "MonteBlancoLMix"],
-      ["FRMonteBlancoL","REMMonteBlancoL"],
+      ["FRMonteBlancoL","FRMonteBlancoL_net"],
+      ["FRMonteBlancoL","FRMonteBlancoL_inf"],
+      ["FRMonteBlancoL_net","MonteBlancoLSup"],
+      ["FRMonteBlancoL_net", "MonteBlancoLMix"],
+      ["FRMonteBlancoL_net","REMMonteBlancoL"],
       ["REMMonteBlancoL","REMMonteBlancoLSub"],
       ["REMMonteBlancoL","REMMonteBlancoLSup"],
       ["REMMonteBlancoLSup","bocatoma22"],
       ["bocatoma22", "bocatoma23"],
       ["bocatoma23","FRMonteBlancoJ"],
-      ["FRMonteBlancoJ","MonteBlancoJSup"],
-      ["FRMonteBlancoJ", "MonteBlancoJMix"],
-      ["FRMonteBlancoJ","REMMonteBlancoJ"],
+      ["FRMonteBlancoJ","FRMonteBlancoJ_net"],
+      ["FRMonteBlancoJ","FRMonteBlancoJ_inf"],
+      ["FRMonteBlancoJ_net","MonteBlancoJSup"],
+      ["FRMonteBlancoJ_net", "MonteBlancoJMix"],
+      ["FRMonteBlancoJ_net","REMMonteBlancoJ"],
       ["REMMonteBlancoJ","REMMonteBlancoJSub"],
       ["REMMonteBlancoJ","REMMonteBlancoJSup"],
       ["REMMonteBlancoJSup","bocatoma23"],
       ["bocatoma23", "bocatoma24"],
       ["bocatoma24","FRStaRita"],
-      ["FRStaRita","StaRitaSup"],
-      ["FRStaRita", "StaRitaMix"],
-      ["FRStaRita","REMStaRita"],
+      ["FRStaRita","FRStaRita_net"],
+      ["FRStaRita","FRStaRita_inf"],
+      ["FRStaRita_net","StaRitaSup"],
+      ["FRStaRita_net", "StaRitaMix"],
+      ["FRStaRita_net","REMStaRita"],
       ["REMStaRita","REMStaRitaSub"],
       ["bocatoma24", "bocatoma25"],
       ["bocatoma25","FRDadinco"],
-      ["FRDadinco","DadincoSup"],
-      ["FRDadinco", "DadincoMix"],
-      ["FRDadinco","REMDadinco"],
+      ["FRDadinco","FRDadinco_net"],
+      ["FRDadinco","FRDadinco_inf"],
+      ["FRDadinco_net","DadincoSup"],
+      ["FRDadinco_net", "DadincoMix"],
+      ["FRDadinco_net","REMDadinco"],
       ["REMDadinco","REMDadincoSub"],
       ["bocatoma25", "bocatoma26"],
       ["bocatoma26","TUCSnJoseCox"],
       ["TUCSnJoseCox","FRSanJoseS"],
-      ["FRSanJoseS","SanJoseSSup"],
-      ["FRSanJoseS", "SanJoseSMix"],
-      ["FRSanJoseS","REMSanJoseS"],
+      ["FRSanJoseS","FRSanJoseS_net"],
+      ["FRSanJoseS","FRSanJoseS_inf"],
+      ["FRSanJoseS_net","SanJoseSSup"],
+      ["FRSanJoseS_net", "SanJoseSMix"],
+      ["FRSanJoseS_net","REMSanJoseS"],
       ["REMSanJoseS","REMSanJoseSSub"],
       ["REMSanJoseS","REMSanJoseSSup"],
       ["REMSanJoseSSup","bocatoma26"],
       ["TUCSnJoseCox","FRCapillaCox"],
-      ["FRCapillaCox","CapillaCoxSup"],
-      ["FRCapillaCox", "CapillaCoxMix"],
-      ["FRCapillaCox","REMCapillaCox"],
+      ["FRCapillaCox","FRCapillaCox_net"],
+      ["FRCapillaCox","FRCapillaCox_inf"],
+      ["FRCapillaCox_net","CapillaCoxSup"],
+      ["FRCapillaCox_net", "CapillaCoxMix"],
+      ["FRCapillaCox_net","REMCapillaCox"],
       ["REMCapillaCox","REMCapillaCoxSub"],
       ["REMCapillaCox","REMCapillaCoxSup"],
       ["REMCapillaCoxSup","bocatoma26"],
       ["bocatoma26", "bocatoma27"],
       ["bocatoma27","FRCapillaN"],
-      ["FRCapillaN","CapillaNSup"],
-      ["FRCapillaN", "CapillaNMix"],
-      ["FRCapillaN","REMCapillaN"],
+      ["FRCapillaN","FRCapillaN_net"],
+      ["FRCapillaN","FRCapillaN_inf"],
+      ["FRCapillaN_net","CapillaNSup"],
+      ["FRCapillaN_net", "CapillaNMix"],
+      ["FRCapillaN_net","REMCapillaN"],
       ["REMCapillaN","REMCapillaNSub"],
       ["REMCapillaN","REMCapillaNSup"],
       ["REMCapillaNSup","bocatoma27"],
       ["bocatoma27", "bocatoma28"],
       ["bocatoma28","FRSanJoseN"],
-      ["FRSanJoseN", "SanJoseNSup"],
-      ["FRSanJoseN", "SanJoseNMix"],
-      ["FRSanJoseN","REMSanJoseN"],
+      ["FRSanJoseN","FRSanJoseN_net"],
+      ["FRSanJoseN","FRSanJoseN_inf"],
+      ["FRSanJoseN_net", "SanJoseNSup"],
+      ["FRSanJoseN_net", "SanJoseNMix"],
+      ["FRSanJoseN_net","REMSanJoseN"],
       ["REMSanJoseN","REMSanJoseNSub"],
       ["bocatoma28", "bocatoma29"],
       ["bocatoma29","FRRinconadaC"],
-      ["FRRinconadaC","RinconadaCSup"],
-      ["FRRinconadaC", "RinconadaCMix"],
-      ["FRRinconadaC","REMRinconadaC"],
+      ["FRRinconadaC","FRRinconadaC_net"],
+      ["FRRinconadaC","FRRinconadaC_inf"],
+      ["FRRinconadaC_net","RinconadaCSup"],
+      ["FRRinconadaC_net", "RinconadaCMix"],
+      ["FRRinconadaC_net","REMRinconadaC"],
       ["REMRinconadaC","REMRinconadaCSub"],
       ["REMRinconadaC","REMRinconadaCSup"],
       ["REMRinconadaCSup","bocatoma29"],
       ["bocatoma29", "bocatoma30"],
       ["bocatoma30","FRArancibia"],
-      ["FRArancibia","ArancibiaSup"],
-      ["FRArancibia", "ArancibiaMix"],
-      ["FRArancibia","REMArancibia"],
+      ["FRArancibia","FRArancibia_net"],
+      ["FRArancibia","FRArancibia_inf"],
+      ["FRArancibia_net","ArancibiaSup"],
+      ["FRArancibia_net", "ArancibiaMix"],
+      ["FRArancibia_net","REMArancibia"],
       ["REMArancibia","REMArancibiaSub"],
       ["bocatoma30", "bocatoma31"],
       ["bocatoma31","FRStaLaura"],
-      ["FRStaLaura","StaLauraSup"],
-      ["FRStaLaura", "StaLauraMix"],
-      ["FRStaLaura","REMStaLaura"],
+      ["FRStaLaura","FRStaLaura_net"],
+      ["FRStaLaura","FRStaLaura_inf"],
+      ["FRStaLaura_net","StaLauraSup"],
+      ["FRStaLaura_net", "StaLauraMix"],
+      ["FRStaLaura_net","REMStaLaura"],
       ["REMStaLaura","REMStaLauraSub"],
       ["bocatoma31","bocatoma32"],
       ["bocatoma32","FRLaPalma"],
-      ["FRLaPalma","LaPalmaSup"],
-      ["FRLaPalma", "LaPalmaMix"],
-      ["FRLaPalma","REMLaPalma"],
+      ["FRLaPalma","FRLaPalma_net"],
+      ["FRLaPalma","FRLaPalma_inf"],
+      ["FRLaPalma_net","LaPalmaSup"],
+      ["FRLaPalma_net", "LaPalmaMix"],
+      ["FRLaPalma_net","REMLaPalma"],
       ["REMLaPalma","REMLaPalmaSub"],
       ["bocatoma32", "rioNuble"]
     ],
@@ -2477,7 +2825,7 @@
         "agg_func": "sum",
         "parameters": 
         [
-        "FRCollico",
+        "FRCollico_net",
         {
           "type": "aggregated",
           "agg_func": "product",
@@ -2563,7 +2911,7 @@
         "agg_func": "sum",
         "parameters": 
         [
-          "FRGYM",
+          "FRGYM_net",
           {
             "type": "aggregated",
             "agg_func": "product",
@@ -2790,7 +3138,7 @@
           "agg_func": "sum",
           "parameters": 
           [
-          "TUCRG",
+          "TUCRG_net",
           {
             "type": "aggregated",
             "agg_func": "product",
@@ -3023,7 +3371,7 @@
                 "agg_func": "sum",
                 "parameters": 
                 [
-                "FRLurinSilva",
+                "FRLurinSilva_net",
                 {
                   "type": "aggregated",
                   "agg_func": "product",
@@ -3100,7 +3448,7 @@
                   "agg_func": "sum",
                   "parameters": 
                   [
-                  "FRMuticura",
+                  "FRMuticura_net",
                   {
                     "type": "aggregated",
                     "agg_func": "product",
@@ -3194,7 +3542,7 @@
           "agg_func": "sum",
           "parameters": 
           [
-          "TUCSPS",
+          "TUCSPS_net",
           {
             "type": "aggregated",
             "agg_func": "product",
@@ -3288,7 +3636,7 @@
               "agg_func": "sum",
               "parameters": 
               [
-              "FRBellavista",
+              "FRBellavista_net",
               {
                 "type": "aggregated",
                 "agg_func": "product",
@@ -3382,7 +3730,7 @@
           "agg_func": "sum",
           "parameters": 
           [
-          "TUCMORLIL",
+          "TUCMORLIL_net",
           {
             "type": "aggregated",
             "agg_func": "product",
@@ -3476,7 +3824,7 @@
           "agg_func": "sum",
           "parameters": 
           [
-          "FRMonteBlancoB",
+          "FRMonteBlancoB_net",
           {
             "type": "aggregated",
             "agg_func": "product",
@@ -3570,7 +3918,7 @@
             "agg_func": "sum",
             "parameters": 
             [
-            "FRPomuyetoBajoA",
+            "FRPomuyetoBajoA_net",
             {
               "type": "aggregated",
               "agg_func": "product",
@@ -3664,7 +4012,7 @@
               "agg_func": "sum",
               "parameters": 
               [
-              "FRPomuyetoBajoB",
+              "FRPomuyetoBajoB_net",
               {
                 "type": "aggregated",
                 "agg_func": "product",
@@ -3758,7 +4106,7 @@
             "agg_func": "sum",
             "parameters": 
             [
-            "FRLasDumas",
+            "FRLasDumas_net",
             {
               "type": "aggregated",
               "agg_func": "product",
@@ -3822,6 +4170,22 @@
                   "FlowNubleSanFabian",
                   0.00686624396563539993870728395109]
             },
+          "FRQuilelto_inf":
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FRQuilelto",
+                  0.14]
+            },
+          "FRQuilelto_net":
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FRQuilelto",
+                  0.86]
+            },
           "DAASubQuilelto": 
           {
           "type": "aggregated",
@@ -3836,7 +4200,7 @@
             "agg_func": "sum",
             "parameters": 
             [
-            "FRQuilelto",
+            "FRQuilelto_net",
             {
               "type": "aggregated",
               "agg_func": "product",
@@ -3900,6 +4264,22 @@
                     "FlowNubleSanFabian",
                     0.00686624396563539993870728395109]
               },
+            "FRMBFerrada_inf":
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "FRMBFerrada",
+                    0.08]
+              },
+            "FRMBFerrada_net":
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "FRMBFerrada",
+                    0.92]
+              },
             "DAASubMBFerrada": 
             {
             "type": "aggregated",
@@ -3914,7 +4294,7 @@
               "agg_func": "sum",
               "parameters": 
               [
-              "FRMBFerrada",
+              "FRMBFerrada_net",
               {
                 "type": "aggregated",
                 "agg_func": "product",
@@ -3979,6 +4359,22 @@
                 "FlowNubleSanFabian",
                 0.0147733537591548998862966968204]
           },
+        "FRStaRosaN_inf":
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "FRStaRosaN",
+                0.2774]
+          },
+        "FRStaRosaN_net":
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "FRStaRosaN",
+                0.7226]
+          },
         "DAASubStaRosaN": 
         {
         "type": "aggregated",
@@ -3993,7 +4389,7 @@
           "agg_func": "sum",
           "parameters": 
           [
-          "FRStaRosaN",
+          "FRStaRosaN_net",
           {
             "type": "aggregated",
             "agg_func": "product",
@@ -4058,6 +4454,22 @@
                   "FlowNubleSanFabian",
                   0.0018912797817462999056675743148]
             },
+          "FRMBMendez_inf":
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FRMBMendez",
+                  0.09]
+            },
+          "FRMBMendez_net":
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FRMBMendez",
+                  0.91]
+            },
           "DAASubMBMendez": 
           {
           "type": "aggregated",
@@ -4072,7 +4484,7 @@
             "agg_func": "sum",
             "parameters": 
             [
-            "FRMBMendez",
+            "FRMBMendez_net",
             {
               "type": "aggregated",
               "agg_func": "product",
@@ -4137,6 +4549,22 @@
                     "FlowNubleSanFabian",
                     0.00959824489236250043278086963028]
               },
+            "FRElPenon_inf":
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "FRElPenon",
+                    0.19]
+              },
+            "FRElPenon_net":
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "FRElPenon",
+                    0.81]
+              },
             "DAASubElPenon": 
             {
             "type": "aggregated",
@@ -4151,7 +4579,7 @@
               "agg_func": "sum",
               "parameters": 
               [
-              "FRElPenon",
+              "FRElPenon_net",
               {
                 "type": "aggregated",
                 "agg_func": "product",
@@ -4216,6 +4644,22 @@
                       "FlowNubleSanFabian",
                       0.0141845983630973001415886969312]
                 },
+              "FRAlazan_inf":
+              {
+                "type": "aggregated",
+                "agg_func": "product",
+                "parameters": [
+                      "FRAlazan",
+                      0.09]
+                },
+              "FRAlazan_net":
+              {
+                "type": "aggregated",
+                "agg_func": "product",
+                "parameters": [
+                      "FRAlazan",
+                      0.91]
+                },
               "DAASubAlazan": 
               {
               "type": "aggregated",
@@ -4230,7 +4674,7 @@
                 "agg_func": "sum",
                 "parameters": 
                 [
-                "FRAlazan",
+                "FRAlazan_net",
                 {
                   "type": "aggregated",
                   "agg_func": "product",
@@ -4279,6 +4723,22 @@
                   "FlowNubleSanFabian",
                   0.0250594571081385990296563903712]
             },
+          "FRReloca_inf":
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FRReloca",
+                  0.14]
+            },
+          "FRReloca_net":
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FRReloca",
+                  0.86]
+            },
           "DAASubReloca": 
           {
           "type": "aggregated",
@@ -4293,7 +4753,7 @@
             "agg_func": "sum",
             "parameters": 
             [
-            "FRReloca",
+            "FRReloca_net",
             {
               "type": "aggregated",
               "agg_func": "product",
@@ -4358,6 +4818,22 @@
               "FlowNubleSanFabian",
               0.0130422653749225000985312306057]
         },
+      "FRRomeral_inf":
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FRRomeral",
+              0.06]
+        },
+      "FRRomeral_net":
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FRRomeral",
+              0.94]
+        },
       "DAASubRomeral": 
       {
       "type": "aggregated",
@@ -4372,7 +4848,7 @@
         "agg_func": "sum",
         "parameters": 
         [
-        "FRRomeral",
+        "FRRomeral_net",
         {
           "type": "aggregated",
           "agg_func": "product",
@@ -4421,6 +4897,22 @@
           "FlowNubleSanFabian",
           0.00472819945436570021612965319946]
     },
+  "FRSanLuisC_inf":
+  {
+    "type": "aggregated",
+    "agg_func": "product",
+    "parameters": [
+          "FRSanLuisC",
+          0.07]
+    },
+  "FRSanLuisC_net":
+  {
+    "type": "aggregated",
+    "agg_func": "product",
+    "parameters": [
+          "FRSanLuisC",
+          0.93]
+    },
   "DAASubSanLuisC": 
   {
   "type": "aggregated",
@@ -4435,7 +4927,7 @@
     "agg_func": "sum",
     "parameters": 
     [
-    "FRSanLuisC",
+    "FRSanLuisC_net",
     {
       "type": "aggregated",
       "agg_func": "product",
@@ -4492,6 +4984,22 @@
           "FlowNubleSanFabian",
           0.00283691967261940009362164438755]
     },
+  "FRQuinquehua_inf":
+  {
+    "type": "aggregated",
+    "agg_func": "product",
+    "parameters": [
+          "FRQuinquehua",
+          0.0927]
+    },
+  "FRQuinquehua_net":
+  {
+    "type": "aggregated",
+    "agg_func": "product",
+    "parameters": [
+          "FRQuinquehua",
+          0.9073]
+    },
   "DAASubQuinquehua": 
   {
   "type": "aggregated",
@@ -4506,7 +5014,7 @@
     "agg_func": "sum",
     "parameters": 
     [
-    "FRQuinquehua",
+    "FRQuinquehua_net",
     {
       "type": "aggregated",
       "agg_func": "product",
@@ -4555,6 +5063,22 @@
           "FlowNubleSanFabian",
           0.00945639890873149931149743707692]
     },
+  "FRSantaRosaCato_inf":
+  {
+    "type": "aggregated",
+    "agg_func": "product",
+    "parameters": [
+          "FRSantaRosaCato",
+          0.0759]
+    },
+  "FRSantaRosaCato_net":
+  {
+    "type": "aggregated",
+    "agg_func": "product",
+    "parameters": [
+          "FRSantaRosaCato",
+          0.9241]
+    },
   "DAASubSantaRosaCato": 
   {
   "type": "aggregated",
@@ -4569,7 +5093,7 @@
     "agg_func": "sum",
     "parameters": 
     [
-    "FRSantaRosaCato",
+    "FRSantaRosaCato_net",
     {
       "type": "aggregated",
       "agg_func": "product",
@@ -4634,6 +5158,22 @@
           "FlowNubleSanFabian",
           0.00851075901785840020774553948968]
     },
+  "FRMonteBlancoL_inf":
+  {
+    "type": "aggregated",
+    "agg_func": "product",
+    "parameters": [
+          "FRMonteBlancoL",
+          0.09]
+    },
+  "FRMonteBlancoL_net":
+  {
+    "type": "aggregated",
+    "agg_func": "product",
+    "parameters": [
+          "FRMonteBlancoL",
+          0.91]
+    },
   "DAASubMonteBlancoL": 
   {
   "type": "aggregated",
@@ -4648,7 +5188,7 @@
     "agg_func": "sum",
     "parameters": 
     [
-    "FRMonteBlancoL",
+    "FRMonteBlancoL_net",
     {
       "type": "aggregated",
       "agg_func": "product",
@@ -4713,6 +5253,22 @@
             "FlowNubleSanFabian",
             0.00338066260987150007943924379106]
       },
+    "FRMonteBlancoJ_inf":
+    {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FRMonteBlancoJ",
+            0.1]
+      },
+    "FRMonteBlancoJ_net":
+    {
+      "type": "aggregated",
+      "agg_func": "product",
+      "parameters": [
+            "FRMonteBlancoJ",
+            0.9]
+      },
     "DAASubMonteBlancoJ": 
     {
     "type": "aggregated",
@@ -4727,7 +5283,7 @@
       "agg_func": "sum",
       "parameters": 
       [
-      "FRMonteBlancoJ",
+      "FRMonteBlancoJ_net",
       {
         "type": "aggregated",
         "agg_func": "product",
@@ -4792,6 +5348,22 @@
               "FlowNubleSanFabian",
               0.00567383934523889993384315744152]
         },
+      "FRStaRita_inf":
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FRStaRita",
+              0.09]
+        },
+        "FRStaRita_net":
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "FRStaRita",
+                0.91]
+          },
       "DAASubStaRita": 
       {
       "type": "aggregated",
@@ -4806,7 +5378,7 @@
         "agg_func": "sum",
         "parameters": 
         [
-        "FRStaRita",
+        "FRStaRita_net",
         {
           "type": "aggregated",
           "agg_func": "product",
@@ -4855,6 +5427,22 @@
               "FlowNubleSanFabian",
               0.0725522820654666000805832482001]
         },
+      "FRDadinco_inf":
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FRDadinco",
+              0.14667]
+        },
+      "FRDadinco_net":
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FRDadinco",
+              0.85333]
+        },
       "DAASubDadinco": 
       {
       "type": "aggregated",
@@ -4869,7 +5457,7 @@
         "agg_func": "sum",
         "parameters": 
         [
-        "FRDadinco",
+        "FRDadinco_net",
         {
           "type": "aggregated",
           "agg_func": "product",
@@ -4926,6 +5514,22 @@
               "FlowNubleSanFabian",
               0.0141845983630973001415886969312]
         },
+      "FRSanJoseS_inf":
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FRSanJoseS",
+              0.09]
+        },
+      "FRSanJoseS_net":
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FRSanJoseS",
+              0.91]
+        },
       "DAASubSanJoseS": 
       {
       "type": "aggregated",
@@ -4940,7 +5544,7 @@
         "agg_func": "sum",
         "parameters": 
         [
-        "FRSanJoseS",
+        "FRSanJoseS_net",
         {
           "type": "aggregated",
           "agg_func": "product",
@@ -5005,6 +5609,22 @@
                 "FlowNubleSanFabian",
                 0.0283691967261946002831773938624]
           },
+        "FRCapillaCox_inf":
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "FRCapillaCox",
+                0.07]
+          },
+          "FRCapillaCox_net":
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FRCapillaCox",
+                  0.93]
+            },
         "DAASubCapillaCox": 
         {
         "type": "aggregated",
@@ -5019,7 +5639,7 @@
           "agg_func": "sum",
           "parameters": 
           [
-          "FRCapillaCox",
+          "FRCapillaCox_net",
           {
             "type": "aggregated",
             "agg_func": "product",
@@ -5084,6 +5704,22 @@
                   "FlowNubleSanFabian",
                   0.00756511912698519962267029725922]
             },
+          "FRCapillaN_inf":
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FRCapillaN",
+                  0.1]
+            },
+            "FRCapillaN_net":
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "FRCapillaN",
+                    0.9]
+              },
           "DAASubCapillaN": 
           {
           "type": "aggregated",
@@ -5098,7 +5734,7 @@
             "agg_func": "sum",
             "parameters": 
             [
-            "FRCapillaN",
+            "FRCapillaN_net",
             {
               "type": "aggregated",
               "agg_func": "product",
@@ -5155,6 +5791,22 @@
                     "FlowNubleSanFabian",
                     0.0261469429826426992546917205118]
               },
+            "FRSanJoseN_inf":
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "FRSanJoseN",
+                    0.1768]
+              },
+              "FRSanJoseN_net":
+              {
+                "type": "aggregated",
+                "agg_func": "product",
+                "parameters": [
+                      "FRSanJoseN",
+                      0.8232]
+                },
             "SanJoseN":
             {
               "type": "aggregated",
@@ -5169,7 +5821,7 @@
               "agg_func": "sum",
               "parameters": 
               [
-              "FRSanJoseN",
+              "FRSanJoseN_net",
               {
                 "type": "aggregated",
                 "agg_func": "product",
@@ -5234,6 +5886,22 @@
                       "FlowNubleSanFabian",
                       0.00378255956349259981133514862961]
                 },
+              "FRArancibia_inf":
+              {
+                "type": "aggregated",
+                "agg_func": "product",
+                "parameters": [
+                      "FRArancibia",
+                      0.13]
+                },
+              "FRArancibia_net":
+              {
+                "type": "aggregated",
+                "agg_func": "product",
+                "parameters": [
+                      "FRArancibia",
+                      0.87]
+                },
               "DAASubArancibia": 
               {
               "type": "aggregated",
@@ -5248,7 +5916,7 @@
                 "agg_func": "sum",
                 "parameters": 
                 [
-                "FRArancibia",
+                "FRArancibia_net",
                 {
                   "type": "aggregated",
                   "agg_func": "product",
@@ -5306,6 +5974,22 @@
               "FlowNubleSanFabian",
               0.00945639890873149931149743707692]
         },
+      "FRRinconadaC_inf":
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FRRinconadaC",
+              0.07]
+      },
+      "FRRinconadaC_net":
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FRRinconadaC",
+              0.93]
+        },
       "DAASubRinconadaC": 
       {
       "type": "aggregated",
@@ -5320,7 +6004,7 @@
         "agg_func": "sum",
         "parameters": 
         [
-        "FRRinconadaC",
+        "FRRinconadaC_net",
         {
           "type": "aggregated",
           "agg_func": "product",
@@ -5384,6 +6068,22 @@
                 "FlowNubleSanFabian",
                 0.00945639890873149931149743707692]
           },
+        "FRStaLaura_inf":
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "FRStaLaura",
+                0.136]
+          },
+          "FRStaLaura_net":
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FRStaLaura",
+                  0.864]
+            },
         "DAASubStaLaura": 
         {
         "type": "aggregated",
@@ -5398,7 +6098,7 @@
           "agg_func": "sum",
           "parameters": 
           [
-          "FRStaLaura",
+          "FRStaLaura_net",
           {
             "type": "aggregated",
             "agg_func": "product",
@@ -5447,6 +6147,22 @@
                 "FlowNubleSanFabian",
                 0.000378255956349200003069332964856]
           },
+        "FRLaPalma_inf":
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "FRLaPalma",
+                0.11625]
+          },
+          "FRLaPalma_net":
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FRLaPalma",
+                  0.88375]
+            },
         "DAASubLaPalma": 
         {
         "type": "aggregated",
@@ -5461,7 +6177,7 @@
           "agg_func": "sum",
           "parameters": 
           [
-          "FRLaPalma",
+          "FRLaPalma_net",
           {
             "type": "aggregated",
             "agg_func": "product",
@@ -5556,7 +6272,7 @@
       "agg_func": "sum",
       "parameters": 
       [
-      "FRChacayalO",
+      "FRChacayalO_net",
       {
         "type": "aggregated",
         "agg_func": "product",
@@ -5589,28 +6305,13 @@
             "flowChacayalOSup",
             "flowChacayalOMix"]
       },
-    "superhChacayalO":
-    {
-      "type": "aggregated",
-      "agg_func": "sum",
-      "parameters": 
-      [
-      "FRChacayalO",
-      {
-        "type": "aggregated",
-        "agg_func": "product",
-        "parameters": 
-        ["ChacayalO",-1]
-      }     
-      ]
-      },
     "superhChacayalP":
     {
       "type": "aggregated",
       "agg_func": "sum",
       "parameters": 
       [
-      "FRChacayalP",
+      "FRChacayalP_net",
       {
         "type": "aggregated",
         "agg_func": "product",
@@ -5635,6 +6336,22 @@
                 "FlowNubleSanFabian",
                 0.0470883274940070012393178444654]
           },
+        "FRMunicipal_inf":
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "FRMunicipal",
+                0.11]
+          },
+          "FRMunicipal_net":
+          {
+            "type": "aggregated",
+            "agg_func": "product",
+            "parameters": [
+                  "FRMunicipal",
+                  0.89]
+            },
         "DAASubMunicipal": 
         {
         "type": "aggregated",
@@ -5657,7 +6374,7 @@
           "agg_func": "sum",
           "parameters": 
           [
-          "FRMunicipal",
+          "FRMunicipal_net",
           {
             "type": "aggregated",
             "agg_func": "product",
@@ -5712,7 +6429,7 @@
             "agg_func": "sum",
             "parameters": 
             [
-            "TUCCSC",
+            "TUCCSC_net",
             {
               "type": "aggregated",
               "agg_func": "product",

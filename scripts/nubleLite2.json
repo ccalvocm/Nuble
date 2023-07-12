@@ -113,6 +113,18 @@
             "cost": 100
         },
         {
+          "name": "FRGYM_net",
+            "type": "rivergauge",
+            "mrf": "FRGYM_net",
+            "cost": 100
+        },
+        {
+          "name": "FRGYM_inf",
+            "type": "rivergauge",
+            "mrf": "FRGYM_inf",
+            "cost": 100
+        }, 
+        {
           "name":"ChacayalOSup",
           "type": "Output",
           "cost": -100,
@@ -170,6 +182,18 @@
           "name": "TUCJFR",
             "type": "rivergauge",
             "mrf": "TUCJFR",
+            "cost": 100
+        },
+        {
+          "name": "TUCJFR_net",
+            "type": "rivergauge",
+            "mrf": "TUCJFR_net",
+            "cost": 100
+        },
+        {
+          "name": "TUCJFR_inf",
+            "type": "rivergauge",
+            "mrf": "TUCJFR_inf",
             "cost": 100
         },
         {
@@ -285,6 +309,18 @@
           "mrf": "FRSanPedro"
         },   
         {
+          "name":"FRSanPedro_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRSanPedro_net"
+        }, 
+        {
+          "name":"FRSanPedro_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRSanPedro_inf"
+        }, 
+        {
           "name":"SanPedroSup",
           "type": "Output",
           "cost": -100,
@@ -319,7 +355,19 @@
           "type": "rivergauge",
           "cost": -100,
           "mrf": "FRArrauNiquen"
-        },   
+        }, 
+        {
+          "name":"FRArrauNiquen_net",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRArrauNiquen_net"
+        },
+        {
+          "name":"FRArrauNiquen_inf",
+          "type": "rivergauge",
+          "cost": -100,
+          "mrf": "FRArrauNiquen_inf"
+        },
         {
           "name":"ArrauNiquenSup",
           "type": "Output",
@@ -1883,9 +1931,11 @@
       ["REMCollico","REMCollicoSub"],
       ["bocatoma2", "bocatoma3"],
       ["bocatoma3", "FRGYM"],
-      ["FRGYM", "GreeneYMairaSup"],
-      ["FRGYM", "GreeneYMairaMix"],
-      ["FRGYM", "REMGYM"],
+      ["bocatoma3", "FRGYM_net"],
+      ["bocatoma3", "FRGYM_inf"],
+      ["FRGYM_net", "GreeneYMairaSup"],
+      ["FRGYM_net", "GreeneYMairaMix"],
+      ["FRGYM_net", "REMGYM"],
       ["REMGYM", "REMGYMSub"],
       ["bocatoma3", "bocatoma4"],
       ["bocatoma4","TUCChacayal"],
@@ -1907,9 +1957,11 @@
       ["REMMunicipal", "REMMunicipalSub"],
       ["bocatoma5", "bocatoma6"],
       ["bocatoma6","TUCJFR"],
-      ["TUCJFR", "JFRVirguinZemitaMix"],
-      ["TUCJFR", "JFRVirguinZemitaSup"],
-      ["TUCJFR","REMJFRVirguinZemita"],
+      ["TUCJFR", "TUCJFR_net"],
+      ["TUCJFR", "TUCJFR_inf"],
+      ["TUCJFR_net", "JFRVirguinZemitaMix"],
+      ["TUCJFR_net", "JFRVirguinZemitaSup"],
+      ["TUCJFR_net","REMJFRVirguinZemita"],
       ["REMJFRVirguinZemita","REMJFRVirguinZemitaSub"],
       ["bocatoma6", "bocatoma7"],
       ["bocatoma7","TUCCSC"],
@@ -1926,14 +1978,18 @@
       ["bocatoma8", "bocatoma9"],
       ["bocatoma9", "TUCSA"],
       ["TUCSA","FRSanPedro"],
-      ["FRSanPedro","SanPedroSup"],
-      ["FRSanPedro", "SanPedroMix"],
-      ["FRSanPedro","REMSanPedro"],
+      ["FRSanPedro","FRSanPedro_net"],
+      ["FRSanPedro","FRSanPedro_inf"],
+      ["FRSanPedro_net","SanPedroSup"],
+      ["FRSanPedro_net", "SanPedroMix"],
+      ["FRSanPedro_net","REMSanPedro"],
       ["REMSanPedro","REMSanPedroSub"],
       ["TUCSA","FRArrauNiquen"],
-      ["FRArrauNiquen","ArrauNiquenSup"],
-      ["FRArrauNiquen", "ArrauNiquenMix"],
-      ["FRArrauNiquen","REMArrauNiquen"],
+      ["FRArrauNiquen","FRArrauNiquen_net"],
+      ["FRArrauNiquen","FRArrauNiquen_inf"],
+      ["FRArrauNiquen_net","ArrauNiquenSup"],
+      ["FRArrauNiquen_net", "ArrauNiquenMix"],
+      ["FRArrauNiquen_net","REMArrauNiquen"],
       ["REMArrauNiquen","REMArrauNiquenSub"],
       ["bocatoma9", "bocatoma10"],
       ["bocatoma10", "TUCLSM"],
@@ -2285,6 +2341,22 @@
               "FlowNubleSanFabian",
               0.0480236599100695993325160770837]
         },
+      "FRGYM_net":
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FRGYM",
+              0.892]
+        },
+      "FRGYM_inf":
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FRGYM",
+              0.108]
+        },
       "superhGYM":
       {
         "type": "aggregated",
@@ -2395,6 +2467,22 @@
               "FlowNubleSanFabian",
               0.205295110568944200180041548265]
         },
+      "TUCJFR_net": 
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "TUCJFR",
+              0.88]
+        },
+      "TUCJFR_inf": 
+      {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+          "TUCJFR",
+          0.12]
+        },
       "DAASubJFRVirguinZemita": 
       {
       "type": "aggregated",
@@ -2409,13 +2497,13 @@
         "agg_func": "sum",
         "parameters": 
         [
-              "TUCJFR",
-              {
-                "type": "aggregated",
-                "agg_func": "product",
-                "parameters": 
-                ["JFRVirguinZemita",-1]
-              }     
+          "TUCJFR_net",
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": 
+          ["JFRVirguinZemita",-1]
+        }     
         ]
         },
       "REMJFRVirguinZemita": 
@@ -2501,68 +2589,84 @@
         "parameters": 
         ["superhRanchilloGP",0]
         },
-          "flowSanPedroSup": 
-          {
-            "type": "dataframe",
-            "url": "../inputs/qdda_m3d.csv",
-            "index_col": "Date",
-            "parse_dates": true,
-            "column": "08106001-0"
-            },
-          "flowSanPedroMix": 
-          {
-            "type": "dataframe",
-            "url": "../inputs/qdda_m3d.csv",
-            "index_col": "Date",
-            "parse_dates": true,
-            "column": "08106001-0"
-            },
-          "SanPedro":
-          {
-            "type": "aggregated",
-            "agg_func": "sum",
-            "parameters": [
-                  "flowSanPedroMix",
-                  "flowSanPedroSup"]
-            },
-          "FRSanPedro": 
-          {
-            "type": "aggregated",
-            "agg_func": "product",
-            "parameters": [
-                  "FlowNubleSanFabian",
-                  0.00784124597512020002354482528517]
-            },
-          "DAASubSanPedro": 
-          {
+        "flowSanPedroSup": 
+        {
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
+        "flowSanPedroMix": 
+        {
+          "type": "dataframe",
+          "url": "../inputs/qdda_m3d.csv",
+          "index_col": "Date",
+          "parse_dates": true,
+          "column": "08106001-0"
+          },
+        "SanPedro":
+        {
+          "type": "aggregated",
+          "agg_func": "sum",
+          "parameters": [
+                "flowSanPedroMix",
+                "flowSanPedroSup"]
+          },
+        "FRSanPedro": 
+        {
           "type": "aggregated",
           "agg_func": "product",
           "parameters": [
                 "FlowNubleSanFabian",
-                0.001]
+                0.00784124597512020002354482528517]
           },
-          "superhSanPedro":
+        "FRSanPedro_net": 
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "FRSanPedro",
+                0.8809]
+          },
+        "FRSanPedro_inf":
+        {
+          "type": "aggregated",
+          "agg_func": "product",
+          "parameters": [
+                "FRSanPedro",
+                0.1191]
+          },
+        "DAASubSanPedro": 
+        {
+        "type": "aggregated",
+        "agg_func": "product",
+        "parameters": [
+              "FlowNubleSanFabian",
+              0.001]
+        },
+        "superhSanPedro":
+        {
+          "type": "aggregated",
+          "agg_func": "sum",
+          "parameters": 
+          [
+          "FRSanPedro_net",
           {
             "type": "aggregated",
-            "agg_func": "sum",
+            "agg_func": "product",
             "parameters": 
-            [
-            "FRSanPedro",
-            {
-              "type": "aggregated",
-              "agg_func": "product",
-              "parameters": 
-              ["SanPedro",-1]
-            }     
-            ]
-            },
-         "REMSanPedro": 
-          {
-          "type": "aggregated",
-          "agg_func": "max",
-          "parameters": 
-          ["superhSanPedro",0]
+            ["SanPedro",-1]
+          }     
+          ]
           },
+        "REMSanPedro": 
+        {
+        "type": "aggregated",
+        "agg_func": "max",
+        "parameters": 
+        ["superhSanPedro",0]
+        },
             "flowArrauNiquenSup": 
             {
               "type": "dataframe",
@@ -2595,6 +2699,22 @@
                     "FlowNubleSanFabian",
                     0.0235700742800134012411295003631]
               },
+            "FRArrauNiquen_net": 
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "FRArrauNiquen",
+                    0.882]
+              },
+            "FRArrauNiquen_inf":
+            {
+              "type": "aggregated",
+              "agg_func": "product",
+              "parameters": [
+                    "FRArrauNiquen",
+                    0.118]
+              },
             "DAASubArrauNiquen": 
             {
             "type": "aggregated",
@@ -2609,7 +2729,7 @@
               "agg_func": "sum",
               "parameters": 
               [
-              "FRArrauNiquen",
+              "FRArrauNiquen_net",
               {
                 "type": "aggregated",
                 "agg_func": "product",

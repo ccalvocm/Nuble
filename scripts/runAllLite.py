@@ -47,8 +47,9 @@ def connectAquifer(modelo,acuifero,nodosRecarga,nodosDescarga):
     for nodoR in nodosRecarga:
         model.nodes[nodoR].connect(acuifero)
     
-    for nodoD in nodosDescarga:
-        acuifero.connect(modelo.nodes[nodoD],from_slot=0)
+    if len(nodosDescarga)>1:
+        for nodoD in nodosDescarga:
+            acuifero.connect(modelo.nodes[nodoD],from_slot=0)
     
     return modelo,acuifero
     
@@ -65,6 +66,7 @@ def getDischarge(lista):
 def getOutputs(lista):
     return [x.replace('deficit','')+'Mix' for x in lista]
 
+#%%
 if __name__ == "__main__":
     
     path="nubleLite2.json"
@@ -80,6 +82,10 @@ if __name__ == "__main__":
     descargas=['abstraccionAqNiq']+getDischarge(recargas)
     model,aqferNiquen=connectAquifer(model,aqferNiquen,recargas,
                                      descargas)
+    
+    # conectar las infiltraciones al acuífero Ñiquen
+    infiltraciones=['TUCJFR_inf','FRSanPedro_inf']
+    model,aqferNiquen=connectAquifer(model,aqferNiquen,infiltraciones,[])
 
 #     conectar nodos existentes al acuifero Changaral
     recargas=['REMGYMSub','REMMunicipalSub','REMSACCSSub',
@@ -93,6 +99,10 @@ if __name__ == "__main__":
     
     model,aqferChan=connectAquifer(model,aqferChan,recargas,descargas)
     
+    # conectar las infiltraciones al acuífero Ñiquen
+    infiltraciones=['FRGYM_inf','FRArrauNiquen_inf']
+    model,aqferNiquen=connectAquifer(model,aqferChan,infiltraciones,[])
+
 #     conectar nodos existentes al acuifero Ñuble
     recargas=['REMCollicoSub','REMChacayalOSub','REMChacayalPSub','REMMuticuraSub',
 'REMBellavistaSub','REMMonteBlancoBSub','REMPomuyetoBajoASub','REMPomuyetoBajoBSub',
@@ -158,6 +168,8 @@ recargas,descargas)
     print(model.nodes["FRBellavista"].flow)
     print(model.nodes["REMBellavistaSub"].flow)
     print(model.nodes["REMBellavistaSup"].flow)
+    print(model.nodes["FRSanPedro_inf"].flow)
+    print(model.nodes["FRSanPedro_net"].flow)
     print(model.nodes["rioNuble"].flow)
 
 

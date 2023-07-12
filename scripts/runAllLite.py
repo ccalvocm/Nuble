@@ -100,8 +100,10 @@ if __name__ == "__main__":
     model,aqferChan=connectAquifer(model,aqferChan,recargas,descargas)
     
     # conectar las infiltraciones al acuífero Ñiquen
-    infiltraciones=['FRGYM_inf','FRArrauNiquen_inf']
-    model,aqferNiquen=connectAquifer(model,aqferChan,infiltraciones,[])
+    infiltraciones=['FRGYM_inf','FRArrauNiquen_inf','TUCCSC_inf',
+                    'TUCRG_inf','FRLurinSilva_inf','TUCSPS_inf',
+                    'TUCMORLIL_inf']
+    model,aqferChan=connectAquifer(model,aqferChan,infiltraciones,[])
 
 #     conectar nodos existentes al acuifero Ñuble
     recargas=['REMCollicoSub','REMChacayalOSub','REMChacayalPSub','REMMuticuraSub',
@@ -114,8 +116,14 @@ if __name__ == "__main__":
     
     descargas=['abstraccionAqNub']+getDischarge(recargas)
     
-    model,aqferNiquen=connectAquifer(model,aqferNuble,
+    model,aqferNuble=connectAquifer(model,aqferNuble,
 recargas,descargas)
+    
+    # conectar las infiltraciones al acuífero Ñuble
+    infiltraciones=['FRCollico_inf','FRChacayalO_inf','FRChacayalP_inf',
+'FRMuticura_inf','FRBellavista_inf','FRPomuyetoBajoA_inf','FRMonteBlancoB_inf',
+'FRPomuyetoBajoB_inf','FRLasDumas_inf']
+    model,aqferNuble=connectAquifer(model,aqferNuble,infiltraciones,[])
         
 #     conectar los nodos de déficit que faltan
     entradas=['deficitJFRVirguinZemita','deficitCollico','deficitChacayalO','deficitChacayalP',
